@@ -187,7 +187,7 @@ export default function Home() {
       {/** Quote */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 z-10 bg-neutral-950">
         <Card className="flex flex-row">
-          <div className="h-full scale-x-[-1] px-5 pt-5 mb-0 mt-auto rounded">
+          <div className="hidden sm:flex h-full scale-x-[-1] px-5 pt-5 mb-0 mt-auto rounded">
             <Image src={"/ashiq-sir.png"} alt="Advisor" height={470} width={380} />
           </div>
           <CardContent className="flex flex-col my-10">
