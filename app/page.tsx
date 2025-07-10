@@ -25,7 +25,7 @@ export default function Home() {
     {name: "Committee announcement",
       designation: "May 2025",
       quote: "We got a new committee",
-      src: "https://picsum.photos/401",
+      src: "https://picsum.photos/420/420",
       href:"/event/b",
     },
     {name: "NEW WEBSITE!!",
@@ -333,22 +333,22 @@ export default function Home() {
           </h1>
           <div className="flex flex-row justify-center gap-4">
             <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
-              <div className="flex justify-center h-30">
-                <Image src={"/vercel.svg"} alt="vp" height={100} width={100}/>
+              <div className="flex justify-center">
+                <Image src={"/vp.png"} alt="vp" height={400} width={400}/>
               </div>
               <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Arafat Rahman Nishat</p>
               <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">Vice President</p>
             </div>
-            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 -translate-y-2 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
-              <div className="flex justify-center h-30">
-                <Image src={"/vercel.svg"} alt="vp" height={100} width={100}/>
+            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-8 mb-2 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+              <div className="flex justify-center">
+                <Image src={"/president.png"} alt="vp" height={400} width={400}/>
               </div>
               <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Md. Luban Medha</p>
               <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">President</p>
             </div>
             <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
-              <div className="flex justify-center h-30">
-                <Image src={"/vercel.svg"} alt="vp" height={100} width={100}/>
+              <div className="flex justify-center">
+                <Image src={"/treasurer.png"} alt="vp" height={400} width={400}/>
               </div>
               <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Safwan Sakib</p>
               <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">Treasurer</p>
@@ -366,7 +366,7 @@ export default function Home() {
 
       {/* Events section */}
       <section id="about" className="relative flex flex-col items-center py-20 px-4 sm:px-6 lg:px-8 z-10 bg-neutral-950">
-        <p className="text-4xl text-center md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-2"
+        <p className="text-4xl text-center md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent -mb-5"
         >EVENTS
         </p>
         <AnimatedTestimonials testimonials={events} />

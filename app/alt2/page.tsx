@@ -330,23 +330,23 @@ export default function Home() {
              MEET THE PANEL
           </h1>
           <div className="flex flex-row justify-center gap-4">
-            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded">
+            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
               <div className="flex justify-center">
-                <Image src={"/vercel.svg"} alt="vp" height={100} width={100}/>
+                <Image src={"/vp.png"} alt="vp" height={400} width={400}/>
               </div>
               <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Arafat Rahman Nishat</p>
               <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">Vice President</p>
             </div>
-            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-5 min-w-[25vw] rounded">
+            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-8 mb-2 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
               <div className="flex justify-center">
-                <Image src={"/vercel.svg"} alt="vp" height={100} width={100}/>
+                <Image src={"/president.png"} alt="vp" height={400} width={400}/>
               </div>
               <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Md. Luban Medha</p>
               <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">President</p>
             </div>
-            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded">
+            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
               <div className="flex justify-center">
-                <Image src={"/vercel.svg"} alt="vp" height={100} width={100}/>
+                <Image src={"/treasurer.png"} alt="vp" height={400} width={400}/>
               </div>
               <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Safwan Sakib</p>
               <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">Treasurer</p>
