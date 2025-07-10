@@ -5,12 +5,8 @@ import { X, Menu, ChevronDown, Thermometer, Zap, Wind, Settings, Quote, ArrowRig
 import { GlobeDemo } from "@/components/ui/renderGlobe";
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
   CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonial";
 import { Button } from "@/components/ui/button";
@@ -143,11 +139,11 @@ export default function Home() {
             {/* Main Tagline */}
             <div className="space-y-4 z-15">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
-                Shaping Tomorrow's HVAC&R Engineers
+                Shaping Tomorrow&apos;s HVAC&R Engineers
               </h1>
 
               <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 max-w-4xl mx-auto leading-relaxed">
-                Pioneering sustainable building technologies and shaping tomorrow's built environment
+                Pioneering sustainable building technologies and shaping tomorrow&apos;s built environment
               </p>
               <div className="flex justify-center w-full">
               <button
@@ -394,8 +390,8 @@ export default function Home() {
               animation: 'fadeInUp 0.8s ease-out 0.2s both'
             }}
           >
-            Be part of a community that's shaping the future of sustainable building technologies
-            and creating solutions for tomorrow's challenges.
+            Be part of a community that&apos;s shaping the future of sustainable building technologies
+            and creating solutions for tomorrow&apos;s challenges.
           </p>
 
           <div
