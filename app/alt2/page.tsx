@@ -20,6 +20,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
+import Link from "next/link";
  
 
 export default function Home() {
@@ -36,7 +37,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <a href="/"
+            <Link href="/"
               className="flex items-center space-x-3 drop-shadow-lg"
             >
               <Image src={"/ashrae-logo-tp.png"} alt="ASHRAE logo" height={72} width={72} />
@@ -46,7 +47,7 @@ export default function Home() {
                 </h1>
                 <p className="text-xs">Student Branch</p>
               </div>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
