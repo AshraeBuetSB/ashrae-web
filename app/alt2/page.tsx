@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import { X, Menu, ChevronDown, Thermometer, Zap, Wind, Settings, Quote, ArrowRight, CircleCheck } from "lucide-react"
-import { GlobeDemo } from "@/components/ui/renderGlobe";
 import {
   Card,
   CardAction,
@@ -12,32 +11,20 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { AnimatedTestimonials } from "@/components/ui/animated-testimonial";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 import { Button } from "@/components/ui/button";
-
+import { cn } from "@/lib/utils";
+import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
+ 
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const events = [
-    {name: "Seminar on HVAC",
-      designation: "Mar 2025",
-      quote: "Event held to dive into HVAC",
-      src: "https://picsum.photos/400",
-      href:"/event/hvac",
-    },
-    {name: "Committee announcement",
-      designation: "May 2025",
-      quote: "We got a new committee",
-      src: "https://picsum.photos/401",
-      href:"/event/b",
-    },
-    {name: "NEW WEBSITE!!",
-      designation: "Aug 2025",
-      quote: "our brand new website is here for you",
-      src: "https://picsum.photos/400/400",
-      href:"/event/c",
-    },
-  ]
   return (
     <div className="min-h-screen overflow-x-hidden bg-neutral-950 text-neutral-300">
 
@@ -132,7 +119,7 @@ export default function Home() {
 
 
       {/* Landing part*/}
-      <section className="relative min-h-screen flex items-center justify-center z-10  bg-gradient-to-b from-sky-700 from-0% via-blue-900 via-5% to-neutral-950 to-80%">
+      <section className="relative min-h-screen flex items-center justify-center z-10  bg-gradient-to-b from-blue-900 from-5% to-neutral-950 to-80%">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div
             className="space-y-5"
@@ -158,7 +145,15 @@ export default function Home() {
               </button>
               </div>
             </div>
-            <GlobeDemo />
+            <InteractiveGridPattern
+              className={cn(
+                "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]",
+                "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+              )}
+              width={40}
+              height={40}
+              squares={[60, 60]}
+            />
           </div>
         </div>
 
@@ -335,22 +330,22 @@ export default function Home() {
              MEET THE PANEL
           </h1>
           <div className="flex flex-row justify-center gap-4">
-            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
-              <div className="flex justify-center h-30">
+            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded">
+              <div className="flex justify-center">
                 <Image src={"/vercel.svg"} alt="vp" height={100} width={100}/>
               </div>
               <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Arafat Rahman Nishat</p>
               <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">Vice President</p>
             </div>
-            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 -translate-y-2 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
-              <div className="flex justify-center h-30">
+            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-5 min-w-[25vw] rounded">
+              <div className="flex justify-center">
                 <Image src={"/vercel.svg"} alt="vp" height={100} width={100}/>
               </div>
               <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Md. Luban Medha</p>
               <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">President</p>
             </div>
-            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
-              <div className="flex justify-center h-30">
+            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded">
+              <div className="flex justify-center">
                 <Image src={"/vercel.svg"} alt="vp" height={100} width={100}/>
               </div>
               <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Safwan Sakib</p>
@@ -372,7 +367,51 @@ export default function Home() {
         <p className="text-4xl text-center md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-2"
         >EVENTS
         </p>
-        <AnimatedTestimonials testimonials={events} />
+        <Carousel 
+        className="w-full max-w-sm my-5"
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        >
+          <CarouselContent>
+            <CarouselItem>
+              <Card>
+                <CardContent>
+                  <div className="w-80 h-50 text-xs text-grey-500 italic">image</div>
+                </CardContent>
+                <CardHeader>
+                  <CardTitle>Seminar on HVAC</CardTitle>
+                  <CardDescription>Student led seminar on HVAC</CardDescription>
+                </CardHeader>
+              </Card>
+            </CarouselItem>
+            <CarouselItem>
+              <Card>
+                <CardContent>
+                  <div className="w-80 h-50 text-xs text-grey-500 italic">image</div>
+                </CardContent>
+                <CardHeader>
+                  <CardTitle>Executive Committee announment</CardTitle>
+                  <CardDescription>We announced the latest executive committee</CardDescription>
+                </CardHeader>
+              </Card>
+            </CarouselItem>
+            <CarouselItem>
+              <Card>
+                <CardContent>
+                  <div className="w-80 h-50 text-xs text-grey-500 italic">image</div>
+                </CardContent>
+                <CardHeader>
+                  <CardTitle>Three</CardTitle>
+                  <CardDescription>placeholder</CardDescription>
+                </CardHeader>
+              </Card>
+            </CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </section>
 
 
