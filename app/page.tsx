@@ -1,53 +1,45 @@
 "use client"
-import { useState } from "react";
-import Image from "next/image";
-import { X, Menu, ChevronDown, Thermometer, Zap, Wind, Settings, Quote, ArrowRight, CircleCheck } from "lucide-react"
-import { GlobeDemo } from "@/components/ui/renderGlobe";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card"
-import { AnimatedTestimonials } from "@/components/ui/animated-testimonial";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { 
+  Menu, X, Target,
+  ChevronDown,ArrowRight, BookOpen,
+  GraduationCap, Lightbulb, Trophy, UserCheck,
+  Building2
+} from 'lucide-react';
+import AnimatedSection from '@/components/AnimatedSection';
+import FloatingCard from '@/components/FloatingCard';
+import Image from 'next/image';
+import Link from 'next/link';
 
-
-export default function Home() {
+function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const events = [
-    {name: "Seminar on HVAC",
-      designation: "Mar 2025",
-      quote: "Event held to dive into HVAC",
-      src: "https://picsum.photos/400",
-      href:"/event/hvac",
-    },
-    {name: "Committee announcement",
-      designation: "May 2025",
-      quote: "We got a new committee",
-      src: "https://picsum.photos/420/420",
-      href:"/event/b",
-    },
-    {name: "NEW WEBSITE!!",
-      designation: "Aug 2025",
-      quote: "our brand new website is here for you",
-      src: "https://picsum.photos/400/400",
-      href:"/event/c",
-    },
-  ]
-  return (
-    <div className="min-h-screen overflow-x-hidden bg-neutral-950 text-neutral-300">
+  const [scrollY, setScrollY] = useState(0);
 
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-x-hidden">
+      
       {/* Navigation */}
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm`}
-        style={{
-          maskImage: 'linear-gradient(to bottom, black 5%, black 20%, black 80%, transparent)',
-        }}
+      <motion.header 
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrollY > 50 ? 'bg-black/20 backdrop-blur-lg border-b border-white/10' : 'bg-transparent'
+        }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <Link href="/"
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-2 sm:py-4">
+            <motion.div 
+              className="flex items-center space-x-2 sm:space-x-3"
+              whileHover={{ scale: 1.05 }}
+            >
+              <Link href="/"
               className="flex items-center space-x-3 drop-shadow-lg"
             >
               <Image src={"/ashrae-logo-tp.png"} alt="ASHRAE logo" height={72} width={72} />
@@ -58,34 +50,71 @@ export default function Home() {
                 <p className="text-xs">Student Branch</p>
               </div>
             </Link>
-
+            </motion.div>
+            
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               {[
                 { title: 'About', href: '#about' },
                 { title: 'Research', href: '#research' },
-                { title: 'Events', href: '#events' },
-                { title: 'Members', href: '#members' },
+                { title: 'Events', href: '/events' },
+                { title: 'Members', href: '/members' },
                 { title: 'Contact', href: '#contact' },
               ].map((item) => (
-                <a
+                <motion.a
                   key={item.title}
                   href={item.href}
-                  className="relative text-gray-300 hover:text-white transition-all duration-200 hover:scale-110 group"
+                  className="relative text-gray-300 hover:text-white transition-colors duration-200"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   {item.title}
-                  <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 to-green-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-200" />
-                </a>
+                  <motion.div
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 to-green-400"
+                    initial={{ scaleX: 0 }}
+                    whileHover={{ scaleX: 1 }}
+                    transition={{ duration: 0.2 }}
+                  />
+                </motion.a>
               ))}
             </nav>
-
+            {/* <nav className="hidden md:flex items-center space-x-8">
+              {['Home', 'About', 'Activities', 'Events', 'Members', 'Contact'].map((item) => (
+                <motion.a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  className="relative text-gray-300 hover:text-white transition-colors duration-200"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {item}
+                  <motion.div
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 to-green-400"
+                    initial={{ scaleX: 0 }}
+                    whileHover={{ scaleX: 1 }}
+                    transition={{ duration: 0.2 }}
+                  />
+                </motion.a>
+              ))}
+            </nav> */}
+            
             <div className="flex items-center space-x-4">
-              <button
-                className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-200 shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30"
+              <motion.button 
+                className="hidden sm:block bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-200 shadow-lg"
+                whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(59, 130, 246, 0.3)" }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Join Chapter
+              </motion.button>
+              
+              <motion.button 
+                className="sm:hidden bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-3 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 shadow-lg"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 Join
-              </button>
-
+              </motion.button>
+              
               <button
                 className="md:hidden text-white"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -95,343 +124,583 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-
-      </header>
-      {/* Mobile Navigation */}
-      <div
-        className={`md:hidden bg-neutral-950 backdrop-blur-lg border-t border-white/10 transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-          }`}
-      >
-        <div className="px-4 space-y-3 mt-[10vh] pb-[5vh]">
-          {[
-            { title: 'About', href: '#about' },
-            { title: 'Research', href: '#research' },
-            { title: 'Events', href: '#events' },
-            { title: 'Members', href: '#members' },
-            { title: 'Contact', href: '#contact' },
-          ].map((item, index) => (
-            <a
-              key={item.title}
-              href={item.href}
-              className="block py-2 text-gray-300 hover:text-white transition-all duration-200 hover:translate-x-2"
-              onClick={() => setIsMenuOpen(false)}
-              style={{
-                animationDelay: `${index * 0.1}s`,
-                animation: isMenuOpen ? 'slideInLeft 0.3s ease-out forwards' : 'none'
-              }}
+        
+        {/* Mobile Navigation */}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden bg-black/30 backdrop-blur-lg border-t border-white/10"
             >
-              {item.title}
-            </a>
-          ))}
-        </div>
-      </div>
-
-
-      {/* Landing part*/}
-      <section className="relative min-h-screen flex items-center justify-center z-10  bg-gradient-to-b from-sky-700 from-0% via-blue-900 via-5% to-neutral-950 to-80%">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div
-            className="space-y-5"
-            style={{
-              animation: 'fadeInUp 1s ease-out'
-            }}
-          >
-            {/* Main Tagline */}
-            <div className="space-y-4 z-15">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
-                Shaping Tomorrow&apos;s HVAC&R Engineers
-              </h1>
-
-              <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 max-w-4xl mx-auto leading-relaxed">
-                Pioneering sustainable building technologies and shaping tomorrow&apos;s built environment
-              </p>
-              <div className="flex justify-center w-full">
-              <button
-                className="flex flex-row bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-2 rounded-full font-semibold transition-all duration-200 shadow-lg hover:scale-105"
-              >
-                <span>Explore more</span>
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
+              <div className="px-4 py-4 space-y-3">
+                {[
+                { title: 'About', href: '#about' },
+                { title: 'Research', href: '#research' },
+                { title: 'Events', href: '/events' },
+                { title: 'Members', href: '/members' },
+                { title: 'Contact', href: '#contact' },
+              ].map((item) => (
+                  <motion.a
+                    key={item.title}
+                    href={item.href}
+                    className="block py-2 text-gray-300 hover:text-white transition-colors duration-200"
+                    whileHover={{ x: 10 }}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.title}
+                  </motion.a>
+                ))}
               </div>
-            </div>
-            <GlobeDemo />
-          </div>
-        </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.header>
 
+      {/* Hero Section with Professional Welcome */}
+      <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            {/* Professional Welcome Badge */}
+            <motion.div 
+              className="inline-flex items-center space-x-2 sm:space-x-3 bg-gradient-to-r from-blue-500/20 to-green-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-3 py-2 sm:px-8 sm:py-4 mb-6 sm:mb-8"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+            >
+              <GraduationCap className="w-4 h-4 sm:w-6 sm:h-6 text-blue-400" />
+              <span className="text-sm sm:text-lg text-gray-200 font-medium">Welcome to ASHRAE BUET</span>
+            </motion.div>
+            
+            <motion.h1 
+              className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-8 leading-tight"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+            >
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent">
+                Shaping Tomorrow's
+              </span>
+              <br />
+              <span className="text-white">HVAC&R Engineers</span>
+            </motion.h1>
+            
+            <motion.div 
+              className="max-w-4xl mx-auto mb-8 sm:mb-12"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
+              <p className="text-base sm:text-xl md:text-2xl text-gray-300 leading-relaxed px-2 sm:px-0">
+                We are a vibrant community of BUET students passionate about <strong className="text-blue-400">Heating, Ventilation, Air Conditioning & Refrigeration</strong> technologies.
+              </p>
+            </motion.div>
+            
+            <motion.div 
+              className="flex justify-center"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.7 }}
+            >
+              <motion.button 
+                className="group bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 shadow-xl flex items-center space-x-2"
+                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span>Explore Our Journey</span>
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+              </motion.button>
+            </motion.div>
+          </motion.div>
+        </div>
+        
         {/* Scroll indicator */}
-        <div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
-          style={{
-            animation: 'bounce 2s infinite'
-          }}
+        <motion.div 
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
         >
           <ChevronDown className="w-8 h-8 text-white/60" />
-        </div>
-        <div className="absolute bottom-0 w-full h-10 z-40 bg-gradient-to-b from-transparent to-neutral-950"></div>
+        </motion.div>
       </section>
 
-      {/** About section */}
-      <section id="about" className="relative py-20 px-4 sm:px-6 lg:px-8 z-10 bg-neutral-950">
-        <p className="text-4xl text-center md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-2">
-          WHO WE ARE
-        </p>
-        <p
-          className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white/90 max-w-4xl mx-auto leading-relaxed"
-        > A vibrant community of BUET students passionate about Heating, Ventilation, Air Conditioning & Refrigeration technologies.
-        </p>
-        <p
-          className="text-lg md:text-xl lg:text-2xl text-pretty md:text-balance text-white/90 max-w-[70ch] mx-auto my-5 text-center leading-relaxed"
-        >Our goal is to advance the fields of heating, ventilation, air conditioning, and refrigeration to serve humanity and foster a sustainable world. Through our dedicated research, standards writing, publishing, certification, and continuing education efforts, we aim to be a pioneer in developing innovative solutions for a greener future.
-        </p>
-      </section>
-
-      {/** Quote */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 z-10 bg-neutral-950">
-        <Card className="flex flex-row">
-          <div className="hidden sm:flex h-full scale-x-[-1] px-5 pt-5 mb-0 mt-auto rounded">
-            <Image src={"/ashiq-sir.png"} alt="Advisor" height={470} width={380} />
+      {/* Mission & Values Section */}
+      <AnimatedSection className="py-20 px-4 sm:px-6 lg:px-8">
+        <div id='about' className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <motion.h2 
+              className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              Our Mission & Values
+            </motion.h2>
+            <motion.p 
+              className="text-xl text-gray-300 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              Empowering BUET students to excel in HVAC&R technologies through education and innovation
+            </motion.p>
           </div>
-          <CardContent className="flex flex-col my-10">
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 max-w-4xl mx-auto leading-relaxed">
-              <Quote className="w-10 h-10" /> A quote from our advisor Ashiq Sir About ASHRAE and importance of student involvement
-            </h1>
-            <CardFooter className="grid grid-col">
-              <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Dr. Md. Ashiqur Rahman</p>
-              <p className="text-sm md:text-md lg:text-lg text-white/90">Advisor, ASHRAE Buet Student Branch</p>
-              <p className="text-sm md:text-md lg:text-lg text-white/90">Professor, Department of Mechanical Engineering, BUET</p>
-            </CardFooter>
-          </CardContent>
-        </Card>
-      </section>
+          
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="grid grid-cols-1 md:grid-cols-2 gap-12"
+            >
+              <div className="bg-gradient-to-br from-blue-500/10 to-green-500/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-6 flex items-center justify-center">
+                    <Target className="w-6 h-6 text-blue-400 mr-3" />
+                    Our Mission
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed text-center">
+                    To advance the arts and sciences of heating, ventilation, air conditioning, and refrigeration to serve humanity and promote a sustainable world through research, standards writing, publishing, certification, and continuing education.
+                  </p>
+                </div>
+              </div>
 
-      {/* Benefits */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 z-10 bg-neutral-950">
-        <div className="flex flex-col">
-          <h1 className="text-4xl text-center md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-2">
-             Providing Members With
-          </h1>
-          <div className="text-xl my-5">
-            <div className="flex flex-row justify-center">
-              <CircleCheck className="mr-4 ml-10 mt-1"/>
-              <span className="min-w-[30ch]">Student-led technical seminars</span>
-            </div>
-            <div className="flex flex-row justify-center">
-              <CircleCheck className="mr-4 ml-10 mt-1"/>
-              <span className="min-w-[30ch]">Professional networking events</span>
-            </div>
-            <div className="flex flex-row justify-center">
-              <CircleCheck className="mr-4 ml-10 mt-1"/>
-              <span className="min-w-[30ch]">Scholarship opportunities</span>
-            </div>
-            <div className="flex flex-row justify-center">
-              <CircleCheck className="mr-4 ml-10 mt-1"/>
-              <span className="min-w-[30ch]">Career development programs</span>
-            </div>
+              <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-6 flex items-center justify-center">
+                    <Building2 className="w-6 h-6 text-green-400 mr-3" />
+                    Core Values
+                  </h3>
+                  <div className="space-y-4">
+                    {[
+                      "Excellence in engineering and technical innovation",
+                      "Commitment to sustainability and environmental stewardship",
+                      "Professional development and lifelong learning",
+                      "Collaboration and knowledge sharing"
+                    ].map((value, index) => (
+                      <motion.div 
+                        key={index}
+                        className="flex items-center space-x-3"
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 }}
+                      >
+                        <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-gray-300">{value}</span>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
-      </section>
-        
+      </AnimatedSection>
 
-      {/* Features Grid */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 z-10 bg-neutral-950">
-        <div className="max-w-7xl mx-auto">
-          <div
-            className="text-center mb-16"
-            style={{
-              animation: 'fadeInUp 0.8s ease-out'
-            }}
+
+      {/* Advisor Quote Section */}
+      <AnimatedSection className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-gradient-to-br from-blue-500/10 to-green-500/10 backdrop-blur-lg rounded-3xl p-8 sm:p-12 border border-white/20"
           >
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+              {/* Advisor Photo */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="flex justify-center lg:justify-start"
+              >
+                <div className="relative">
+                  <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden bg-gradient-to-r from-blue-400 to-green-400 p-1">
+                    <div className="w-full h-full rounded-full overflow-hidden bg-blue-500/10">
+                      <Image src={"/ashiq-sir.png"} alt='Dr. Md. Ashiqur Rahman' height={470} width={380} className='w-full h-full object-cover object-[center_20%]'/>
+                    </div>
+                  </div>
+                  {/* Decorative elements */}
+                  <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-400 rounded-full opacity-60"></div>
+                  <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-400 rounded-full opacity-60"></div>
+                </div>
+              </motion.div>
+              
+              {/* Quote Content */}
+              <div className="lg:col-span-2 text-center lg:text-left">
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                >
+                  {/* Quote Icon */}
+                  <div className="flex justify-center lg:justify-start mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-green-400 rounded-full flex items-center justify-center">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  {/* Quote Text */}
+                  <blockquote className="text-lg sm:text-xl text-gray-200 leading-relaxed mb-8 italic">
+                    "A quote from our advisor Ashiq Sir About ASHRAE and importance of student involvement"
+                  </blockquote>
+                  
+                  {/* Advisor Info */}
+                  <div className="border-l-4 border-gradient-to-b from-blue-400 to-green-400 pl-6">
+                    <div className="text-xl sm:text-2xl font-bold text-white mb-2">
+                      Dr. Md. Ashiqur Rahman
+                    </div>
+                    <div className="text-blue-400 font-semibold mb-1">
+                      Advisor, ASHRAE BUET Student Branch
+                    </div>
+                    <div className="text-gray-300">
+                      Professor, Department of Mechanical Engineering, BUET
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </AnimatedSection>
+
+      {/* Student Activities Grid */}
+      <AnimatedSection className="py-20 px-4 sm:px-6 lg:px-8">
+        <div id='events' className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Our Expertise
+              Student Activities
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Leading research and innovation in HVAC&R technologies
+              Engaging activities designed to enhance learning and professional development
             </p>
           </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: <Thermometer className="w-8 h-8" />,
-                title: "Thermal Systems",
-                description: "Advanced thermal management and energy-efficient heating solutions",
-                color: "from-red-400 to-orange-400"
-              },
-              {
-                icon: <Wind className="w-8 h-8" />,
-                title: "Ventilation",
-                description: "Smart air quality control and ventilation system optimization",
+                icon: <BookOpen className="w-8 h-8" />,
+                title: "Technical Workshops",
+                description: "Hands-on learning sessions on HVAC design, installation, and maintenance",
                 color: "from-blue-400 to-cyan-400"
               },
               {
-                icon: <Zap className="w-8 h-8" />,
-                title: "Energy Efficiency",
-                description: "Sustainable energy solutions and green building technologies",
-                color: "from-green-400 to-emerald-400"
+                icon: <Lightbulb className="w-8 h-8" />,
+                title: "Innovation Projects",
+                description: "Student-led research projects exploring sustainable HVAC solutions",
+                color: "from-yellow-400 to-orange-400"
               },
               {
-                icon: <Settings className="w-8 h-8" />,
-                title: "Automation",
-                description: "IoT-enabled smart building systems and automated controls",
+                icon: <Trophy className="w-8 h-8" />,
+                title: "Competitions",
+                description: "Participate in national and international HVAC design competitions",
                 color: "from-purple-400 to-pink-400"
+              },
+              {
+                icon: <UserCheck className="w-8 h-8" />,
+                title: "Industry Visits",
+                description: "Field trips to HVAC facilities and interaction with industry professionals",
+                color: "from-green-400 to-emerald-400"
               }
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 text-center border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105 hover:-translate-y-2"
-              >
-                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-r ${feature.color} mb-6`}>
+            ].map((activity, index) => (
+              <FloatingCard key={index} delay={index * 0.1} className="p-8 text-center">
+                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-r ${activity.color} mb-6`}>
                   <div className="text-white">
-                    {feature.icon}
+                    {activity.icon}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">{feature.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{feature.description}</p>
-              </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">{activity.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{activity.description}</p>
+              </FloatingCard>
             ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* Stats Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-neutral-950 backdrop-blur-sm z-10">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between flex-grow gap-8 mx-[2vw] sm:mx-[10vw] lg:mx-[20vw]">
-            {[
-              { number: "180+", label: "Active Members" },
-              { number: "50+", label: "Research Papers" },
-              { number: "10+", label: "Awards Won" }
-            ].map((stat, index) => (
-              <div
-                key={index}
-                className="text-center"
-                style={{
-                  animation: `fadeInUp 0.8s ease-out ${index * 0.1}s both`
-                }}
-              >
-                <div
-                  className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-2"
-                  style={{
-                    animation: `scaleIn 0.8s ease-out ${index * 0.1 + 0.3}s both`
-                  }}
-                >
-                  {stat.number}
-                </div>
-                <div className="text-gray-300 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Panel Memebrs */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 z-10 bg-neutral-950">
-        <div className="flex flex-col">
-          <h1 className="text-4xl text-center md:text-5xl font-bold mb-2">
-             MEET THE PANEL
-          </h1>
-          <div className="flex flex-row justify-center gap-4">
-            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
-              <div className="flex justify-center">
-                <Image src={"/vp.png"} alt="vp" height={400} width={400}/>
-              </div>
-              <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Arafat Rahman Nishat</p>
-              <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">Vice President</p>
-            </div>
-            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-8 mb-2 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
-              <div className="flex justify-center">
-                <Image src={"/president.png"} alt="vp" height={400} width={400}/>
-              </div>
-              <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Md. Luban Medha</p>
-              <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">President</p>
-            </div>
-            <div className="flex flex-col justify-center bg-neutral-900 p-4 mt-10 min-w-[25vw] rounded transition-all duration-300 hover:scale-105 hover:-translate-y-2">
-              <div className="flex justify-center">
-                <Image src={"/treasurer.png"} alt="vp" height={400} width={400}/>
-              </div>
-              <p className="text-lg text-center md:text-xl lg:text-2xl font-semibold text-white/90 max-w-4xl leading-relaxed mt-10">Safwan Sakib</p>
-              <p className="text-sm text-center md:text-md lg:text-lg text-zinc-600">Treasurer</p>
-            </div>
-          </div>
-          <div className="flex justify-center my-5">
-            <Button className="mx-auto">
-            <a href="/panel">View Full Panel</a>
-            <ArrowRight/>
-          </Button>
+      {/* Meet the Panel Members Section */}
+      <AnimatedSection className="py-20 px-4 sm:px-6 lg:px-8">
+        <div id='members' className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <motion.h2 
+              className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              Meet the Panel Members
+            </motion.h2>
+            <motion.p 
+              className="text-xl text-gray-300 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              Our dedicated leadership team driving innovation and excellence in HVAC&R education
+            </motion.p>
           </div>
           
-        </div>
-      </section>
-
-      {/* Events section */}
-      <section id="about" className="relative flex flex-col items-center py-20 px-4 sm:px-6 lg:px-8 z-10 bg-neutral-950">
-        <p className="text-4xl text-center md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent -mb-5"
-        >EVENTS
-        </p>
-        <AnimatedTestimonials testimonials={events} />
-      </section>
-
-
-      {/* CTA Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2
-            className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight"
-            style={{
-              animation: 'fadeInUp 0.8s ease-out'
-            }}
-          >
-            Join the Future of HVAC&R
-          </h2>
-
-          <p
-            className="text-xl text-gray-300 mb-8 leading-relaxed"
-            style={{
-              animation: 'fadeInUp 0.8s ease-out 0.2s both'
-            }}
-          >
-            Be part of a community that&apos;s shaping the future of sustainable building technologies
-            and creating solutions for tomorrow&apos;s challenges.
-          </p>
-
-          <div
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
-            style={{
-              animation: 'fadeInUp 0.8s ease-out 0.4s both'
-            }}
-          >
-            <button
-              className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/30"
-            >
-              Become a Member
-            </button>
-
-            <button
-              className="bg-transparent border-2 border-white/30 hover:border-white hover:bg-white/10 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm hover:scale-105"
-            >
-              Contact Us
-            </button>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+            {[
+              {
+                name: "Arafath Rahman Nishat",
+                designation: "Vice President",
+                image: "/vp.png",
+                color: "from-blue-500 to-cyan-500"
+              },
+              {
+                name: "Md. Luban Medha",
+                designation: "President", 
+                image: "/president.png",
+                color: "from-purple-500 to-pink-500"
+              },
+              {
+                name: "Safwan Sakib",
+                designation: "Treasurer",
+                image: "/treasurer.png",
+                color: "from-green-500 to-emerald-500"
+              }
+            ].map((member, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 text-center"
+              >
+                {/* Member Photo */}
+                <div className="relative mb-6 flex justify-center">
+                  <div className={`w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden bg-gradient-to-r ${member.color} p-1`}>
+                    <div className="w-full h-full rounded-full overflow-hidden">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        height={400}
+                        width={400}
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Member Info */}
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
+                    {member.name}
+                  </h3>
+                  <div className={`inline-block px-4 py-2 rounded-full bg-gradient-to-r ${member.color} text-white font-semibold text-sm sm:text-base`}>
+                    {member.designation}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
+
+      {/* Student Chapter Info Section */}
+      <AnimatedSection className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <motion.h2 
+                className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                About Our Chapter
+              </motion.h2>
+              
+              <motion.p 
+                className="text-xl text-gray-300 mb-8 leading-relaxed"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+              >
+                The ASHRAE BUET Student Chapter is dedicated to fostering academic excellence and professional development among mechanical engineering students interested in HVAC&R technologies.
+              </motion.p>
+              
+              <motion.div 
+                className="space-y-6"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+              >
+                {[
+                  "Student-led technical seminars",
+                  "Professional networking events",
+                  "Scholarship opportunities",
+                  "Career development programs"
+                ].map((item, index) => (
+                  <motion.div 
+                    key={index}
+                    className="flex items-center space-x-3"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.6 + index * 0.1 }}
+                  >
+                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-green-400 rounded-full"></div>
+                    <span className="text-gray-300">{item}</span>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative"
+            >
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                <img 
+                  src="/WhatsApp Image 2025-06-19 at 18.48.51_5ea854a3.jpg"
+                  alt="ASHRAE BUET Student Chapter Activities"
+                  className="w-full h-96 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-6 left-6 text-white">
+                  <p className="text-sm font-medium mb-1">Student Chapter Event 2025</p>
+                  <p className="text-lg font-bold">Learning Through Innovation</p>
+                </div>
+              </div>
+              
+              {/* Floating stats */}
+              <motion.div 
+                className="absolute -top-8 -right-8 bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.8 }}
+              >
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-400 mb-1">150+</div>
+                  <div className="text-sm text-gray-300 font-medium">Active Students</div>
+                </div>
+              </motion.div>
+            </motion.div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* Stats Section */}
+      <AnimatedSection className="py-20 px-4 sm:px-6 lg:px-8 bg-black/20 backdrop-blur-sm">
+        <div id='research' className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              { number: "150+", label: "Student Members" },
+              { number: "25+", label: "Technical Sessions" },
+              { number: "10+", label: "Industry Partners" },
+              { number: "5+", label: "Awards Won" }
+            ].map((stat, index) => (
+              <motion.div
+                key={index}
+                className="text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <motion.div 
+                  className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-2"
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 + 0.3, type: "spring" }}
+                >
+                  {stat.number}
+                </motion.div>
+                <div className="text-gray-300 font-medium">{stat.label}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* CTA Section */}
+      <AnimatedSection className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.h2 
+            className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Join Our Student Community
+          </motion.h2>
+          
+          <motion.p 
+            className="text-xl text-gray-300 mb-8 leading-relaxed"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            Connect with fellow BUET students passionate about HVAC&R technology and build your professional network while enhancing your academic journey.
+          </motion.p>
+          
+          <motion.div 
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+          >
+            <motion.button 
+              className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
+              whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Join Chapter
+            </motion.button>
+            
+            <motion.button 
+              className="bg-transparent border-2 border-white/30 hover:border-white hover:bg-white/10 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Learn More
+            </motion.button>
+          </motion.div>
+        </div>
+      </AnimatedSection>
 
       {/* Footer */}
       <footer className="bg-black/40 backdrop-blur-lg border-t border-white/10 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div id='contact' className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-full overflow-hidden bg-gradient-to-r from-blue-400 to-green-400 p-0.5">
-                  <div className="w-full h-full rounded-full overflow-hidden bg-white flex items-center justify-center">
-                    <img 
-                      src="/WhatsApp Image 2025-06-19 at 13.46.32_36dddcee.jpg" 
-                      alt="ASHRAE BUET Logo" 
-                      className="w-8 h-8 object-contain"
-                    />
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold">ASHRAE BUET Student Branch</h3>
+                <Link href="/"
+                    className="flex items-center space-x-3 drop-shadow-lg"
+                    >
+                    <Image src={"/ashrae-logo-tp.png"} alt="ASHRAE logo" height={72} width={72} />
+                    <div>
+                        <h1 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
+                        BUET
+                        </h1>
+                        <p className="text-xs">Student Branch</p>
+                    </div>
+                </Link>
               </div>
               <p className="text-gray-400 leading-relaxed mb-4">
                 Empowering BUET students to excel in HVAC&R technologies through education, 
@@ -446,7 +715,7 @@ export default function Home() {
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#about" className="hover:text-blue-400 transition-colors duration-200">About Chapter</a></li>
-                <li><a href="#activities" className="hover:text-blue-400 transition-colors duration-200">Research</a></li>
+                <li><a href="#activities" className="hover:text-blue-400 transition-colors duration-200">Activities</a></li>
                 <li><a href="#events" className="hover:text-blue-400 transition-colors duration-200">Events</a></li>
                 <li><a href="#members" className="hover:text-blue-400 transition-colors duration-200">Membership</a></li>
               </ul>
@@ -464,8 +733,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
-
-
     </div>
   );
 }
+
+export default App;

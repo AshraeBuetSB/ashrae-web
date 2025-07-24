@@ -2,15 +2,15 @@
 import { useState } from "react";
 import Image from "next/image";
 import { X, Menu, ChevronDown, Thermometer, Zap, Wind, Settings, Quote, ArrowRight, CircleCheck } from "lucide-react"
+import { GlobeDemo } from "@/components/ui/renderGlobe";
 import {
   Card,
   CardContent,
   CardFooter,
 } from "@/components/ui/card"
-import { Button } from "@/components/ui/button";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import Link from "next/link";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonial";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -155,7 +155,7 @@ export default function Home() {
               </button>
               </div>
             </div>
-            <BackgroundBeams/>
+            <GlobeDemo />
           </div>
         </div>
 
@@ -360,6 +360,7 @@ export default function Home() {
             <ArrowRight/>
           </Button>
           </div>
+          
         </div>
       </section>
 

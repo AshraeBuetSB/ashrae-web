@@ -393,7 +393,6 @@ export function GlobeDemo() {
   return (
     <div className="absolute w-[80vh] h-[80vh] mx-auto sm:w-[100vh] sm:h-[100vh] md:w-[80vw] md:h-[80vw] md:mx-[10vw] top-[65vh] sm:top-[50vh] md:top-[40vh] z-[-1] select-none">
           <World data={sampleArcs} globeConfig={globeConfig} />
-    
     </div>
   );
 }
