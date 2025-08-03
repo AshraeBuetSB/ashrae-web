@@ -105,15 +105,15 @@ export default function Header() {
                 >
                     <div className="px-4 py-4 space-y-3">
                     {['Home', 'About', 'Activities', 'Events', 'Members', 'Contact'].map((item) => (
-                        <motion.a
-                        key={item}
-                        href={`/${item.toLowerCase()}`}
-                        className="block py-2 text-gray-300 hover:text-white transition-colors duration-200"
-                        whileHover={{ x: 10 }}
-                        onClick={() => setIsMenuOpen(false)}
-                        >
-                        {item}
-                        </motion.a>
+                        <MotionLink
+                            key={item}
+                            to={`/${item.toLowerCase()}`}
+                            className="relative text-gray-300 hover:text-white transition-colors duration-200"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            >
+                            {item}
+                        </MotionLink>
                     ))}
                     </div>
                 </motion.div>
