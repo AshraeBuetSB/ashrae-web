@@ -108,7 +108,7 @@ export default function Header() {
                         <MotionLink
                             key={item}
                             to={`/${item.toLowerCase()}`}
-                            className="relative text-gray-300 hover:text-white transition-colors duration-200"
+                            className="block py-2 text-gray-300 hover:text-white transition-colors duration-200"
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.95 }}
                             >
