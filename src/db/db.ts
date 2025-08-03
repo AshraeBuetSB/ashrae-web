@@ -216,7 +216,7 @@ const db = [
         color: "from-green-500 to-emerald-500",
     },
     {
-        name: "Abdullah Ione Nasiruddin (Sheehan)",
+        name: "Abdullah Ibne Nasiruddin (Sheehan)",
         designation: "Associate Coordinator",
         image: "https://i.postimg.cc/3W5fQQDd/Abdullah-Ibne-Nasiruddin-Sheehan-Associate-Coordinator.png",
         color: "from-green-500 to-emerald-500",
