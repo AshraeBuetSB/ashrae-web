@@ -7,16 +7,17 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="col-span-1 md:col-span-2">
                     <div className="flex items-center space-x-3 mb-4">
-                        <div className="w-10 h-10 rounded-full overflow-hidden bg-gradient-to-r from-blue-400 to-green-400 p-0.5">
-                        <div className="w-full h-full rounded-full overflow-hidden bg-white flex items-center justify-center">
-                            <img 
-                            src="./WhatsApp Image 2025-06-19 at 13.46.32_36dddcee.jpg" 
-                            alt="ASHRAE BUET Logo" 
-                            className="w-8 h-8 object-contain"
-                            />
+                    <a href="/"
+                        className="flex items-center space-x-3 drop-shadow-lg"
+                        >
+                        <img src={"/ashrae-logo-tp.png"} alt="ASHRAE logo" height={72} width={72} />
+                        <div>
+                            <h1 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
+                            BUET
+                            </h1>
+                            <p className="text-xs">Student Branch</p>
                         </div>
-                        </div>
-                        <h3 className="text-xl font-bold">ASHRAE BUET Student Chapter</h3>
+                    </a>
                     </div>
                     <p className="text-gray-400 leading-relaxed mb-4">
                         Empowering BUET students to excel in HVAC&R technologies through education, 

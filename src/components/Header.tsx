@@ -29,25 +29,21 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-2 sm:py-4">
                 <motion.div 
-                    className="flex items-center space-x-2 sm:space-x-3"
-                    whileHover={{ scale: 1.05 }}
-                >
-                    <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full overflow-hidden bg-gradient-to-r from-blue-400 to-green-400 p-0.5">
-                    <div className="w-full h-full rounded-full overflow-hidden bg-white flex items-center justify-center">
-                        <img 
-                        src="./WhatsApp Image 2025-06-19 at 13.46.32_36dddcee.jpg" 
-                        alt="ASHRAE BUET Logo" 
-                        className="w-6 h-6 sm:w-10 sm:h-10 object-contain"
-                        />
-                    </div>
-                    </div>
-                    <div>
-                    <h1 className="text-sm sm:text-xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
-                        ASHRAE BUET
-                    </h1>
-                    <p className="text-xs sm:text-xs text-gray-300">Student Chapter</p>
-                    </div>
-                </motion.div>
+              className="flex items-center space-x-2 sm:space-x-3"
+              whileHover={{ scale: 1.05 }}
+            >
+              <a href="/"
+              className="flex items-center space-x-3 drop-shadow-lg"
+            >
+              <img src={"/ashrae-logo-tp.png"} alt="ASHRAE logo" height={72} width={72} />
+              <div>
+                <h1 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
+                  BUET
+                </h1>
+                <p className="text-xs">Student Branch</p>
+              </div>
+            </a>
+            </motion.div>
                 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-8">
