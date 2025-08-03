@@ -1,0 +1,99 @@
+import { motion } from 'framer-motion';
+import AnimatedSection from '../components/AnimatedSection';
+
+
+export default function ChapterInfo() {
+    return (
+        <div>
+            {/* Student Chapter Info Section */}
+            <AnimatedSection className="py-20 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <motion.h2 
+                    className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    >
+                    About Our Chapter
+                    </motion.h2>
+                    
+                    <motion.p 
+                    className="text-xl text-gray-300 mb-8 leading-relaxed"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                    >
+                    The ASHRAE BUET Student Chapter is dedicated to fostering academic excellence and professional development among mechanical engineering students interested in HVAC&R technologies.
+                    </motion.p>
+                    
+                    <motion.div 
+                    className="space-y-6"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 }}
+                    >
+                    {[
+                        "Student-led technical seminars",
+                        "Professional networking events",
+                        "Scholarship opportunities",
+                        "Career development programs"
+                    ].map((item, index) => (
+                        <motion.div 
+                        key={index}
+                        className="flex items-center space-x-3"
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.6 + index * 0.1 }}
+                        >
+                        <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-green-400 rounded-full"></div>
+                        <span className="text-gray-300">{item}</span>
+                        </motion.div>
+                    ))}
+                    </motion.div>
+                </div>
+                
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="relative"
+                >
+                    <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                    <img 
+                        src="./WhatsApp Image 2025-06-19 at 18.48.51_5ea854a3.jpg"
+                        alt="ASHRAE BUET Student Chapter Activities"
+                        className="w-full h-96 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    <div className="absolute bottom-6 left-6 text-white">
+                        <p className="text-sm font-medium mb-1">Student Chapter Event 2025</p>
+                        <p className="text-lg font-bold">Learning Through Innovation</p>
+                    </div>
+                    </div>
+                    
+                    {/* Floating stats */}
+                    <motion.div 
+                    className="absolute -top-8 -right-8 bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.8 }}
+                    >
+                    <div className="text-center">
+                        <div className="text-3xl font-bold text-blue-400 mb-1">150+</div>
+                        <div className="text-sm text-gray-300 font-medium">Active Students</div>
+                    </div>
+                    </motion.div>
+                </motion.div>
+                </div>
+            </div>
+            </AnimatedSection>
+        </div>
+    );
+}
