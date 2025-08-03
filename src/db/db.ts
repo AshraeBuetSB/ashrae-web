@@ -2,7 +2,7 @@ const db = [
     {
         name: "Dr. Md. Ashiqur Rahman",
         designation: "Advisor",
-        image: "https://i.postimg.cc/d1ZYjv2f/Dr-Md-Ashiqur-Rahman-Advisor.webp",
+        image: "https://i.postimg.cc/FsxDmh98/Dr-Md-Ashiqur-Rahman-Advisor-png.png",
         color: "from-green-500 to-emerald-500",
     },
     {

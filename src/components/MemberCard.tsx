@@ -96,11 +96,11 @@ export default function Members() {
                                 src={member.image}
                                 alt={member.name}
                                 style={{
-                                  width: '200%',
-                                  height: '200%',
+                                  width: '190%',
+                                  height: '190%',
                                   objectFit: 'cover',
                                   objectPosition: 'center',
-                                  transform: 'translate(0%, -25%)'
+                                  transform: 'translate(0%, -20%)'
                                 }}
                               />
                             </div>
