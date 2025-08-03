@@ -107,7 +107,7 @@ export default function Header() {
                     {['Home', 'About', 'Activities', 'Events', 'Members', 'Contact'].map((item) => (
                         <motion.a
                         key={item}
-                        href={`#${item.toLowerCase()}`}
+                        href={`/${item.toLowerCase()}`}
                         className="block py-2 text-gray-300 hover:text-white transition-colors duration-200"
                         whileHover={{ x: 10 }}
                         onClick={() => setIsMenuOpen(false)}
