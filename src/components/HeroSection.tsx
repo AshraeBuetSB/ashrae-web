@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GraduationCap, ArrowRight, ChevronDown } from 'lucide-react';
+import { GraduationCap, ChevronDown } from 'lucide-react';
 
 export default function HeroSection() {
     return (
@@ -47,7 +47,7 @@ export default function HeroSection() {
               </p>
             </motion.div>
             
-            <motion.div 
+            {/* <motion.div 
               className="flex justify-center"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ export default function HeroSection() {
                 <span>Explore Our Journey</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
         

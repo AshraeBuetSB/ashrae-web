@@ -6,6 +6,7 @@ import StudentActivities from '../components/StudentActivities';
 import PanelMembers from '../components/PanelMembers';
 import ChapterInfo from '../components/ChapterInfo';
 import Stats from '../components/Stats';
+import Sponsors from '../components/Sponsors';
 import CTA from '../components/CTA';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <PanelMembers />
       <ChapterInfo />
       <Stats />
+      <Sponsors />
       <CTA />
     </div>
   );

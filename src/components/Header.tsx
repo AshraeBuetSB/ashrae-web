@@ -10,6 +10,14 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrollY, setScrollY] = useState(0);
 
+    const navigation = [
+        {label: 'Home', href: "/home"},
+        {label: 'Executive Committee', href: '/members'},
+        {label: 'Activities', href: '/activities'},
+        {label: 'Events', href: '/events'},
+        {label: 'Projects', href: '/projects'}
+        
+    ]
     useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
@@ -47,15 +55,16 @@ export default function Header() {
                 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-8">
-                {['Home', 'About', 'Activities', 'Events', 'Members', 'Contact'].map((item) => (
+                {/* {['Home', 'About', 'Activities', 'Events', 'Members', 'Contact'].map((item) => ( */}
+                {navigation.map((item)=>(
                     <MotionLink
-                    key={item}
-                    to={`/${item.toLowerCase()}`}
+                    key={item.label}
+                    to={item.href}
                     className="relative text-gray-300 hover:text-white transition-colors duration-200"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     >
-                    {item}
+                    {item.label}
                     <motion.div
                         className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 to-green-400"
                         initial={{ scaleX: 0 }}
@@ -73,7 +82,7 @@ export default function Header() {
                     whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(59, 130, 246, 0.3)" }}
                     whileTap={{ scale: 0.95 }}
                     >
-                    Join Chapter
+                    Contact Us
                     </motion.button>
                     
                     <motion.button 
@@ -81,7 +90,7 @@ export default function Header() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     >
-                    Join
+                    Contact
                     </motion.button>
                     
                     <button
@@ -104,15 +113,16 @@ export default function Header() {
                     className="md:hidden bg-black/30 backdrop-blur-lg border-t border-white/10"
                 >
                     <div className="px-4 py-4 space-y-3">
-                    {['Home', 'About', 'Activities', 'Events', 'Members', 'Contact'].map((item) => (
+                    {/* {['Home', 'About', 'Activities', 'Events', 'Members', 'Contact'].map((item) => ( */}
+                    {navigation.map((item) => (
                         <MotionLink
-                            key={item}
-                            to={`/${item.toLowerCase()}`}
+                            key={item.label}
+                            to={item.href}
                             className="block py-2 text-gray-300 hover:text-white transition-colors duration-200"
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.95 }}
                             >
-                            {item}
+                            {item.label}
                         </MotionLink>
                     ))}
                     </div>
