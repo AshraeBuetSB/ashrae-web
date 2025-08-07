@@ -10,7 +10,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-            Activities
+            Projects
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Hands-on projects designed and executed by ASHRAE BUET student members.
