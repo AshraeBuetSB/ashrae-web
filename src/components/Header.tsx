@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import ScrollToTop from './ScrollToTop';
 
 const MotionLink = motion(Link);
 
@@ -14,7 +15,6 @@ export default function Header() {
         {label: 'Home', href: "/home"},
         {label: 'Executive Committee', href: '/members'},
         {label: 'Activities', href: '/activities'},
-        {label: 'Events', href: '/events'},
         {label: 'Projects', href: '/projects'}
         
     ]
@@ -130,6 +130,7 @@ export default function Header() {
                 )}
             </AnimatePresence>
             </motion.header>
+            <ScrollToTop/>
         </div>
     );
 }
