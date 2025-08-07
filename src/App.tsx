@@ -8,6 +8,7 @@ import Events from './pages/Events';
 import Members from './pages/Members';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import ProjectDetail from './pages/ProjectDetails';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="members" element={<Members />} />
         <Route path="contact" element={<Contact />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="projects/:slug" element={<ProjectDetail />} />
       </Route>
     </Routes>
   );
