@@ -41,25 +41,35 @@ export default function Members() {
     <div>
       <AnimatedSection className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <motion.h2
-              className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+          <section className="relative pt-8 pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <motion.h1 
+              className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
             >
-              Meet the Team
-            </motion.h2>
-            <motion.p
-              className="text-xl text-gray-300 max-w-3xl mx-auto"
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent">
+                Meet the team
+              </span>
+            </motion.h1>
+            
+            <motion.p 
+              className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-4xl mx-auto"
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
             >
               Our passionate team powering the future of HVAC&R excellence.
             </motion.p>
-          </div>
+          </motion.div>
+        </div>
+      </section>
 
           {groups.map((group, groupIndex) => {
             const members = db.filter(member => group.designations.includes(member.designation));
