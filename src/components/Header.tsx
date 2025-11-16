@@ -77,22 +77,24 @@ export default function Header() {
 
                 
                 <div className="flex items-center space-x-4">
-                    <motion.button 
-                    className="hidden sm:block bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-200 shadow-lg"
-                    whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(59, 130, 246, 0.3)" }}
-                    whileTap={{ scale: 0.95 }}
-                    >
-                    Contact Us
-                    </motion.button>
-                    
-                    <motion.button 
-                    className="sm:hidden bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-3 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 shadow-lg"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    >
-                    Contact
-                    </motion.button>
-                    
+                    <a href='#connect'>
+                        <motion.button 
+                        className="hidden sm:block bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-200 shadow-lg"
+                        whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(59, 130, 246, 0.3)" }}
+                        whileTap={{ scale: 0.95 }}
+                        >
+                        Contact Us
+                        </motion.button>
+                        
+                        <motion.button 
+                        className="sm:hidden bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-3 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 shadow-lg"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        >
+                        Contact
+                        </motion.button>
+                    </a>
+
                     <button
                     className="md:hidden text-white"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}

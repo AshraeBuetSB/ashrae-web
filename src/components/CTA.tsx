@@ -6,7 +6,7 @@ export default function CTA() {
         <div>
             {/* CTA Section */}
             <AnimatedSection className="py-20 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-4xl mx-auto text-center">
+                <div className="max-w-4xl mx-auto text-center" id='connect'>
                 <motion.h2 
                     className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight"
                     initial={{ opacity: 0, y: 30 }}

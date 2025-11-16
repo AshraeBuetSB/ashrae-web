@@ -29,13 +29,13 @@ export default function Footer() {
                     </div>
                     
                     <div>
-                    <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+                    {/* <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul className="space-y-2 text-gray-400">
                         <li><a href="#about" className="hover:text-blue-400 transition-colors duration-200">About Chapter</a></li>
                         <li><a href="#activities" className="hover:text-blue-400 transition-colors duration-200">Activities</a></li>
                         <li><a href="#events" className="hover:text-blue-400 transition-colors duration-200">Events</a></li>
                         <li><a href="#members" className="hover:text-blue-400 transition-colors duration-200">Membership</a></li>
-                    </ul>
+                    </ul> */}
                     </div>
                     
                     <div>
