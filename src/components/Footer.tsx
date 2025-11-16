@@ -24,7 +24,7 @@ export default function Footer() {
                         innovation, and professional development opportunities.
                     </p>
                     <div className="text-sm text-gray-500">
-                        © 2024 ASHRAE BUET Student Chapter. All rights reserved.
+                        © 2025 ASHRAE BUET Student Chapter. All rights reserved.
                     </div>
                     </div>
                     
