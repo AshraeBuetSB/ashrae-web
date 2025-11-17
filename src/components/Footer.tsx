@@ -43,7 +43,7 @@ export default function Footer() {
                     <ul className="space-y-2 text-gray-400">
                         <li>BUET Campus</li>
                         <li>Dhaka-1000, Bangladesh</li>
-                        <li>Email: ashrae@buet.ac.bd</li>
+                        <li>Email: ashraebuetsb@gmail.com</li>
                         <li>Phone: +880-XXX-XXXX</li>
                     </ul>
                     </div>
