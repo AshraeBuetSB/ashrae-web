@@ -37,9 +37,9 @@ export default function CTA() {
                     className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
                     whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
                     whileTap={{ scale: 0.95 }}
-                    >
+                    > <a href="mailto:mail@ashrae-buet.com">
                     mail@ashrae-buet.com
-                    </motion.button>
+                    </a></motion.button>
  <motion.button 
                     className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
                     whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
