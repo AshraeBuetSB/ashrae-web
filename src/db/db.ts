@@ -1,6 +1,6 @@
 const db = [
     {
-        name: "Dr. Md. Ashiqur Rahman",
+        name: "Dr. Md. Ashiqur Rahman, Professor, Department of Mechanical Engineering",
         designation: "Advisor",
         image: "https://i.postimg.cc/FsxDmh98/Dr-Md-Ashiqur-Rahman-Advisor-png.png",
         color: "from-green-500 to-emerald-500",
