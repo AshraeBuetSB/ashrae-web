@@ -20,6 +20,20 @@ const projects = [
     description:
       'Innovative exchanger with enhanced turbulence and uniform heat distribution. Applicable to power generation, water treatment, and food industries.',
   },
+  {
+    slug: 'pcm-thermal-bifurated-fins',
+    image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
+    title: 'Optimization of a PCM based Thermal EEnergy Storage System Enhanced with Bifurcated Fins',
+    description:
+      'This project introduces a cost-effective thermal energy storage system, utilizing paraffin wax and an optimized triangular multi-tube geometry with bifurcated fins to maximize heat transfer efficiency.',
+  },
+  {
+    slug: 'double-pipe-oscillating-inserts',
+    image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
+    title: 'Self-Optimizing Double Pipe Heat Exchanger with Oscillating Inserts',
+    description:
+      'This project introduces a method of controlling turbulent flow in a double pipe heat exchanger by using alternating magnetic fields to oscillate metal inserts.',
+  },
 ];
 
 export default projects;
