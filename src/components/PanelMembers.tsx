@@ -37,7 +37,7 @@ export default function PanelMembers() {
                         mobileOrder: "order-2 md:order-1"
                     },
                     {
-                        name: "Md. Luban Medha",
+                        name: "Md. Luban Mehda",
                         designation: "President", 
                         image: "./president.webp",
                         color: "from-purple-500 to-pink-500",
