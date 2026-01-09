@@ -10,13 +10,8 @@ export default function Footer() {
                     <a href="/"
                         className="flex items-center space-x-3 drop-shadow-lg"
                         >
-                        <img src={"/ashrae-logo-tp.png"} alt="ASHRAE logo" height={72} width={72} />
-                        <div>
-                            <h1 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
-                            BUET
-                            </h1>
-                            <p className="text-xs">Student Branch</p>
-                        </div>
+                        <img src={"/ASHARE_BUET_SB_Logo_H.png"} alt="ASHRAE logo" height={320} width={125} />
+                        
                     </a>
                     </div>
                     <p className="text-gray-400 leading-relaxed mb-4">
