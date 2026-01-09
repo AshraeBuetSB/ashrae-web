@@ -2,7 +2,7 @@ import AnimatedSection from '../components/AnimatedSection';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import projects from '../db/projects';
-import { Eye } from 'lucide-react';
+import { Eye, BookOpen } from 'lucide-react';
 
 export default function Projects() {
   return (
@@ -38,6 +38,31 @@ export default function Projects() {
           </motion.div>
         </div>
       </section>
+
+      {/* Publications CTA */}
+      <AnimatedSection className="px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          
+          <motion.div 
+            className="flex justify-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+          >
+            <Link to="/publications">
+              <motion.div 
+                className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl flex items-center justify-center space-x-2"
+                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <BookOpen className="w-5 h-5" />
+                <span>View Publications</span>
+              </motion.div>
+            </Link>
+          </motion.div>
+        </div>
+      </AnimatedSection>
 
       {/* Projects Grid */}
       <AnimatedSection className="py-16 px-4 sm:px-6 lg:px-8">
@@ -92,7 +117,8 @@ export default function Projects() {
           </div>
         </div>
       </AnimatedSection>
+
+      
     </div>
   );
 }
-

@@ -8,6 +8,7 @@ import Members from './pages/Members';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetails';
+import Publications from './pages/Publications';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="projects" element={<Projects />} />
         <Route path="projects/:slug" element={<ProjectDetail />} />
+        <Route path="publications" element={<Publications />} />
       </Route>
     </Routes>
   );
