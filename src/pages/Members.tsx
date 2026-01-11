@@ -65,13 +65,13 @@ export default function Members() {
                 <div className="flex justify-center gap-4 mb-16">
                   <button 
                     onClick={() => setActivePanel('first')}
-                    className={px-8 py-3 rounded-full font-bold transition-all duration-300 ${activePanel === 'first' ? 'bg-white text-black scale-105 shadow-xl' : 'bg-white/10 text-white hover:bg-white/20'}}
+                    className={`px-8 py-3 rounded-full font-bold transition-all duration-300 ${activePanel === 'first' ? 'bg-white text-black scale-105 shadow-xl' : 'bg-white/10 text-white hover:bg-white/20'}`}
                   >
                     First Panel
                   </button>
                   <button 
                     onClick={() => setActivePanel('second')}
-                    className={px-8 py-3 rounded-full font-bold transition-all duration-300 ${activePanel === 'second' ? 'bg-white text-black scale-105 shadow-xl' : 'bg-white/10 text-white hover:bg-white/20'}}
+                    className={`px-8 py-3 rounded-full font-bold transition-all duration-300 ${activePanel === 'second' ? 'bg-white text-black scale-105 shadow-xl' : 'bg-white/10 text-white hover:bg-white/20'}`}
                   >
                     Second Panel
                   </button>
@@ -113,7 +113,7 @@ export default function Members() {
                         >
                           <div className="relative mb-4 flex justify-center">
                             <div
-                              className={rounded-full overflow-hidden bg-gradient-to-r ${member.color} p-1}
+                              className={`rounded-full overflow-hidden bg-gradient-to-r ${member.color} p-1`}
                               style={{ width: '140px', height: '140px' }}
                             >
                               {/* Restored your specific image scaling logic */}
@@ -146,7 +146,7 @@ export default function Members() {
                             <h3 className="text-lg sm:text-xl font-bold text-white mb-1">
                               {member.name}
                             </h3>
-                            <div className={inline-block px-3 py-1 rounded-full bg-gradient-to-r ${member.color} text-white text-sm}>
+                            <div className={`inline-block px-3 py-1 rounded-full bg-gradient-to-r ${member.color} text-white text-sm`}>
                               {member.designation}
                             </div>
                           </div>
