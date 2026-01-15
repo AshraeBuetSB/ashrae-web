@@ -20,7 +20,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.1 }}
             >
               <GraduationCap className="w-4 h-4 sm:w-6 sm:h-6 text-blue-400" />
-              <span className="text-sm sm:text-lg text-gray-200 font-medium">Welcome to ASHRAE BUET</span>
+              <span className="text-sm sm:text-lg text-gray-200 font-medium">Welcome to ASHRAE BUET Student Branch</span>
             </motion.div>
             
             <motion.h1 
