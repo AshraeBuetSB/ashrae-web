@@ -26,7 +26,7 @@ export default function MissionAndValues() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                     >
-                    Empowering BUET students to excel in HVAC&R technologies through education and innovation
+                    Empowering BUET students to develop technical competence, professional ethics, and global perspective in HVAC&R through ASHRAE-guided learning and engagement.
                     </motion.p>
                 </div>
                 
@@ -45,7 +45,7 @@ export default function MissionAndValues() {
                             Our Mission
                         </h3>
                         <p className="text-gray-300 leading-relaxed text-center">
-                            To advance the arts and sciences of heating, ventilation, air conditioning, and refrigeration to serve humanity and promote a sustainable world through research, standards writing, publishing, certification, and continuing education.
+                            To support ASHRAE’s global mission by promoting HVAC&R knowledge, professional ethics, and sustainable practices among BUET students through seminars, workshops, projects, and industry engagement.
                         </p>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ export default function MissionAndValues() {
                             "Excellence in engineering and technical innovation",
                             "Commitment to sustainability and environmental stewardship",
                             "Professional development and lifelong learning",
-                            "Collaboration and knowledge sharing"
+                            "Collaboration, leadership, and knowledge sharing"
                             ].map((value, index) => (
                             <motion.div 
                                 key={index}
