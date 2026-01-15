@@ -23,7 +23,7 @@ export default function PanelMembers() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                     >
-                    Our dedicated leadership team driving innovation and excellence in HVAC&R education
+                    Our leadership team, committed to advancing HVAC&R knowledge and guiding BUET students toward excellence
                     </motion.p>
                 </div>
                 
@@ -49,6 +49,13 @@ export default function PanelMembers() {
                         image: "./treasurer.webp",
                         color: "from-blue-500 to-cyan-500",
                         mobileOrder: "order-3"
+                    },
+                    {
+                        name: "Nahian Prapon Jaman",
+                        designation: "Secretary",
+                        image: "./treasurer.webp",
+                        color: "from-blue-500 to-cyan-500",
+                        mobileOrder: "order-4"
                     }
                     ].map((member, index) => (
                     <motion.div
