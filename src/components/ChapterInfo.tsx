@@ -26,7 +26,7 @@ export default function ChapterInfo() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                     >
-                    The ASHRAE BUET Student Chapter is dedicated to fostering academic excellence and professional development among mechanical engineering students interested in HVAC&R technologies.
+                    The ASHRAE BUET Student Chapter empowers mechanical engineering students to explore, learn, and excel in HVAC&R technologies. Through student-led initiatives, we provide hands-on learning, industry exposure, and guidance on professional and technical opportunities.
                     </motion.p>
                     
                     <motion.div 
@@ -37,10 +37,10 @@ export default function ChapterInfo() {
                     transition={{ delay: 0.4 }}
                     >
                     {[
-                        "Student-led technical seminars",
-                        "Professional networking events",
-                        "Scholarship opportunities",
-                        "Career development programs"
+                        "Applied HVAC&R projects",
+                        "Industry engagement and HVAC&R expos",
+                        "Career development and mentoring programs in HVAC&R engineering",
+                        "Technical seminars and workshops"
                     ].map((item, index) => (
                         <motion.div 
                         key={index}
