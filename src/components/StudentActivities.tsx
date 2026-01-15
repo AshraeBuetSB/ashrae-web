@@ -13,33 +13,33 @@ export default function StudentActivities() {
                     Student Activities
                 </h2>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Engaging activities designed to enhance learning and professional development
+                    Hands-on technical and professional activities focused on HVAC&R learning and industry exposure
                 </p>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
                     {
-                    icon: <BookOpen className="w-8 h-8" />,
-                    title: "Technical Workshops",
-                    description: "Hands-on learning sessions on HVAC design, installation, and maintenance",
+                    icon: <Lightbulb className="w-8 h-8" />,
+                    title: "Applied HVAC&R Projects and Research",
+                    description: "Projects applying HVAC&R principles, aligned with ASHRAE standards and sustainable practices. Projects foster technical skills, problem-solving, and innovative thinking",
                     color: "from-blue-400 to-cyan-400"
                     },
                     {
-                    icon: <Lightbulb className="w-8 h-8" />,
-                    title: "Innovation Projects",
+                    icon: <BookOpen className="w-8 h-8" />,
+                    title: "Exploring ASHRAE Student Activities",
                     description: "Student-led research projects exploring sustainable HVAC solutions",
                     color: "from-yellow-400 to-orange-400"
                     },
                     {
-                    icon: <Trophy className="w-8 h-8" />,
-                    title: "Competitions",
-                    description: "Participate in national and international HVAC design competitions",
+                    icon: <UserCheck className="w-8 h-8" />,
+                    title: "Technical Tour and Industry Engagement Competitions",
+                    description: "Visits to HVAC&R facilities and Manufacturing Plants, offering students direct exposure to real-world systems, operational practices, and professional workflows. These trips include discussions with engineers and demonstrations of current technologies",
                     color: "from-purple-400 to-pink-400"
                     },
                     {
                     icon: <UserCheck className="w-8 h-8" />,
-                    title: "Industry Visits",
+                    title: "Participating HVAC&R Expos",
                     description: "Field trips to HVAC facilities and interaction with industry professionals",
                     color: "from-green-400 to-emerald-400"
                     }
