@@ -53,8 +53,8 @@ export default function PanelMembers() {
                     {
                         name: "Nahian Prapon Jaman",
                         designation: "Secretary",
-                        image: "./treasurer.webp",
-                        color: "from-blue-500 to-cyan-500",
+                        image: "https://i.postimg.cc/vT1tm2df/Nahiyan-Prapon-Jaman-Secretary.png",
+                        color: "from-amber-400 to-orange-500",
                         mobileOrder: "order-4"
                     }
                     ].map((member, index) => (
