@@ -74,6 +74,11 @@ export default function PanelMembers() {
                                 src={member.image}
                                 alt={member.name}
                                 className="w-full h-full object-cover object-center"
+                                style={member.designation === "Secretary" ? {
+                                  width: '190%',
+                                  height: '190%',
+                                  transform: 'translate(0%, -20%)'
+                                } : {}}
                             />
                             </div>
                         </div>
