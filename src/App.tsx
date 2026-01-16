@@ -8,6 +8,7 @@ import Members from './pages/Members';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetails';
+import ActivityDetail from './pages/ActivityDetails';
 import Publications from './pages/Publications';
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="home" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="activities" element={<Activities />} />
+        <Route path="activities/:slug" element={<ActivityDetail />} />
         <Route path="members" element={<Members />} />
         <Route path="contact" element={<Contact />} />
         <Route path="projects" element={<Projects />} />
