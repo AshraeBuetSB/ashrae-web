@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Eye, Calendar, MapPin, Users, Award, Building2, Handshake } from 'lucide-react';
+import { Eye, Calendar, MapPin} from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { Link } from 'react-router-dom';
 import activities from '../db/activities';

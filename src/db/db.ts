@@ -399,6 +399,13 @@ const db = [
         panel: "first"
     },
     {
+        name: "Md Luban Mehda",
+        designation: "Coordinator, Logistics",
+        image: "",
+        color: "from-blue-500 to-cyan-500",
+        panel: "first"
+    },
+    {
         name: "Arafath Rahman",
         designation: "Coordinator, Logistics",
         image: "",
@@ -422,13 +429,6 @@ const db = [
     {
         name: "Safwan Sakib",
         designation: "Coordinator, Sponsorship",
-        image: "",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Md Luban Mehda",
-        designation: "Coordinator, Logistics",
         image: "",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
