@@ -23,7 +23,7 @@ export default function Projects() {
               transition={{ duration: 1, delay: 0.2 }}
             >
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent">
-                Our Projects
+                Innovating for a Sustainable Future
               </span>
             </motion.h1>
             
@@ -33,7 +33,7 @@ export default function Projects() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              Hands-on projects designed and executed by ASHRAE BUET student members, showcasing innovation in HVAC&R technology.
+              Explore award-winning research and grant-funded prototypes designed by ASHRAE BUET Student Branch students to solve real-world HVAC&R challenges.
             </motion.p>
           </motion.div>
         </div>
