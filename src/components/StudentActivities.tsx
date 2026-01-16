@@ -28,7 +28,7 @@ export default function StudentActivities() {
                     {
                     icon: <BookOpen className="w-8 h-8" />,
                     title: "Exploring ASHRAE Student Activities",
-                    description: "Student-led research projects exploring sustainable HVAC solutions",
+                    description: "Participation in ASHRAE grant and professional initiatives, with awarded grants supporting student projects and technical activities, alongside exposure to standards and career development opportunities",
                     color: "from-yellow-400 to-orange-400"
                     },
                     {
@@ -40,7 +40,7 @@ export default function StudentActivities() {
                     {
                     icon: <UserCheck className="w-8 h-8" />,
                     title: "Participating HVAC&R Expos",
-                    description: "Field trips to HVAC facilities and interaction with industry professionals",
+                    description: "Engagement in HVAC&R expos and exhibitions, enabling students to observe real-world applications, interact with professionals, and understand industry standards and innovations.",
                     color: "from-green-400 to-emerald-400"
                     }
                 ].map((activity, index) => (
