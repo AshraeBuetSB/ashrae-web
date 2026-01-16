@@ -55,7 +55,7 @@ export default function PanelMembers() {
                         designation: "Secretary",
                         image: "https://i.postimg.cc/vT1tm2df/Nahiyan-Prapon-Jaman-Secretary.png",
                         color: "from-amber-400 to-orange-500",
-                        mobileOrder: "order-4"
+                        mobileOrder: "order-4 md:col-start-2"
                     }
                     ].map((member, index) => (
                     <motion.div
