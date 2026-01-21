@@ -55,7 +55,7 @@ export default function PanelMembers() {
                         designation: "Secretary",
                         image: "https://i.postimg.cc/vT1tm2df/Nahiyan-Prapon-Jaman-Secretary.png",
                         color: "from-amber-400 to-orange-500",
-                        mobileOrder: "order-4"
+                        mobileOrder: "order-4 md:col-start-2"
                     }
                     ].map((member, index) => (
                     <motion.div
@@ -74,6 +74,11 @@ export default function PanelMembers() {
                                 src={member.image}
                                 alt={member.name}
                                 className="w-full h-full object-cover object-center"
+                                style={member.designation === "Secretary" ? {
+                                  width: '190%',
+                                  height: '190%',
+                                  transform: 'translate(0%, -20%)'
+                                } : {}}
                             />
                             </div>
                         </div>

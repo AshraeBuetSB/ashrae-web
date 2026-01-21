@@ -67,13 +67,13 @@ export default function Members() {
                     onClick={() => setActivePanel('first')}
                     className={`px-8 py-3 rounded-full font-bold transition-all duration-300 ${activePanel === 'first' ? 'bg-white text-black scale-105 shadow-xl' : 'bg-white/10 text-white hover:bg-white/20'}`}
                   >
-                    First Panel
+                    2024-2025
                   </button>
                   <button 
                     onClick={() => setActivePanel('second')}
                     className={`px-8 py-3 rounded-full font-bold transition-all duration-300 ${activePanel === 'second' ? 'bg-white text-black scale-105 shadow-xl' : 'bg-white/10 text-white hover:bg-white/20'}`}
                   >
-                    Second Panel
+                    2025-2026
                   </button>
                 </div>
               </motion.div>

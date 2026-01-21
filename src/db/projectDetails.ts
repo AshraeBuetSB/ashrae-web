@@ -2,21 +2,16 @@
 
 const projectDetails = {
   'cooling-tower-plastic-fill': {
-    title: 'Cross Flow Induced Draft Cooling Tower with Waste Plastic Fill',
+    title: 'A Prototype of a Cross Flow Induced Draft Cooling Tower with Waste Plastic Fill Material',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
     overview:
-      `This project demonstrates a promising eco-friendly innovation by repurposing recycled PET plastic bottles and 
-      jute fiber as fill materials for cooling towers. By validating their thermal performance through experimental 
-      testing, it offers a cost-effective and sustainable alternative to industrial-grade plastic fills. The initiative 
-      not only helps reduce plastic waste and environmental impact but also lays the groundwork for scalable industrial 
-      applications, particularly in regions with abundant plastic and jute resources. Its relevance lies in addressing 
-      both engineering efficiency and environmental responsibility in modern thermal management systems.`,
-    objectives: [
-      'Design and construct a lab-scale cooling tower.',
-      'Use waste plastic and jute as filler materials.',
-      'Compare performance with conventional PVC fills.',
+      `This project introduces a sustainable alternative to industrial cooling towers by repurposing recycled PET plastic bottles and jute fiber as fill material. By validating the thermal performance of these waste materials against standard PVC fills, the team created a cost-effective, eco-friendly solution that addresses both engineering efficiency and the global plastic waste crisis.`,
+    technicalInnovations: [
+      'Eco-Friendly Fill Material: Replaced expensive industrial-grade plastic with recycled PET bottles and locally sourced jute fiber.',
+      'Cost Efficiency: Achieved significant reduction in fabrication costs while maintaining competitive thermal performance.',
+      'Scalable Design: The prototype lays the groundwork for industrial applications in developing regions where plastic waste and jute are abundant.',
     ],
-    awards: 'ASHRAE Equipment Grant ($1,110)',
+    awards: 'Awarded ASHRAE Undergraduate Equipment Grant ($1,110)',
     team: ['Taskin Mehereen', 'Afrina Ayrin', 'Asif Chowdhury', 'Arif Sadik Riddhie'],
     year: 2024,
   },
@@ -32,7 +27,7 @@ const projectDetails = {
         uses stainless steel for durability and incorporates a counterflow configuration to enhance heat 
         transfer. The project seeks to make SPHX technology more accessible and scalable, especially 
         in resource-limited contexts. `,
-    objectives: [
+    technicalInnovations: [
       'Design a compact SPHX suited for milk pasteurization.',
       'Ensure low maintenance and high hygiene standards.',
       'Evaluate thermal performance and ease of cleaning.',
@@ -52,7 +47,7 @@ const projectDetails = {
       it ideal for industrial processes requiring precise heat control. Applications include power generation, chemical 
       processing, food and beverage industries, and water treatment systems. With its scalable and energy-efficient 
       configuration, the design offers a modern solution for advanced industrial thermal management.`,
-    objectives: [
+    technicalInnovations: [
       'Improve thermal performance through novel baffle geometry.',
       'Fabricate and test exchanger under controlled lab conditions.',
       'Investigate applicability in power and water treatment industries.',
@@ -71,7 +66,7 @@ const projectDetails = {
       system captures renewable waste heat to provide a sustainable energy solution. Through rigorous simulation 
       and prototyping, the design optimizes heat transfer via a unique triangular shell geometry and bifurcated fins, 
       ensuring high thermal efficiency and practical integration for domestic use.`,
-    objectives: [
+    technicalInnovations: [
       'Design a thermal energy storage system using PCM.',
       'Incorporate bifurcated fins for enhanced heat transfer.',
       'Optimize geometry for maximum efficiency.',
@@ -91,7 +86,7 @@ const projectDetails = {
       characteristics, the system optimizes thermal performance in real-time, making it suitable for various industrial 
       applications. The design emphasizes energy efficiency, adaptability, and scalability, offering a cutting-edge 
       solution for modern heat exchange systems.`,
-    objectives: [
+    technicalInnovations: [
       'Develop a double pipe heat exchanger with magnetic inserts.',
       'Use alternating magnetic fields to induce oscillation.',
       'Evaluate heat transfer enhancement and energy savings.',
@@ -110,7 +105,7 @@ const projectDetails = {
       and residential demand. The design focuses on maximizing thermal efficiency through enhanced heat transfer and 
       compact storage, making it suitable for urban households with limited space. By leveraging locally available 
       materials and renewable energy, the system aims to provide an affordable and eco-friendly solution for domestic hot water needs.`,
-    objectives: [
+    technicalInnovations: [
       'Design a honeycomb-based LHTES unit using Paraffin PCM.',
       'Incorporate aluminum mesh for improved heat transfer.',
       'Integrate with solar water heating systems for residential use.',
@@ -129,7 +124,7 @@ const projectDetails = {
       minimize energy consumption, and promote sustainability. The cooling tower is particularly suited for industrial 
       applications in regions with abundant solar resources and plastic waste, offering a cost-effective and eco-friendly 
       solution for thermal management.`,
-    objectives: [
+    technicalInnovations: [
       'Design a hybrid draft cooling tower with aerodynamic optimization.',
       'Incorporate recycled PET bottle nozzles for water distribution.',
       'Utilize photovoltaic energy to power cooling fans.',
@@ -149,7 +144,7 @@ const projectDetails = {
       and efficiency. The design emphasizes adaptability, energy efficiency, and scalability, making it suitable for a wide 
       range of electric vehicle applications. Through rigorous testing and optimization, the project aims to deliver a 
       cutting-edge solution for advanced battery thermal management.`,
-    objectives: [
+    technicalInnovations: [
       'Develop a hybrid thermal management system for lithium-ion batteries.',
       'Combine mini-channel liquid cooling with forced air control.',
       'Evaluate performance under extreme temperature conditions.',
@@ -169,7 +164,7 @@ const projectDetails = {
       compact configuration allows for space-saving installations in facilities with limited room. Through experimental 
       testing and performance evaluation, the project aims to deliver a reliable and efficient heat exchanger that meets 
       the stringent hygiene and operational standards of the food and beverage sector.`,
-    objectives: [
+    technicalInnovations: [
       'Design a compact dimple-tube heat exchanger for food applications.',
       'Enhance heat transfer through boundary layer disruption.',
       'Test performance with viscous and fouling fluids.',
