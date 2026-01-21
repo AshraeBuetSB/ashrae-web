@@ -117,7 +117,7 @@ export default function Members() {
                               style={{ width: '140px', height: '140px' }}
                             >
                               {/* Restored your specific image scaling logic */}
-                              {(groupIndex > 1 || (groupIndex == 1 && index == 3)) &&
+                              {(groupIndex > 1 || (groupIndex == 1 && index == 3)) && activePanel=="second" &&
                                 <div className="rounded-full overflow-hidden bg-white" style={{ width: '100%', height: '100%' }}>
                                   <img
                                     src={member.image}
@@ -132,7 +132,22 @@ export default function Members() {
                                   />
                                 </div>
                               }
-                              {groupIndex <= 1 &&
+                              {(groupIndex >= 1) && activePanel=="first" &&
+                                <div className="rounded-full overflow-hidden bg-white" style={{ width: '100%', height: '100%' }}>
+                                  <img
+                                    src={member.image}
+                                    alt={member.name}
+                                    style={{
+                                      width: '190%',
+                                      height: '190%',
+                                      objectFit: 'cover',
+                                      objectPosition: '80% 50%',
+                                      transform: 'translate(0%, -20%)'
+                                    }}
+                                  />
+                                </div>
+                              }
+                              {((groupIndex <= 1 && activePanel=="second") || (groupIndex < 1 && activePanel=="first")) &&
                                 <div className="rounded-full overflow-hidden bg-white" style={{ width: '100%', height: '100%' }}>
                                   <img
                                     src={member.image}

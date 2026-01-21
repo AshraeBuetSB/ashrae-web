@@ -35,7 +35,8 @@ export default function ActivityDetail() {
                 <span>{activity.category}</span>
             </div>
         </div>
-
+{/* 
+    Add this back when we add atttendees
         {activity.attendees && (
             <div className="mb-6">
             <h2 className="text-2xl font-semibold mb-2">Attendees</h2>
@@ -46,7 +47,7 @@ export default function ActivityDetail() {
             </ul>
             </div>
         )}
-
+*/}
         {activity.key_moments && (
             <div className="mb-6">
             <h2 className="text-2xl font-semibold mb-2">Key Moments</h2>
@@ -57,12 +58,13 @@ export default function ActivityDetail() {
 </ul>
             </div>
         )}
+    
 
         {activity.gallery && (
             <div className="mb-6">
                 <h2 className="text-2xl font-semibold mb-2">Gallery</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {activity.gallery.map((image, idx) => (
+                    {activity.gallery && activity.gallery.map((image, idx) => (
                         <img key={idx} src={image} alt={`${activity.title} gallery image ${idx + 1}`} className="rounded-lg" />
                     ))}
                 </div>

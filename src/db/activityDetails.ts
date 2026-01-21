@@ -13,8 +13,8 @@ const activityDetails = {
         'Students from Mechanical Engineering and other departments'
     ],
     gallery: [
-        'https://picsum.photos/200',
-        'https://picsum.photos/200'
+        'https://i.postimg.cc/vTmpsZk8/DSC05194.jpg',
+'https://i.postimg.cc/pr13XttN/DSC05283.jpg',
     ],
     key_moments: [
         'Inaugural speech by the chief guest.',
@@ -33,8 +33,6 @@ const activityDetails = {
         'ASHRAE Officials'
     ],
     gallery: [
-        'https://picsum.photos/200',
-        'https://picsum.photos/200'
     ],
     key_moments: [
         'Official announcement of the grant.',
@@ -53,8 +51,9 @@ const activityDetails = {
         'Faculty Advisors'
     ],
     gallery: [
-        'https://picsum.photos/200',
-        'https://picsum.photos/200'
+        'https://i.postimg.cc/PxCR3Rwm/20241226-155635.jpg',
+'https://i.postimg.cc/wvnbSQX2/20241226-160814.jpg',
+
     ],
     key_moments: [
         'Tour of a state-of-the-art manufacturing plant.',
@@ -74,8 +73,7 @@ const activityDetails = {
         'Members from other ASHRAE student branches'
     ],
     gallery: [
-        'https://picsum.photos/200',
-        'https://picsum.photos/200'
+        'https://i.postimg.cc/J06trtnR/IMG-9816.jpg'
     ],
     key_moments: [
         'Keynote speech on sustainable HVAC&R solutions.',
@@ -95,8 +93,7 @@ const activityDetails = {
         'Representatives from ASHRAE Bangladesh Chapter'
     ],
     gallery: [
-        'https://picsum.photos/200',
-        'https://picsum.photos/200'
+        'https://i.postimg.cc/28t3gqM2/IMG-1690.avif'
     ],
     key_moments: [
         'Presentation of successful projects.',
@@ -116,8 +113,9 @@ const activityDetails = {
         'Engineers from various industries'
     ],
     gallery: [
-        'https://picsum.photos/200',
-        'https://picsum.photos/200'
+        'https://i.postimg.cc/2yc3k36z/Group-stall.jpg',
+        'https://i.postimg.cc/gjSrzrJ9/Taskin-apu-poster.jpg',
+        'https://i.postimg.cc/3NJdQ23X/nishat-poster-2.jpg'
     ],
     key_moments: [
         'Attending technical sessions on risk assessment.',
@@ -137,8 +135,10 @@ const activityDetails = {
         'Faculty Advisor'
     ],
     gallery: [
-        'https://picsum.photos/200',
-        'https://picsum.photos/200'
+        'https://i.postimg.cc/s2LrgSPv/1.jpg',
+'https://i.postimg.cc/pdrvvkj2/2.jpg',
+'https://i.postimg.cc/TPs63mjj/9.jpg',
+
     ],
     key_moments: [
         'Speeches by outgoing and incoming panel members.',

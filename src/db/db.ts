@@ -331,105 +331,105 @@ const db = [
     {
         name: "Taskin Mehereen",
         designation: "President",
-        image: "", 
+        image: "https://i.postimg.cc/5Yc4jvw8/Taskin-Mehereen-President.png", 
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Jubaer Jami",
         designation: "Vice President",
-        image: "",
+        image: "https://i.postimg.cc/PpGXNZmC/Jubaer-Jami-Vice-President.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Sahib Ur Rauf",
         designation: "Treasurer",
-        image: "",
+        image: "https://i.postimg.cc/BLWStDxK/Sahib-Ur-Rauf-Treasurer.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Nahid Shahriare",
         designation: "Secretary",
-        image: "",
+        image: "https://i.postimg.cc/R6rSqfct/Nahid-Shahriare-Secretary.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Afia Zaman",
         designation: "Joint Secretary, Competitions Scholarships & Research",
-        image: "",
+        image: "https://i.postimg.cc/1479NLch/Afia-Zaman-Joint-Secretary-Competitions-Scholarships-Research.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Iltimas Wasek",
         designation: "Joint Secretary, Trips & Conference",
-        image: "",
+        image: "https://i.postimg.cc/fkqw06jN/Iltimas-Wasek-Joint-Secretary-Trips-Conference.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Atia Ashrafy",
         designation: "Assistant Joint Secretary, Trips & Conferences",
-        image: "",
+        image: "https://i.postimg.cc/sGggRzYm/Atia-Ashrafy-Assistant-Joint-Secretary-Trips-Conferences.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Kaifa Samsad",
         designation: "Assistant Joint Secretary, Trips & Conferences",
-        image: "",
+        image: "https://i.postimg.cc/CnxxV0G4/Kaifa-Samsad-Assistant-Joint-Secretary-Trips-Conferences.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Arnab Roy",
         designation: "Assistant Joint Secretary, Competitions Scholarships & Research",
-        image: "",
+        image: "https://i.postimg.cc/Zv55hm88/Arnab-Roy-Assistant-Joint-Secretary-Competitions-Scholarships-Research.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Afrina Ayrin",
         designation: "Assistant Joint Secretary, Competitions Scholarships & Research",
-        image: "",
+        image: "https://i.postimg.cc/V0kkcwq4/Afrina-Ayrin-Assistant-Joint-Secretary-Competitions-Scholarships-Research.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Md Luban Mehda",
         designation: "Coordinator, Logistics",
-        image: "",
+        image: "https://i.postimg.cc/N2Kv4j8D/Md-Lubnan-Mehda-Coordinator-Logistics.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Arafath Rahman",
         designation: "Coordinator, Logistics",
-        image: "",
+        image: "https://i.postimg.cc/ZvWzc5P8/Arafath-Rahman-Nishat-Coordinator-Logistics.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Nafisa Ferdous",
         designation: "Coordinator, Public Communications",
-        image: "",
+        image: "https://i.postimg.cc/tnsG54dz/Nafisa-Ferdous-Coordinator-Public-Communications.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Prapon Jaman",
         designation: "Coordinator, Sponsorship",
-        image: "",
+        image: "https://i.postimg.cc/BPjfgn5g/Prapon-Jaman-Coordinator-Sponsorship.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     },
     {
         name: "Safwan Sakib",
         designation: "Coordinator, Sponsorship",
-        image: "",
+        image: "https://i.postimg.cc/wR1YVj5c/Safwan-Sakib-Coordinator-Sponsorship.png",
         color: "from-blue-500 to-cyan-500",
         panel: "first"
     }
