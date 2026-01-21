@@ -35,8 +35,7 @@ export default function ActivityDetail() {
                 <span>{activity.category}</span>
             </div>
         </div>
-{/* 
-    Add this back when we add atttendees
+
         {activity.attendees && (
             <div className="mb-6">
             <h2 className="text-2xl font-semibold mb-2">Attendees</h2>
@@ -47,7 +46,7 @@ export default function ActivityDetail() {
             </ul>
             </div>
         )}
-*/}
+
         {activity.key_moments && (
             <div className="mb-6">
             <h2 className="text-2xl font-semibold mb-2">Key Moments</h2>

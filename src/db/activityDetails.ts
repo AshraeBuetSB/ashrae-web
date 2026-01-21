@@ -123,6 +123,26 @@ const activityDetails = {
         'Networking with safety professionals.'
     ]
   },
+"icme-2025":{
+    title: "Representation of the Student Branch at ICME 2025",
+    overview: "ASHRAE BUET Student Branch successfully represented itself at International Conference of Mechanical Engineering (ICME) 2025 by showcasing the students’ projects, recognized by national and international conferences. We were greatly appreciated by honourable university faculties and reputed industrialists.",
+    date: "October 2025",
+    location: "BUET Premises",
+    category: "Conference",
+    attendees: [
+        'ASHRAE BUET Student Branch Executive Panel',
+'ASHRAE Officials',
+    ],
+    gallery:[
+        'https://i.postimg.cc/pTtmqpr1/IMG-2468.jpg',
+'https://i.postimg.cc/TwXKCphP/IMG-2840.png',
+    ],
+    key_moments: [
+        'Student Project Showcase',
+'Industry & Faculty Engagement',
+'Branch Representation'
+    ]
+  },
   '1st-panel-farewell': {
     title: "Leadership Transition at ASHRAE BUET Student Branch",
     overview: "The ASHRAE BUET Student Branch formally concluded the tenure of the Executive Committee 2024-25, recognizing their impactful leadership and contributions, while welcoming the Executive Committee 2025-26 and extending best wishes as they take on the responsibility of leading the Branch toward continued growth and new milestones.",

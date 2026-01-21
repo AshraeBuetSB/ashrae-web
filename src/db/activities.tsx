@@ -46,6 +46,17 @@ const activities = [
     category: "Networking"
   },
   {
+  id: 7,
+  slug: "icme-2025",
+  title: "Representation of the Student Branch at ICME 2025",
+  description: "ASHRAE BUET Student Branch successfully represented itself at International Conference of Mechanical Engineering (ICME) 2025 by showcasing the students’ projects, recognized by national and international conferences. We were greatly appreciated by honourable university faculties and reputed industrialists.",
+  icon: <Handshake className="w-8 h-8" />,
+  color: "from-teal-500 to-blue-500",
+  date: "October 2025",
+  location: "BUET Premises",
+  category: "Conference"
+},
+  {
     id: 5,
     slug: "abc-post-grant-winning-ceremony",
     title: "ABC Post Grant Winning Ceremony",
@@ -68,7 +79,7 @@ const activities = [
     category: "Conference"
   },
   {
-    id: 7,
+    id: 8,
     slug: "1st-panel-farewell",
     title: "Leadership Transition at ASHRAE BUET Student Branch",
     description: "The ASHRAE BUET Student Branch formally concluded the tenure of the Executive Committee 2024-25, recognizing their impactful leadership and contributions, while welcoming the Executive Committee 2025-26 and extending best wishes as they take on the responsibility of leading the Branch toward continued growth and new milestones.",
