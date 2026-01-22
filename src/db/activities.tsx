@@ -4,7 +4,7 @@ const activities = [
 {
     id: 9,
     slug: "industry-tour-26",
-    title: "Industrial Visit to Elite Hi-Tech Industries Ltd",
+    title: "2nd Industrial Visit to Elite Hi-Tech Industries Ltd",
     description: "Members of the ASHRAE BUET Student Branch participated in an industrial visit to Elite Hi-Tech Industries Ltd., Cumilla. The visit provided students with valuable firsthand exposure to the real-world manufacturing and processing of complete air conditioning units at a state-of-the-art industrial facility.",
     icon: <MapPin className="w-8 h-8" />,
     color: "from-purple-500 to-pink-500",
