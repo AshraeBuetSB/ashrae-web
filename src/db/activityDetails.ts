@@ -1,6 +1,28 @@
 // src/db/activityDetails.ts
 
 const activityDetails = {
+
+  'industry-tour-26': {
+    title: "Industrial Visit to Elite Hi-Tech Industries Ltd",
+    overview: "Members of the ASHRAE BUET Student Branch participated in an industrial visit to Elite Hi-Tech Industries Ltd., Cumilla. The visit provided students with valuable firsthand exposure to the real-world manufacturing and processing of complete air conditioning units at a state-of-the-art industrial facility.",
+    date: "January 2026",
+    location: "Elite Hi-Tech Industries Ltd., Cumilla",
+    category: "Educational",
+    attendees: [
+        'ASHRAE BUET Student Members'
+    ],
+    gallery: [
+        'https://i.postimg.cc/zBZ1FZdf/20260122-154715.jpg',
+'https://i.postimg.cc/HL7gMs9v/IMG-20260122-WA0001.jpg',
+'https://i.postimg.cc/HkNmj7X3/IMG-20260122-WA0005.jpg'
+
+    ],
+    key_moments: [
+        'Tour of a state-of-the-art manufacturing plant.',
+        'Q&A session with senior engineers.',
+        'Demonstration of HVAC&R systems in action.'
+    ]
+  },
   'ashrae-buet-inauguration': {
     title: "Official Inauguration of the ASHRAE BUET Student Branch",
     overview: "The ASHRAE BUET Student Branch officially commenced its journey toward advancing HVAC&R education, research, and professional excellence through an insightful inauguration ceremony, graced by the distinguished presence of prominent leaders and veterans from the HVAC&R field.",
