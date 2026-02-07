@@ -13,39 +13,6 @@ const activities = [
     category: "Educational"
   },
   {
-    id: 1,
-    slug: "ashrae-buet-inauguration",
-    title: "Official Inauguration of the ASHRAE BUET Student Branch",
-    description: "The ASHRAE BUET Student Branch officially commenced its journey toward advancing HVAC&R education, research, and professional excellence through an insightful inauguration ceremony, graced by the distinguished presence of prominent leaders and veterans from the HVAC&R field.",
-    icon: <Building2 className="w-8 h-8" />,
-    color: "from-blue-500 to-cyan-500",
-    date: "October 2024",
-    location: "ME Building, BUET",
-    category: "Milestone Event"
-  },
-  {
-    id: 2,
-    slug: "ashrae-buet-sb-grant-received",
-    title: "Secured Two ASHRAE UG Equipment Grants on First Try",
-    description: "The ASHRAE BUET Student Branch secured two ASHRAE Undergraduate Program Equipment Grants on its first-ever application, receiving a total of USD 1,370 in funding in recognition of innovative, student-led projects in sustainable cooling systems and heat exchanger design.",
-    icon: <Award className="w-8 h-8" />,
-    color: "from-green-500 to-emerald-500",
-    date: "April 2025",
-    location: "ASHRAE Headquarters",
-    category: "Achievement"
-  },
-  {
-    id: 3,
-    slug: "industry-tour",
-    title: "Industrial Visit to Elite Hi-Tech Industries Ltd",
-    description: "Members of the ASHRAE BUET Student Branch participated in an industrial visit to Elite Hi-Tech Industries Ltd., Cumilla. The visit provided students with valuable firsthand exposure to the real-world manufacturing and processing of complete air conditioning units at a state-of-the-art industrial facility.",
-    icon: <MapPin className="w-8 h-8" />,
-    color: "from-purple-500 to-pink-500",
-    date: "December 2024",
-    location: "Elite Hi-Tech Industries Ltd., Cumilla",
-    category: "Educational"
-  },
-  {
     id: 4,
     slug: "ashrae-bangladesh-meeting",
     title: "Participates in ASHRAE Bangladesh Chapter Monthly General Meeting & Technical Session",
@@ -68,15 +35,15 @@ const activities = [
   category: "Conference"
 },
   {
-    id: 5,
-    slug: "abc-post-grant-winning-ceremony",
-    title: "ABC Post Grant Winning Ceremony",
-    description: "Recognition ceremony for achieving the ABC (ASHRAE Bangladesh Chapter) post-grant milestone, celebrating our successful project implementations.",
-    icon: <Award className="w-8 h-8" />,
-    color: "from-yellow-500 to-orange-500",
-    date: "August 2024",
-    location: "BUET Auditorium",
-    category: "Achievement"
+    id: 8,
+    slug: "1st-panel-farewell",
+    title: "Leadership Transition at ASHRAE BUET Student Branch",
+    description: "The ASHRAE BUET Student Branch formally concluded the tenure of the Executive Committee 2024-25, recognizing their impactful leadership and contributions, while welcoming the Executive Committee 2025-26 and extending best wishes as they take on the responsibility of leading the Branch toward continued growth and new milestones.",
+    icon: <Users className="w-8 h-8" />,
+    color: "from-indigo-500 to-purple-500",
+    date: "June 2025",
+    location: "ME Building, BUET",
+    category: "Ceremony"
   },
   {
     id: 6,
@@ -89,17 +56,50 @@ const activities = [
     location: "International Convention City Bashundhara - ICCB",
     category: "Conference"
   },
-  {
-    id: 8,
-    slug: "1st-panel-farewell",
-    title: "Leadership Transition at ASHRAE BUET Student Branch",
-    description: "The ASHRAE BUET Student Branch formally concluded the tenure of the Executive Committee 2024-25, recognizing their impactful leadership and contributions, while welcoming the Executive Committee 2025-26 and extending best wishes as they take on the responsibility of leading the Branch toward continued growth and new milestones.",
-    icon: <Users className="w-8 h-8" />,
-    color: "from-indigo-500 to-purple-500",
-    date: "June 2025",
+    {
+    id: 2,
+    slug: "ashrae-buet-sb-grant-received",
+    title: "Secured Two ASHRAE UG Equipment Grants on First Try",
+    description: "The ASHRAE BUET Student Branch secured two ASHRAE Undergraduate Program Equipment Grants on its first-ever application, receiving a total of USD 1,370 in funding in recognition of innovative, student-led projects in sustainable cooling systems and heat exchanger design.",
+    icon: <Award className="w-8 h-8" />,
+    color: "from-green-500 to-emerald-500",
+    date: "April 2025",
+    location: "ASHRAE Headquarters",
+    category: "Achievement"
+  },
+    {
+    id: 3,
+    slug: "industry-tour",
+    title: "Industrial Visit to Elite Hi-Tech Industries Ltd",
+    description: "Members of the ASHRAE BUET Student Branch participated in an industrial visit to Elite Hi-Tech Industries Ltd., Cumilla. The visit provided students with valuable firsthand exposure to the real-world manufacturing and processing of complete air conditioning units at a state-of-the-art industrial facility.",
+    icon: <MapPin className="w-8 h-8" />,
+    color: "from-purple-500 to-pink-500",
+    date: "December 2024",
+    location: "Elite Hi-Tech Industries Ltd., Cumilla",
+    category: "Educational"
+  },
+    {
+    id: 1,
+    slug: "ashrae-buet-inauguration",
+    title: "Official Inauguration of the ASHRAE BUET Student Branch",
+    description: "The ASHRAE BUET Student Branch officially commenced its journey toward advancing HVAC&R education, research, and professional excellence through an insightful inauguration ceremony, graced by the distinguished presence of prominent leaders and veterans from the HVAC&R field.",
+    icon: <Building2 className="w-8 h-8" />,
+    color: "from-blue-500 to-cyan-500",
+    date: "October 2024",
     location: "ME Building, BUET",
-    category: "Ceremony"
-  }
+    category: "Milestone Event"
+  },
+    {
+    id: 5,
+    slug: "abc-post-grant-winning-ceremony",
+    title: "ABC Post Grant Winning Ceremony",
+    description: "Recognition ceremony for achieving the ABC (ASHRAE Bangladesh Chapter) post-grant milestone, celebrating our successful project implementations.",
+    icon: <Award className="w-8 h-8" />,
+    color: "from-yellow-500 to-orange-500",
+    date: "August 2024",
+    location: "BUET Auditorium",
+    category: "Achievement"
+  },
 ];
 
 export default activities;
