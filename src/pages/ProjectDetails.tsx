@@ -20,7 +20,7 @@ export default function ProjectDetail() {
           <div className="mt-10 mb-6 flex justify-center">
             <div className="relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-green-600 rounded-full shadow-2xl">
               <span className="absolute inset-0 rounded-full opacity-30 bg-gradient-to-r blur-lg"></span>
-              <span className="relative flex items-center space-x-3">
+              <span className="relative flex items-center space-x-3 text-center whitespace-normal">
                 <span className="font-semibold text-lg">{project.banner}</span>
               </span>
             </div>
@@ -59,6 +59,17 @@ export default function ProjectDetail() {
           <h2 className="text-2xl font-semibold mb-2">Year</h2>
           <p className="text-gray-300 leading-relaxed text-lg">{project.year}</p>
         </div>
+
+        {project.gallery && (
+            <div className="mb-6">
+                {/* <h2 className="text-2xl font-semibold mb-2">Gallery</h2> */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {project.gallery && project.gallery.map((image, idx) => (
+                        <img key={idx} src={image} alt={`${project.title} gallery image ${idx + 1}`} className="rounded-lg" />
+                    ))}
+                </div>
+            </div>
+        )}
 
       </div>
     </div>

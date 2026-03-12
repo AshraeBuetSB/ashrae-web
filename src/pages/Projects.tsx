@@ -2,7 +2,7 @@ import AnimatedSection from '../components/AnimatedSection';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import projects from '../db/projects';
-import { Eye, BookOpen } from 'lucide-react';
+import { BookOpen, ArrowRight } from 'lucide-react';
 
 export default function Projects() {
   return (
@@ -64,22 +64,20 @@ export default function Projects() {
         </div>
       </AnimatedSection>
 
-      {/* Projects Grid */}
       <AnimatedSection className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Link to={`/projects/${project.slug}`} key={project.slug}>
+              <Link to={`/projects/${project.slug}`} key={project.slug} aria-label={`View details for ${project.title}`} className="h-full">
                 <motion.div
                   initial={{ opacity: 0, y: 30, scale: 0.9 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   whileHover={{ y: -10, scale: 1.02 }}
-                  className="bg-white/10 backdrop-blur-lg rounded-3xl border border-white/20 overflow-hidden group flex flex-col min-h-[460px] sm:min-h-[500px] lg:min-h-[520px]"
+                  className="cursor-pointer bg-white/10 backdrop-blur-lg rounded-3xl border border-white/20 overflow-hidden group flex flex-col h-full hover:shadow-2xl transition-shadow duration-300"
                 >
-                  {/* Project Image */}
-                  <div className="w-full h-48 overflow-hidden">
+                  <div className="w-full h-64 sm:h-72 overflow-hidden relative">
                     <motion.img
                       src={project.image}
                       alt={project.title}
@@ -87,29 +85,22 @@ export default function Projects() {
                       initial={{ scale: 1 }}
                       whileHover={{ scale: 1.1 }}
                     />
+                    <div className="absolute inset-0 bg-black/25 group-hover:bg-black/30 transition-colors" />
+                    <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <ArrowRight className="w-6 h-6 text-white" />
+                    </div>
                   </div>
 
-                  {/* Content */}
-                  <div className="p-8 flex flex-col flex-grow">
-                    {/* Title */}
-                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">
+                  <div className="p-6 sm:p-8 flex flex-col flex-grow">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 min-h-[5.25rem] leading-tight group-hover:text-blue-300 transition-colors duration-300 line-clamp-3">
                       {project.title}
                     </h3>
 
-                    {/* Description (line clamped) */}
-                    <p className="text-gray-300 leading-relaxed mb-6 text-sm line-clamp-4">
+                    <p className="text-gray-200 leading-relaxed mb-4 text-sm sm:text-base line-clamp-4">
                       {project.description}
                     </p>
 
-                    {/* View Button */}
-                    <motion.div
-                      className="mt-auto w-full bg-gradient-to-r from-blue-500 to-green-500 hover:shadow-lg text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center space-x-2 group-hover:shadow-xl"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      <Eye className="w-5 h-5" />
-                      <span>View Project</span>
-                    </motion.div>
+                    <div className="mt-auto" />
                   </div>
                 </motion.div>
               </Link>

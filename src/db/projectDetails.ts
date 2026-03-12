@@ -17,6 +17,7 @@ const projectDetails = {
       'Taskin Mehereen', 'Afrina Ayrin', 'Asif Chowdhury', 'Arif Sadik Riddhie'
     ],
     year: 2024,
+    gallery: ['https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg'],
   },
 
   'spiral-plate-heat-exchanger': {
@@ -37,6 +38,7 @@ const projectDetails = {
       'Arafath Rahman Nishat', 'Anurag Dev', 'Aion Aich', 'Aniruddha Biswas'
     ],
     year: 2024,
+    gallery: ['https://i.postimg.cc/SKfHdzQZ/Picture5.png'],
   },
 
   'cinquefoil-baffle-heat-exchanger': {
@@ -60,6 +62,7 @@ const projectDetails = {
       'Md Thawhid Hasan Puspo'
     ],
     year: 2026,
+    gallery: [],
   },
 
   'pcm-thermal-bifurated-fins': {
@@ -83,6 +86,7 @@ const projectDetails = {
       'Sanjit Kumar Bakshi', 'Md Mozammal Hossain Ashik'
     ],
     year: 2026,
+    gallery: [],
   },
 
   'double-pipe-oscillating-inserts': {
@@ -106,6 +110,7 @@ const projectDetails = {
       'Sadman Hasan Sadaf'
     ],
     year: 2026,
+    gallery: [],
   },
 
   'honeycomb-based-thermal-energy-storage': {
@@ -128,6 +133,7 @@ const projectDetails = {
       'Khan Mohammad Ar-Rafi'
     ],
     year: 2026,
+    gallery: [],
   },
 
   'aerodynamic-optimized-hybrid-draft-cooling-tower': {
@@ -152,6 +158,7 @@ const projectDetails = {
       'Sabikun Nahar Maisha',
     ],
     year: 2026,
+    gallery: [],
   },
 
   'integrated-thermal-management-system': {
@@ -173,6 +180,7 @@ const projectDetails = {
       'Tahomid Ahomed Tonoy'
     ],
     year: 2026,
+    gallery: [],
   },
 
   'dimple-tube-heat-exchanger': {
@@ -192,6 +200,7 @@ const projectDetails = {
     team:
         ['Rifa Rafia', 'Authoe Dey', 'Abrar Jarif Utsab', 'Md. Arafat Hoshen'],
     year: 2026,
+    gallery: [],
   },
 
 };
