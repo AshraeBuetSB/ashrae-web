@@ -2,176 +2,193 @@
 
 const projectDetails = {
   'cooling-tower-plastic-fill': {
-    title: 'A Prototype of a Cross Flow Induced Draft Cooling Tower with Waste Plastic Fill Material',
+    title:
+        'A Prototype of a Cross Flow Induced Draft Cooling Tower with Waste Plastic Fill Material',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
     overview:
-      `This project introduces a sustainable alternative to industrial cooling towers by repurposing recycled PET plastic bottles and jute fiber as fill material. By validating the thermal performance of these waste materials against standard PVC fills, the team created a cost-effective, eco-friendly solution that addresses both engineering efficiency and the global plastic waste crisis.`,
+        `This project introduces a sustainable alternative to industrial cooling towers by repurposing recycled PET plastic bottles and jute fiber as fill material. By validating the thermal performance of these waste materials against standard PVC fills, the team created a cost-effective, eco-friendly solution that addresses both engineering efficiency and the global plastic waste crisis.`,
     technicalInnovations: [
       'Eco-Friendly Fill Material: Replaced expensive industrial-grade plastic with recycled PET bottles and locally sourced jute fiber.',
       'Cost Efficiency: Achieved significant reduction in fabrication costs while maintaining competitive thermal performance.',
       'Scalable Design: The prototype lays the groundwork for industrial applications in developing regions where plastic waste and jute are abundant.',
     ],
     awards: 'Awarded ASHRAE Undergraduate Equipment Grant ($1,110)',
-    team: ['Taskin Mehereen', 'Afrina Ayrin', 'Asif Chowdhury', 'Arif Sadik Riddhie'],
+    team: [
+      'Taskin Mehereen', 'Afrina Ayrin', 'Asif Chowdhury', 'Arif Sadik Riddhie'
+    ],
     year: 2024,
   },
 
   'spiral-plate-heat-exchanger': {
-    title: 'Spiral Plate Heat Exchanger for Food & Beverage',
+    title:
+        'Spiral Plate Heat Exchanger for Food and Beverage Processing Industries',
     image: 'https://i.postimg.cc/SKfHdzQZ/Picture5.png',
     overview:
-        `The project aims to develop a compact, efficient, and cost-effective spiral 
-        plate heat exchanger (SPHX) suitable for space-constrained industrial applications. The SPHX 
-        offers high thermal efficiency, easy maintenance, and versatility for handling viscous and fouling 
-        fluids. It is particularly tailored for food processing industries like milk pasteurization. The design 
-        uses stainless steel for durability and incorporates a counterflow configuration to enhance heat 
-        transfer. The project seeks to make SPHX technology more accessible and scalable, especially 
-        in resource-limited contexts. `,
+        `This project developed a compact, efficient, and cost-effective Spiral Plate Heat Exchanger (SPHX) tailored for space-constrained industrial applications. 
+        The design is specifically optimized for the food and beverage industry, such as milk pasteurization processes, where maintaining hygiene and handling viscous 
+        fluids are critical challenges. By focusing on scalability, the project aims to make advanced SPHX technology more accessible for resource-limited contexts.`,
     technicalInnovations: [
-      'Design a compact SPHX suited for milk pasteurization.',
-      'Ensure low maintenance and high hygiene standards.',
-      'Evaluate thermal performance and ease of cleaning.',
+      'Counterflow Configuration: The design incorporates a counterflow arrangement to significantly enhance heat transfer efficiency compared to standard parallel flow designs.',
+      'Viscous Fluid Handling: The spiral geometry effectively manages fouling and viscous fluids, reducing maintenance downtime.',
+      'Stainless Steel Construction: Built with durable stainless steel to ensure longevity and meet strict hygiene standards required for food processing.',
     ],
     awards: 'ASHRAE Mini Equipment Grant ($260)',
-    team: ['Arafath Rahman Nishat', 'Anurag Dev', 'Aion Aich', 'Aniruddha Biswas'],
+    team: [
+      'Arafath Rahman Nishat', 'Anurag Dev', 'Aion Aich', 'Aniruddha Biswas'
+    ],
     year: 2024,
   },
 
   'cinquefoil-baffle-heat-exchanger': {
-    title: 'Shell-and-Tube Heat Exchanger with Cinquefoil Baffles',
+    title:
+        'A Shell-and-Tube Heat Exchanger Incorporating Cinquefoil Baffles for Enhanced Heat Transfer and Reduced Fouling.',
     image: 'https://i.postimg.cc/8kfgQcZC/Picture1.png',
     overview:
-      `This project introduces an innovative shell-and-tube heat exchanger featuring cinquefoil baffles and orifice 
-      plates to enhance fluid dynamics and heat transfer efficiency. The design ensures improved turbulence, uniform 
-      temperature distribution, and reliable thermal performance. The prototype demonstrates effective cooling, making 
-      it ideal for industrial processes requiring precise heat control. Applications include power generation, chemical 
-      processing, food and beverage industries, and water treatment systems. With its scalable and energy-efficient 
-      configuration, the design offers a modern solution for advanced industrial thermal management.`,
+        `This project introduces an innovative shell-and-tube heat exchanger featuring "cinquefoil" (five-lobed) baffles and orifice plates to enhance fluid 
+        dynamics and heat transfer efficiency. Traditional baffles often create uneven flow distribution and dead zones; this design guides fluid through multiple 
+        curved paths to ensure improved turbulence and uniform temperature distribution. With applications ranging from power generation to chemical processing, this 
+        scalable configuration offers a modern solution for advanced industrial thermal management.`,
     technicalInnovations: [
-      'Improve thermal performance through novel baffle geometry.',
-      'Fabricate and test exchanger under controlled lab conditions.',
-      'Investigate applicability in power and water treatment industries.',
+      'Cinquefoil Baffles: The unique five-lobed baffle shape creates advanced turbulence patterns to eliminate dead zones and minimize pressure drops compared to complex baffle designs.',
+      'Reduced Fouling: Continuous turbulence minimizes sediment deposition, reducing maintenance needs and chemical cleaning cycles.',
+      'Uniform Temperature Distribution: Simulations demonstrate superior thermal consistency compared to conventional designs, ensuring precise heat control.',
     ],
     awards: 'None',
-    team: ['Md. Luban Mehda'],
-    year: 2025,
+    team: [
+      'Md. Luban Mehda', 'Aasfee Mosharraf Bhuiyan', 'Jubayer Amin Pritom',
+      'Md Thawhid Hasan Puspo'
+    ],
+    year: 2026,
   },
 
   'pcm-thermal-bifurated-fins': {
-    title: 'Optimization of a PCM based Thermal Energy Storage System Enhanced with Bifurcated Fins',
+    title:
+        'PCM Based Thermal Energy Storage System Using Multiple Tubes with Bifurcated Fins in a Triangular Shell',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
     overview:
-      `This project introduces a cost-effective thermal energy storage system designed for residential water heating in 
-      Bangladesh. By utilizing Paraffin wax—a locally accessible and affordable Phase Change Material (PCM)—the 
-      system captures renewable waste heat to provide a sustainable energy solution. Through rigorous simulation 
-      and prototyping, the design optimizes heat transfer via a unique triangular shell geometry and bifurcated fins, 
-      ensuring high thermal efficiency and practical integration for domestic use.`,
+        `Addressing the need for affordable renewable energy storage, this project presents a Latent Heat Thermal Energy Storage (LHTES) system designed for 
+        medium-temperature industrial waste-heat recovery. The system utilizes Paraffin wax as a Phase Change Material (PCM) housed within a novel triangular shell. 
+        By validating this geometry against conventional circular shells, the team proved that the triangular configuration offers superior heat-dissipation capacity, 
+        making it a highly efficient solution for thermal energy storage.`,
     technicalInnovations: [
-      'Design a thermal energy storage system using PCM.',
-      'Incorporate bifurcated fins for enhanced heat transfer.',
-      'Optimize geometry for maximum efficiency.',
+      'Bifurcated Fins: The design features unique Y-shaped (bifurcated) fins extending from the tubes. These fins break up the thermal boundary layer to significantly accelerate the melting and solidification cycles of the PCM.',
+      'Triangular Shell Geometry: Comparative assessments demonstrated that a triangular shell significantly outperforms traditional circular shells of equal cross-section, minimizing "dead zones" where wax often remains unmelted.',
+      'Material Efficiency: The system uses affordable Paraffin wax and copper heat-transfer tubes, offering a cost-effective alternative to expensive commercial storage units.',
     ],
     awards: 'None',
-    team: ['John Doe', 'Jane Smith'],
-    year: 2025,
+    team: [
+      'Tasnim Tarannum Hride', 'Devosree Dey Charu', 'Arafat Hossan',
+      'Sanjit Kumar Bakshi', 'Md Mozammal Hossain Ashik'
+    ],
+    year: 2026,
   },
 
   'double-pipe-oscillating-inserts': {
-    title: 'Self-Optimizing Double Pipe Heat Exchanger with Oscillating Inserts',
+    title:
+        'Dynamically Optimizing Double Pipe Heat Exchanger with Magnetically Controlled Oscillating Inserts ',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
     overview:
-      `This project introduces a novel method for controlling turbulent flow in a double pipe heat exchanger by 
-      utilizing alternating magnetic fields to oscillate metal inserts. This innovative approach aims to enhance heat 
-      transfer efficiency while minimizing pressure drop and energy consumption. By dynamically adjusting the flow 
-      characteristics, the system optimizes thermal performance in real-time, making it suitable for various industrial 
-      applications. The design emphasizes energy efficiency, adaptability, and scalability, offering a cutting-edge 
-      solution for modern heat exchange systems.`,
+        `This project upgrades the conventional double-pipe heat exchanger by introducing active turbulence control. The study harnesses the higher efficiency of 
+        turbulent flow by using electromagnetically actuated oscillating metallic inserts inside the inner pipe. This allows the operator to dynamically adjust 
+        the oscillation frequency and amplitude to match real-time cooling loads, creating secondary flow structures that disrupt the thermal boundary layer - 
+        a massive leap over static designs.`,
     technicalInnovations: [
-      'Develop a double pipe heat exchanger with magnetic inserts.',
-      'Use alternating magnetic fields to induce oscillation.',
-      'Evaluate heat transfer enhancement and energy savings.',
+      'Magnetic Actuation: External electromagnets control the internal inserts, eliminating the need for complex mechanical seals or internal motors.',
+      'Dynamic Optimization: The system can actively tune its heat transfer coefficient based on energy demand, verified through transient CFD analysis.',
+      'Variable Turbulence: Unlike passive static inserts, this design allows for real-time modification of mixing behavior to maximize the Nusselt number.',
     ],
     awards: 'None',
-    team: ['Alice Johnson', 'Bob Lee'],
-    year: 2025,
+    team: [
+      'Shakib Arafat Tapu', 'Abrar Jahin', 'Md Shah Wali Ullah',
+      'Sadman Hasan Sadaf'
+    ],
+    year: 2026,
   },
 
   'honeycomb-based-thermal-energy-storage': {
-    title: 'Modified Honeycomb-Based Latent Heat Thermal Energy Storage (LHTES) Unit using Paraffin PCM for Solar-Assisted Domestic Hot Water',
+    title:
+        'Design and Development of a modified Honeycomb-Based Latent Heat Thermal Energy Storage (LHTES) Unit using Paraffin PCM ',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
     overview:
-      `This project proposes a sustainable, solar-assisted hot water system for Bangladesh using a honeycomb-structured 
-      thermal storage unit that utilizes Paraffin wax and aluminum mesh to bridge the gap between intermittent solar energy 
-      and residential demand. The design focuses on maximizing thermal efficiency through enhanced heat transfer and 
-      compact storage, making it suitable for urban households with limited space. By leveraging locally available 
-      materials and renewable energy, the system aims to provide an affordable and eco-friendly solution for domestic hot water needs.`,
+        `Designed to bridge the "energy-hygiene gap" in Bangladesh, this unit stores solar heat in Paraffin wax for use at night. The system utilizes a 
+                copper-based honeycomb matrix inclined at 30-45° to house the PCM, ensuring structural stability and heat spread. Encased in a transparent acrylic 
+                shell, the unit serves as both a functional water heater and an educational tool, allowing students to visually track the phase change process in real-time.`,
     technicalInnovations: [
-      'Design a honeycomb-based LHTES unit using Paraffin PCM.',
-      'Incorporate aluminum mesh for improved heat transfer.',
-      'Integrate with solar water heating systems for residential use.',
+      'Honeycomb Matrix: A conductive metal honeycomb structure houses the Paraffin wax to overcome the material\'s low thermal conductivity.',
+      'Transparent Shell: The acrylic casing allows for visual observation of the melting and solidification fronts (Stefan problem).',
+      'Porous Aluminum Mesh: Embedded within the wax chambers to promote turbulent heat exchange and faster charging cycles.',
     ],
     awards: 'None',
-    team: ['Emily Davis', 'Michael Brown'],
-    year: 2025,
+    team: [
+      'Usman Gani Pranto', 'Md Sakib Hasan Kafi',
+      'Sheikh Md Shahriar Ahmed Sohan', 'Md Fahim Faisal',
+      'Khan Mohammad Ar-Rafi'
+    ],
+    year: 2026,
   },
 
   'aerodynamic-optimized-hybrid-draft-cooling-tower': {
-    title: 'Aerodynamic Optimization of a Hybrid Draft Cooling Tower Using Waste Plastic Components and Photovoltaic Energy',
+    title:
+        'Aerodynamic Optimization of a Hybrid Draft Cooling Tower Using Waste Plastic Components and Photovoltaic Energy ',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
     overview:
-      `This project introduces a high-efficiency Hybrid Draft Cooling Tower that utilizes a tapered cylindrical design, 
-      recycled PET bottle nozzles, and solar-powered fans to maximize cooling performance while reducing environmental waste. By integrating aerodynamic principles and renewable energy sources, the design aims to enhance airflow, 
-      minimize energy consumption, and promote sustainability. The cooling tower is particularly suited for industrial 
-      applications in regions with abundant solar resources and plastic waste, offering a cost-effective and eco-friendly 
-      solution for thermal management.`,
+        `This project transforms waste into engineering resources by developing a Hybrid Draft Cooling Tower (combining natural and forced draft). 
+        The design features a tapered cylindrical shape for smooth airflow and uniquely utilizes recycled PET bottles as converging nozzles to accelerate 
+        air velocity at the inlet. Powered entirely by a photovoltaic (PV) cell, this system offers a net-zero cooling solution for commercial buildings 
+        while reducing plastic pollution.`,
     technicalInnovations: [
-      'Design a hybrid draft cooling tower with aerodynamic optimization.',
-      'Incorporate recycled PET bottle nozzles for water distribution.',
-      'Utilize photovoltaic energy to power cooling fans.',
+      'PET Bottle Nozzles: Waste bottles are repurposed as converging nozzles to enhance air velocity and facilitate suction for the induced draft fan.',
+      'Corrugated Plastic Fill: Vertical sine-wave shaped fill material made from plastic waste ensures even water distribution and maximum heat transfer time.',
+      'PV Powered: The induced draft fan operates independently on solar energy, eliminating grid power costs and carbon footprint.',
     ],
     awards: 'None',
-    team: ['Sophia Wilson', 'David Martinez'],
-    year: 2025,
+    team: [
+      'Progga Parmita Rahman',
+      'Jarin Tasnim Mahnur',
+      'Afrin Jahan Rifah',
+      'Sabikun Nahar Maisha',
+    ],
+    year: 2026,
   },
 
   'integrated-thermal-management-system': {
-    title: 'Integrated Thermal Management System for Lithium-Ion Battery Modules: Mini-Channel Liquid Heat Transfer Combined with Forced Air Thermal Control',
+    title:
+        'Integrated Thermal Management System for Lithium-Ion Battery Modules: Mini-Channel Liquid Heat Transfer Combined with Forced Air Thermal Control',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
     overview:
-      `This project proposes a hybrid liquid-and-air thermal management system for electric vehicles that utilizes a dual-mode 
-      approach to ensure battery safety and performance in extreme hot and cold climates. By combining mini-channel liquid 
-      cooling with forced air thermal control, the system effectively regulates battery temperature, enhancing longevity 
-      and efficiency. The design emphasizes adaptability, energy efficiency, and scalability, making it suitable for a wide 
-      range of electric vehicle applications. Through rigorous testing and optimization, the project aims to deliver a 
-      cutting-edge solution for advanced battery thermal management.`,
+        `Targeted at the Electric Vehicle (EV) market, this project proposes a hybrid Battery Thermal Management System (BTMS) designed for extreme climates. 
+        The system integrates active liquid cooling via aluminum blocks for high heat loads (like fast charging) and secondary forced-air cooling for energy efficiency 
+        during normal driving. Uniquely, it includes a heating modality to precondition battery packs in sub-zero temperatures, preventing lithium plating and capacity fade.`,
     technicalInnovations: [
-      'Develop a hybrid thermal management system for lithium-ion batteries.',
-      'Combine mini-channel liquid cooling with forced air control.',
-      'Evaluate performance under extreme temperature conditions.',
+      'Dual-Mode Cooling: Seamlessly switches between liquid cooling for peak loads and air cooling for energy conservation.',
+      'Winter Pre-conditioning: Reverses the liquid loop to heat the battery pack in freezing conditions (-30°C to 0°C), extending battery lifespan.',
+      'Mini-Channel Blocks: Aluminum blocks with copper mini-channels maximize the heat extraction surface area within a compact footprint.',
     ],
     awards: 'None',
-    team: ['Olivia Garcia', 'James Anderson'],
-    year: 2025,
+    team: [
+      'Abdullah Sad Tahmid', 'Ahmed Reza Junaid', 'Sadat Tanzim',
+      'Tahomid Ahomed Tonoy'
+    ],
+    year: 2026,
   },
 
   'dimple-tube-heat-exchanger': {
-    title: 'Design and Fabrication of a Compact Dimple‑Tube Heat Exchanger for Food and Beverage Applications',
+    title:
+        'Design and Fabrication of a Compact Dimple-Tube Heat Exchanger for Food and Beverage Applications ',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
     overview:
-      `This project focuses on the design and fabrication of a compact dimple-tube heat exchanger specifically tailored for food 
-      and beverage applications. The dimple-tube design enhances turbulence and heat transfer efficiency while minimizing 
-      fouling, making it ideal for processing viscous and particulate-laden fluids common in the food industry. The 
-      compact configuration allows for space-saving installations in facilities with limited room. Through experimental 
-      testing and performance evaluation, the project aims to deliver a reliable and efficient heat exchanger that meets 
-      the stringent hygiene and operational standards of the food and beverage sector.`,
+        `Targeting the food and beverage industry, this project develops a compact concentric dimple-tube heat exchanger. The core innovation is the dimpled inner tube, 
+        which disrupts the thermal boundary layer to create continuous turbulence. This not only boosts the heat transfer coefficient by approximately 55% but also 
+        creates a "self-cleaning" effect that prevents fouling - critical for processing fluids like milk.`,
     technicalInnovations: [
-      'Design a compact dimple-tube heat exchanger for food applications.',
-      'Enhance heat transfer through boundary layer disruption.',
-      'Test performance with viscous and fouling fluids.',
+      'Dimpled Surface: Strategically placed dimples induce turbulence to significantly enhance the heat transfer coefficient compared to plain tubes',
+      'Anti-Fouling Mechanism: The local turbulence prevents sediment and grime from depositing on tube walls, reducing cleaning downtime.',
+      'Thermal Pollution Control: Designed to use high mass-flow river water to ensure discharge temperatures remain eco-friendly (below 37°C).',
     ],
     awards: 'None',
-    team: ['Isabella Thomas', 'William Taylor'],
-    year: 2025,
+    team:
+        ['Rifa Rafia', 'Authoe Dey', 'Abrar Jarif Utsab', 'Md. Arafat Hoshen'],
+    year: 2026,
   },
 
 };

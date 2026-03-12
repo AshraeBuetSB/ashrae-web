@@ -4,65 +4,64 @@ const projects = [
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
     title: 'Cross Flow Induced Draft Cooling Tower with Waste Plastic Fill',
     description:
-      'An eco-friendly cooling tower innovation repurposing recycled PET bottles and jute fiber as efficient fill materials. Winner of the ASHRAE Undergraduate Equipment Grant ($1,110)',
+        'An eco-friendly cooling tower innovation repurposing recycled PET bottles and jute fiber as efficient fill materials. Winner of the ASHRAE Undergraduate Equipment Grant ($1,110)',
   },
   {
     slug: 'spiral-plate-heat-exchanger',
     image: 'https://i.postimg.cc/SKfHdzQZ/Picture5.png',
     title: 'Spiral Plate Heat Exchanger for Food & Beverage',
     description:
-      'Compact, stainless steel SPHX designed for milk pasteurization and similar applications. Prioritizes high efficiency and low maintenance. Received the ASHRAE Equipment Grant ($260).',
+        'Compact, stainless steel SPHX designed for milk pasteurization and similar applications. Prioritizes high efficiency and low maintenance. Received the ASHRAE Equipment Grant ($260).',
   },
   {
     slug: 'cinquefoil-baffle-heat-exchanger',
     image: 'https://i.postimg.cc/8kfgQcZC/Picture1.png',
     title: 'Shell-and-Tube Heat Exchanger with Cinquefoil Baffles',
     description:
-      'Innovative exchanger with enhanced turbulence and uniform heat distribution. Applicable to power generation, water treatment, and food industries.',
+        'A shell-and-tube design using cinquefoil baffles and orifice plates to maximize thermal efficiency and to eliminate dead zones. Research accepted for the 2026 ASHRAE Winter Conference (Las Vegas).',
   },
   {
     slug: 'pcm-thermal-bifurated-fins',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
-    title: 'Optimization of a PCM based Thermal Energy Storage System Enhanced with Bifurcated Fins',
+    title: 'PCM-Based Thermal Energy Storage with Bifurcated Fins',
     description:
-      'This project introduces a cost-effective thermal energy storage system, utilizing paraffin wax and an optimized triangular multi-tube geometry with bifurcated fins to maximize heat transfer efficiency.',
+        'A renewable waste-heat recovery system using Paraffin wax and bifurcated fins for efficient water heating. Research Paper accepted for the 2026 ASHRAE Winter Conference, Las Vegas.',
   },
   {
     slug: 'double-pipe-oscillating-inserts',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
-    title: 'Self-Optimizing Double Pipe Heat Exchanger with Oscillating Inserts',
+    title: 'Self-Optimizing Double Pipe Heat Exchanger',
     description:
-      'This project introduces a method of controlling turbulent flow in a double pipe heat exchanger by using alternating magnetic fields to oscillate metal inserts.',
+        'A novel approach to controlling fluid turbulence using magnetically oscillating inserts. Research Paper submitted to the 2026 ASHRAE Annual Conference, Austin.',
   },
   {
     slug: 'honeycomb-based-thermal-energy-storage',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
-    title: 'Modified Honeycomb-Based Latent Heat Thermal Energy Storage (LHTES) Unit using Paraffin PCM for Solar-Assisted Domestic Hot Water',
+    title: 'Honeycomb-Based Latent Heat Thermal Energy Storage',
     description:
-      'This project proposes a sustainable, solar-assisted hot water system for Bangladesh using a honeycomb-structured thermal storage unit that utilizes Paraffin wax and aluminum mesh to bridge the gap between intermittent solar energy and residential demand.',
+        'A solar-assisted domestic hot water solution using a copper-based honeycomb matrix and Paraffin PCM to bridge the energy-hygiene gap.',
   },
   {
     slug: 'aerodynamic-optimized-hybrid-draft-cooling-tower',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
-    title: 'Aerodynamic Optimization of a Hybrid Draft Cooling Tower Using Waste Plastic Components and Photovoltaic Energy',
+    title: 'Hybrid Draft Cooling Tower with PV Integration',
     description:
-      'This project introduces a high-efficiency Hybrid Draft Cooling Tower that utilizes a tapered cylindrical design, recycled PET bottle nozzles, and solar-powered fans to maximize cooling performance while reducing environmental waste.',
+        'An aerodynamic cooling solution combining forced and natural draft, utilizing waste plastic components and solar photovoltaic energy.',
   },
   {
     slug: 'integrated-thermal-management-system',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
-    title: 'Integrated Thermal Management System for Lithium-Ion Battery Modules: Mini-Channel Liquid Heat Transfer Combined with Forced Air Thermal Control',
+    title: 'Hybrid Thermal Management for Li-Ion Battery Modules',
     description:
-      'This project proposes a hybrid liquid-and-air thermal management system for electric vehicles that utilizes a dual-mode approach to ensure battery safety and performance in extreme hot and cold climates.',
+        'A dual-mode cooling system for Electric Vehicles combining liquid mini-channels and forced air for optimal performance in extreme climates.',
   },
   {
     slug: 'dimple-tube-heat-exchanger',
     image: 'https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg',
-    title: 'Design and Fabrication of a Compact Dimple‑Tube Heat Exchanger for Food and Beverage Applications',
+    title: 'Compact Dimple-Tube Heat Exchanger',
     description:
-      'This innovation centers on a compact, concentric dimple-tube heat exchanger designed to maximize thermal processing efficiency through boundary layer disruption and advanced fouling resistance.',
+        'A specialized heat exchanger featuring a dimpled surface to promote boundary layer disruption and anti-fouling for food and beverage applications.',
   }
 ];
 
 export default projects;
-

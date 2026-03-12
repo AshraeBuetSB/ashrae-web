@@ -14,14 +14,14 @@ export default function ProjectDetail() {
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white">
       <div className="max-w-4xl mx-auto">
 
-        <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-center">{project.title}</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-10 text-center mt-10">{project.title}</h1>
 
-        {project.awards && project.awards !== "None" && (
+        {/* {project.awards && project.awards !== "None" && (
           <div className="mt-10 mb-6 bg-blue-800 text-white px-4 py-2 rounded-lg block mx-auto w-fit">
             <h2 className="text-lg font-semibold text-center mb-2">🏆 Award</h2>
             <p className="text-md text-center">{project.awards}</p>
           </div>
-        )}
+        )} */}
 
         <div className="mb-6">
           <h2 className="text-2xl font-semibold mb-2">Overview</h2>
