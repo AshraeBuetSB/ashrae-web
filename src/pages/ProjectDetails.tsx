@@ -16,12 +16,16 @@ export default function ProjectDetail() {
 
         <h1 className="text-3xl sm:text-4xl font-bold mb-10 text-center mt-10">{project.title}</h1>
 
-        {/* {project.awards && project.awards !== "None" && (
-          <div className="mt-10 mb-6 bg-blue-800 text-white px-4 py-2 rounded-lg block mx-auto w-fit">
-            <h2 className="text-lg font-semibold text-center mb-2">🏆 Award</h2>
-            <p className="text-md text-center">{project.awards}</p>
+        {project.banner && project.banner !== "None" && (
+          <div className="mt-10 mb-6 flex justify-center">
+            <div className="relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-green-600 rounded-full shadow-2xl">
+              <span className="absolute inset-0 rounded-full opacity-30 bg-gradient-to-r blur-lg"></span>
+              <span className="relative flex items-center space-x-3">
+                <span className="font-semibold text-lg">{project.banner}</span>
+              </span>
+            </div>
           </div>
-        )} */}
+        )}
 
         <div className="mb-6">
           <h2 className="text-2xl font-semibold mb-2">Overview</h2>

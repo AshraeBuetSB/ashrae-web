@@ -12,7 +12,7 @@ const projectDetails = {
       'Cost Efficiency: Achieved significant reduction in fabrication costs while maintaining competitive thermal performance.',
       'Scalable Design: The prototype lays the groundwork for industrial applications in developing regions where plastic waste and jute are abundant.',
     ],
-    awards: 'Awarded ASHRAE Undergraduate Equipment Grant ($1,110)',
+    banner: 'Awarded ASHRAE Undergraduate Equipment Grant ($1,110) ',
     team: [
       'Taskin Mehereen', 'Afrina Ayrin', 'Asif Chowdhury', 'Arif Sadik Riddhie'
     ],
@@ -32,7 +32,7 @@ const projectDetails = {
       'Viscous Fluid Handling: The spiral geometry effectively manages fouling and viscous fluids, reducing maintenance downtime.',
       'Stainless Steel Construction: Built with durable stainless steel to ensure longevity and meet strict hygiene standards required for food processing.',
     ],
-    awards: 'ASHRAE Mini Equipment Grant ($260)',
+    banner: 'Awarded: ASHRAE Undergraduate Equipment Grant ($260)',
     team: [
       'Arafath Rahman Nishat', 'Anurag Dev', 'Aion Aich', 'Aniruddha Biswas'
     ],
@@ -53,7 +53,8 @@ const projectDetails = {
       'Reduced Fouling: Continuous turbulence minimizes sediment deposition, reducing maintenance needs and chemical cleaning cycles.',
       'Uniform Temperature Distribution: Simulations demonstrate superior thermal consistency compared to conventional designs, ensuring precise heat control.',
     ],
-    awards: 'None',
+    banner:
+        'Research Paper Accepted: ASHRAE Winter Conference 2026 (Las Vegas)',
     team: [
       'Md. Luban Mehda', 'Aasfee Mosharraf Bhuiyan', 'Jubayer Amin Pritom',
       'Md Thawhid Hasan Puspo'
@@ -75,7 +76,8 @@ const projectDetails = {
       'Triangular Shell Geometry: Comparative assessments demonstrated that a triangular shell significantly outperforms traditional circular shells of equal cross-section, minimizing "dead zones" where wax often remains unmelted.',
       'Material Efficiency: The system uses affordable Paraffin wax and copper heat-transfer tubes, offering a cost-effective alternative to expensive commercial storage units.',
     ],
-    awards: 'None',
+    banner:
+        'Research Paper Accepted: ASHRAE Winter Conference 2026 (Las Vegas)',
     team: [
       'Tasnim Tarannum Hride', 'Devosree Dey Charu', 'Arafat Hossan',
       'Sanjit Kumar Bakshi', 'Md Mozammal Hossain Ashik'
@@ -97,7 +99,8 @@ const projectDetails = {
       'Dynamic Optimization: The system can actively tune its heat transfer coefficient based on energy demand, verified through transient CFD analysis.',
       'Variable Turbulence: Unlike passive static inserts, this design allows for real-time modification of mixing behavior to maximize the Nusselt number.',
     ],
-    awards: 'None',
+    banner:
+        'Research Paper Submitted: ASHRAE Annual Conference 2026 (Austin, TX)',
     team: [
       'Shakib Arafat Tapu', 'Abrar Jahin', 'Md Shah Wali Ullah',
       'Sadman Hasan Sadaf'
@@ -118,7 +121,7 @@ const projectDetails = {
       'Transparent Shell: The acrylic casing allows for visual observation of the melting and solidification fronts (Stefan problem).',
       'Porous Aluminum Mesh: Embedded within the wax chambers to promote turbulent heat exchange and faster charging cycles.',
     ],
-    awards: 'None',
+    banner: 'Prototype: Solar-Assisted Domestic Hot Water',
     team: [
       'Usman Gani Pranto', 'Md Sakib Hasan Kafi',
       'Sheikh Md Shahriar Ahmed Sohan', 'Md Fahim Faisal',
@@ -141,7 +144,7 @@ const projectDetails = {
       'Corrugated Plastic Fill: Vertical sine-wave shaped fill material made from plastic waste ensures even water distribution and maximum heat transfer time.',
       'PV Powered: The induced draft fan operates independently on solar energy, eliminating grid power costs and carbon footprint.',
     ],
-    awards: 'None',
+    banner: 'Sustainable Design: Waste Plastic & Solar Integrated',
     team: [
       'Progga Parmita Rahman',
       'Jarin Tasnim Mahnur',
@@ -164,7 +167,7 @@ const projectDetails = {
       'Winter Pre-conditioning: Reverses the liquid loop to heat the battery pack in freezing conditions (-30°C to 0°C), extending battery lifespan.',
       'Mini-Channel Blocks: Aluminum blocks with copper mini-channels maximize the heat extraction surface area within a compact footprint.',
     ],
-    awards: 'None',
+    banner: 'EV Technology: Battery Thermal Management System (BTMS)',
     team: [
       'Abdullah Sad Tahmid', 'Ahmed Reza Junaid', 'Sadat Tanzim',
       'Tahomid Ahomed Tonoy'
@@ -185,7 +188,7 @@ const projectDetails = {
       'Anti-Fouling Mechanism: The local turbulence prevents sediment and grime from depositing on tube walls, reducing cleaning downtime.',
       'Thermal Pollution Control: Designed to use high mass-flow river water to ensure discharge temperatures remain eco-friendly (below 37°C).',
     ],
-    awards: 'None',
+    banner: 'Optimization Project: Enhanced Heat Transfer Surfaces',
     team:
         ['Rifa Rafia', 'Authoe Dey', 'Abrar Jarif Utsab', 'Md. Arafat Hoshen'],
     year: 2026,
