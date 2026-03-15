@@ -13,10 +13,10 @@ export default function Header() {
 
     const navigation = [
         {label: 'Home', href: "/home"},
-        {label: 'Executive Committee', href: '/members'},
-        {label: 'Activities', href: '/activities'},
         {label: 'Achievements', href: '/achievements'},
-        {label: 'Projects', href: '/projects'}
+        {label: 'Activities', href: '/activities'},
+        {label: 'Projects', href: '/projects'},
+        {label: 'Executive Committee', href: '/members'}
         
     ]
     useEffect(() => {
