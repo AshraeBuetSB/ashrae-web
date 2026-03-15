@@ -10,6 +10,8 @@ import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetails';
 import ActivityDetail from './pages/ActivityDetails';
 import Publications from './pages/Publications';
+import Achievements from './pages/Achievements';
+import AchievementDetail from './pages/AchievementDetails';
 
 
 function App() {
@@ -26,6 +28,9 @@ function App() {
         <Route path="projects" element={<Projects />} />
         <Route path="projects/:slug" element={<ProjectDetail />} />
         <Route path="publications" element={<Publications />} />
+        <Route path="achievements" element={<Achievements />}/>
+        <Route path="achievements/:slug" element={<AchievementDetail/>}/>
+
       </Route>
     </Routes>
   );

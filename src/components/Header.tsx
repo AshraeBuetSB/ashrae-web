@@ -15,6 +15,7 @@ export default function Header() {
         {label: 'Home', href: "/home"},
         {label: 'Executive Committee', href: '/members'},
         {label: 'Activities', href: '/activities'},
+        {label: 'Achievements', href: '/achievements'},
         {label: 'Projects', href: '/projects'}
         
     ]
@@ -48,7 +49,7 @@ export default function Header() {
             </motion.div>
                 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex items-center space-x-8">
+                <nav className="hidden lg:flex items-center space-x-8">
                 {/* {['Home', 'About', 'Activities', 'Events', 'Members', 'Contact'].map((item) => ( */}
                 {navigation.map((item)=>(
                     <MotionLink
@@ -90,7 +91,7 @@ export default function Header() {
                     </a>
 
                     <button
-                    className="md:hidden text-white"
+                    className="lg:hidden text-white"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                     {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -106,7 +107,7 @@ export default function Header() {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
-                    className="md:hidden bg-black/30 backdrop-blur-lg border-t border-white/10"
+                    className="lg:hidden bg-black/30 backdrop-blur-lg border-t border-white/10"
                 >
                     <div className="px-4 py-4 space-y-3">
                     {/* {['Home', 'About', 'Activities', 'Events', 'Members', 'Contact'].map((item) => ( */}
