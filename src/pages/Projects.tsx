@@ -67,7 +67,7 @@ export default function Projects() {
       <AnimatedSection className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
+            {projects.sort((a, b) => a.id - b.id).map((project, index) => (
               <Link to={`/projects/${project.slug}`} key={project.slug} aria-label={`View details for ${project.title}`} className="h-full">
                 <motion.div
                   initial={{ opacity: 0, y: 30, scale: 0.9 }}

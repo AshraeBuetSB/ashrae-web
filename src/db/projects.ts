@@ -1,5 +1,6 @@
 const projects = [
   {
+    id: 1,
     slug: 'cooling-tower-plastic-fill',
     image:
         'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767501/1_n8xfyr.webp',
@@ -8,6 +9,7 @@ const projects = [
         'An eco-friendly cooling tower innovation repurposing recycled PET bottles and jute fiber as efficient fill materials. Winner of the ASHRAE Undergraduate Equipment Grant ($1,110)',
   },
   {
+    id: 2,
     slug: 'spiral-plate-heat-exchanger',
     image:
         'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767638/1_lq2tio.webp',
@@ -16,6 +18,7 @@ const projects = [
         'Compact, stainless steel SPHX designed for milk pasteurization and similar applications. Prioritizes high efficiency and low maintenance. Received the ASHRAE Equipment Grant ($260).',
   },
   {
+    id: 3,
     slug: 'cinquefoil-baffle-heat-exchanger',
     image:
         'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767698/1_lnqzcg.webp',
@@ -24,6 +27,7 @@ const projects = [
         'A shell-and-tube design using cinquefoil baffles and orifice plates to maximize thermal efficiency and to eliminate dead zones. Research accepted for the 2026 ASHRAE Winter Conference (Las Vegas).',
   },
   {
+    id: 4,
     slug: 'pcm-thermal-bifurated-fins',
     image:
         'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767720/1_bsokah.webp',
@@ -32,6 +36,7 @@ const projects = [
         'A renewable waste-heat recovery system using Paraffin wax and bifurcated fins for efficient water heating. Research Paper accepted for the 2026 ASHRAE Winter Conference, Las Vegas.',
   },
   {
+    id: 5,
     slug: 'double-pipe-oscillating-inserts',
     image:
         'https://res.cloudinary.com/dll7cjob6/image/upload/v1773769342/1_rpcivf.webp',
@@ -40,6 +45,7 @@ const projects = [
         'A novel approach to controlling fluid turbulence using magnetically oscillating inserts. Research Paper submitted to the 2026 ASHRAE Annual Conference, Austin.',
   },
   {
+    id: 6,
     slug: 'honeycomb-based-thermal-energy-storage',
     image:
         'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767776/1_kihsdh.webp',
@@ -48,6 +54,7 @@ const projects = [
         'A solar-assisted domestic hot water solution using a copper-based honeycomb matrix and Paraffin PCM to bridge the energy-hygiene gap.',
   },
   {
+    id: 7,
     slug: 'aerodynamic-optimized-hybrid-draft-cooling-tower',
     image:
         'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767763/1_kj1rrt.webp',
@@ -56,6 +63,7 @@ const projects = [
         'An aerodynamic cooling solution combining forced and natural draft, utilizing waste plastic components and solar photovoltaic energy.',
   },
   {
+    id: 8,
     slug: 'integrated-thermal-management-system',
     image:
         'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767815/1_rxfgaf.webp',
@@ -64,6 +72,7 @@ const projects = [
         'A dual-mode cooling system for Electric Vehicles combining liquid mini-channels and forced air for optimal performance in extreme climates.',
   },
   {
+    id: 9,
     slug: 'dimple-tube-heat-exchanger',
     image:
         'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767829/1_unhbb0.webp',
