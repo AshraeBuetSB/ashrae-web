@@ -38,8 +38,14 @@ const activityDetails =
           'Students from Mechanical Engineering and other departments'
         ],
         gallery: [
-          'https://i.postimg.cc/vTmpsZk8/DSC05194.jpg',
-          'https://i.postimg.cc/pr13XttN/DSC05283.jpg',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785519/1_ngodbd.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785524/7_j160ga.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785523/8_flcqfi.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785519/6_ygmzvo.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785519/4_ovzej6.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785517/2_rt1tnf.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773790126/5_fdpvwd.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773790169/3_zrf6x2.webp'
         ],
         key_moments: [
           'Inaugural speech by the chief guest.',
@@ -57,7 +63,10 @@ const activityDetails =
         attendees: [
           'ASHRAE BUET Student Branch Executive Committee', 'ASHRAE Officials'
         ],
-        gallery: [],
+        gallery: [
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785523/1_nnjhr9.jpg',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785529/Spiral-Plate-Grant_Team_hjsmn1.jpg'
+        ],
         key_moments: [
           'Official announcement of the grant.',
           'Discussion on planned activities and budget utilization.',
@@ -73,8 +82,12 @@ const activityDetails =
         category: 'Educational',
         attendees: ['ASHRAE BUET Student Members', 'Faculty Advisors'],
         gallery: [
-          'https://i.postimg.cc/PxCR3Rwm/20241226-155635.jpg',
-          'https://i.postimg.cc/wvnbSQX2/20241226-160814.jpg',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785519/1_oacova.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785516/6_mf6wtg.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785515/5_lyf2kj.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785513/4_zzqich.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773790777/3_pmcwiy.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785510/2_cfbnjs.webp',
 
         ],
         key_moments: [
@@ -96,7 +109,15 @@ const activityDetails =
           'Professionals from the HVAC&R industry in Bangladesh',
           'Members from other ASHRAE student branches'
         ],
-        gallery: ['https://i.postimg.cc/J06trtnR/IMG-9816.jpg'],
+        gallery: [
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785533/1_aqm5wm.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785533/Copy_of_DSC01781_mfwdaf.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785536/Copy_of_DSC01827_xzazlt.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785536/Copy_of_DSC01863_lnnwyn.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785540/Copy_of_IMG_2488_yimmxu.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785538/Copy_of_IMG_2055_wlbuft.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785541/Copy_of_IMG_2072_ztpitr.webp'
+        ],
         key_moments: [
           'Keynote speech on sustainable HVAC&R solutions.',
           'Networking dinner.', 'Student poster presentations.'
@@ -113,7 +134,11 @@ const activityDetails =
           'Project teams', 'Faculty members',
           'Representatives from ASHRAE Bangladesh Chapter'
         ],
-        gallery: ['https://i.postimg.cc/28t3gqM2/IMG-1690.avif'],
+        gallery: [
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785531/1_idxfpr.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785531/2_oljxi5.webp',
+
+        ],
         key_moments: [
           'Presentation of successful projects.',
           'Award distribution to the winning teams.',
@@ -132,9 +157,12 @@ const activityDetails =
           'Engineers from various industries'
         ],
         gallery: [
-          'https://i.postimg.cc/2yc3k36z/Group-stall.jpg',
-          'https://i.postimg.cc/gjSrzrJ9/Taskin-apu-poster.jpg',
-          'https://i.postimg.cc/3NJdQ23X/nishat-poster-2.jpg'
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773791521/Group_stall_pnvov8.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773791504/Group_photo_corner_c7teoc.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773791502/workshop_qeis21.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773791483/live_demo_4_b9rntn.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773791484/Live_demo_idchzp.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773791495/Taskin_apu_poster_r5z8al.webp'
         ],
         key_moments: [
           'Attending technical sessions on risk assessment.',
@@ -154,8 +182,11 @@ const activityDetails =
           'ASHRAE Officials',
         ],
         gallery: [
-          'https://i.postimg.cc/pTtmqpr1/IMG-2468.jpg',
-          'https://i.postimg.cc/TwXKCphP/IMG-2840.png',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785540/1_arb619.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785545/2_x7ksxd.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785544/3_rqad9i.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785545/4_slqvxy.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785543/5_wpdtae.webp'
         ],
         key_moments: [
           'Student Project Showcase', 'Industry & Faculty Engagement',
@@ -174,9 +205,9 @@ const activityDetails =
           'Faculty Advisor'
         ],
         gallery: [
-          'https://i.postimg.cc/s2LrgSPv/1.jpg',
-          'https://i.postimg.cc/pdrvvkj2/2.jpg',
-          'https://i.postimg.cc/TPs63mjj/9.jpg',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785515/1_x4yzva.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773791851/1_xdhiag.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773791849/9_iviwn0.webp',
 
         ],
         key_moments: [
