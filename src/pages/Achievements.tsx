@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Eye, Calendar, MapPin} from 'lucide-react';
+import { Calendar, MapPin, ArrowRight} from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { Link } from 'react-router-dom';
 import achievements from '../db/achievements';
@@ -52,34 +52,29 @@ export default function Achievements() {
                   whileHover={{ y: -10, scale: 1.02 }}
                   className="bg-white/10 backdrop-blur-lg rounded-3xl border border-white/20 overflow-hidden group h-full flex flex-col"
                 >
-                  {/* Card Header */}
-                  <div className={`h-2 bg-gradient-to-r ${achievement.color}`}></div>
-                  
-                  <div className="p-8 flex-grow flex flex-col">
-                    {/* Icon and Category */}
-                    <div className="flex items-center justify-between mb-6">
-                      <div className={`inline-flex p-3 rounded-2xl bg-gradient-to-r ${achievement.color}`}>
-                        <div className="text-white">
-                          {achievement.icon}
-                        </div>
-                      </div>
-                      <span className="text-xs font-semibold text-gray-400 bg-gray-800/50 px-3 py-1 rounded-full">
-                        {achievement.category}
-                      </span>
+                  <div className="w-full h-64 sm:h-72 overflow-hidden relative">
+                    <motion.img
+                      src={achievement.image}
+                      alt={achievement.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      initial={{ scale: 1 }}
+                      whileHover={{ scale: 1.1 }}
+                    />
+                    <div className="absolute inset-0 bg-black/25 group-hover:bg-black/30 transition-colors" />
+                    <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <ArrowRight className="w-6 h-6 text-white" />
                     </div>
+                  </div>
 
-                    {/* Title */}
-                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">
+                  <div className="pt-4 pb-6 pl-6 pr-6 sm:pt-6 sm:pb-8 sm:pl-8 sm:pr-8 flex flex-col flex-grow">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 min-h-[5.25rem] leading-tight group-hover:text-blue-300 transition-colors duration-300 line-clamp-3">
                       {achievement.title}
                     </h3>
 
-                    {/* Description */}
-                    <p className="text-gray-300 leading-relaxed mb-6 text-sm">
-                      {achievement.description}
-                    </p>
+                    <div className="mt-auto" />
 
                     {/* Event Details */}
-                    <div className="space-y-3 mb-8">
+                    <div className="space-y-3">
                       <div className="flex items-center text-sm text-gray-400">
                         <Calendar className="w-4 h-4 mr-2 text-blue-400" />
                         <span>{achievement.date}</span>
@@ -88,18 +83,6 @@ export default function Achievements() {
                         <MapPin className="w-4 h-4 mr-2 text-green-400" />
                         <span>{achievement.location}</span>
                       </div>
-                    </div>
-
-                    {/* View Button */}
-                    <div className="mt-auto">
-                      <motion.div
-                        className={`w-full bg-gradient-to-r ${achievement.color} hover:shadow-lg text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center space-x-2 group-hover:shadow-xl`}
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                      >
-                        <Eye className="w-5 h-5" />
-                        <span>View Details</span>
-                      </motion.div>
                     </div>
                   </div>
                 </motion.div>
