@@ -17,7 +17,11 @@ const projectDetails = {
       'Taskin Mehereen', 'Afrina Ayrin', 'Asif Chowdhury', 'Arif Sadik Riddhie'
     ],
     year: 2024,
-    gallery: ['https://i.postimg.cc/fTbW9DCn/Assembly-b.jpg'],
+    gallery: [
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767501/1_n8xfyr.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767499/2_frfl85.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767499/3_pxc3v2.webp'
+    ],
   },
 
   'spiral-plate-heat-exchanger': {
@@ -38,7 +42,13 @@ const projectDetails = {
       'Arafath Rahman Nishat', 'Anurag Dev', 'Aion Aich', 'Aniruddha Biswas'
     ],
     year: 2024,
-    gallery: ['https://i.postimg.cc/SKfHdzQZ/Picture5.png'],
+    gallery: [
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767644/3_lpoejg.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767647/4_kijmyo.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767638/1_lq2tio.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767650/5_ljkspg.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767640/2_nzspnj.webp',
+    ],
   },
 
   'cinquefoil-baffle-heat-exchanger': {
@@ -62,7 +72,13 @@ const projectDetails = {
       'Md Thawhid Hasan Puspo'
     ],
     year: 2026,
-    gallery: [],
+    gallery: [
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767698/1_lnqzcg.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767702/2_xeaei7.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767705/3_f4dpmx.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767709/4_jwv81e.webp'
+
+    ],
   },
 
   'pcm-thermal-bifurated-fins': {
@@ -86,7 +102,12 @@ const projectDetails = {
       'Sanjit Kumar Bakshi', 'Md Mozammal Hossain Ashik'
     ],
     year: 2026,
-    gallery: [],
+    gallery: [
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767720/1_bsokah.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767725/2_ober5a.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767729/3_znly7k.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767734/4_yvdb2x.webp'
+    ],
   },
 
   'double-pipe-oscillating-inserts': {
@@ -110,7 +131,13 @@ const projectDetails = {
       'Sadman Hasan Sadaf'
     ],
     year: 2026,
-    gallery: [],
+    gallery: [
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773769342/1_rpcivf.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767744/2_hmo6qq.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767753/4_vnxnfc.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767757/5_wj11w5.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767748/3_w6kwwx.webp',
+    ],
   },
 
   'honeycomb-based-thermal-energy-storage': {
@@ -133,7 +160,13 @@ const projectDetails = {
       'Khan Mohammad Ar-Rafi'
     ],
     year: 2026,
-    gallery: [],
+    gallery: [
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767792/2_swttge.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767796/3_qemqdn.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767810/5_p9iy0v.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767776/1_kihsdh.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767800/4_hxlyqd.webp',
+    ],
   },
 
   'aerodynamic-optimized-hybrid-draft-cooling-tower': {
@@ -158,7 +191,11 @@ const projectDetails = {
       'Sabikun Nahar Maisha',
     ],
     year: 2026,
-    gallery: [],
+    gallery: [
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767763/1_kj1rrt.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767767/2_vziicc.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767771/3_dyhhio.webp'
+    ],
   },
 
   'integrated-thermal-management-system': {
@@ -180,7 +217,11 @@ const projectDetails = {
       'Tahomid Ahomed Tonoy'
     ],
     year: 2026,
-    gallery: [],
+    gallery: [
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767815/1_rxfgaf.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767819/2_kozjzi.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767823/3_uwx9kb.webp'
+    ],
   },
 
   'dimple-tube-heat-exchanger': {
@@ -200,7 +241,12 @@ const projectDetails = {
     team:
         ['Rifa Rafia', 'Authoe Dey', 'Abrar Jarif Utsab', 'Md. Arafat Hoshen'],
     year: 2026,
-    gallery: [],
+    gallery: [
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767829/1_unhbb0.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767834/2_m9wuim.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767987/4_izvscy.webp',
+      'https://res.cloudinary.com/dll7cjob6/image/upload/v1773767839/3_dtukbh.webp',
+    ],
   },
 
 };
