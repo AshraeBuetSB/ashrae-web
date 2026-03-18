@@ -39,7 +39,6 @@ export default function Footer() {
                         <li>BUET Campus</li>
                         <li>Dhaka-1000, Bangladesh</li>
                         <li>Email: ashraebuetsb@gmail.com</li>
-                        <li>Phone: +880-XXX-XXXX</li>
                     </ul>
                     </div>
                 </div>
