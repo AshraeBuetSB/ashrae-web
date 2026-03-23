@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, ArrowRight} from 'lucide-react';
+import { Calendar, ArrowRight} from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { Link } from 'react-router-dom';
 import achievements from '../db/achievements';
@@ -75,13 +75,9 @@ export default function Achievements() {
 
                     {/* Event Details */}
                     <div className="space-y-3">
-                      <div className="flex items-center text-sm text-gray-400">
+                      <div className="flex items-center text-sm text-gray-400 mt-5">
                         <Calendar className="w-4 h-4 mr-2 text-blue-400" />
                         <span>{achievement.date}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-400">
-                        <MapPin className="w-4 h-4 mr-2 text-green-400" />
-                        <span>{achievement.location}</span>
                       </div>
                     </div>
                   </div>

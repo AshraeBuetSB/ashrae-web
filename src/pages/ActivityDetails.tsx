@@ -14,11 +14,11 @@ export default function ActivityDetail() {
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white">
       <div className="max-w-4xl mx-auto">
 
-        <h1 className="text-3xl sm:text-4xl font-bold mb-4 p-10">{activity.title}</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4 p-10 text-center">{activity.title}</h1>
 
         <div className="mb-6">
           <h2 className="text-2xl font-semibold mb-2">Overview</h2>
-          <p className="text-gray-300 leading-relaxed text-lg">{activity.overview}</p>
+          <p className="text-gray-300 leading-relaxed text-lg text-justify">{activity.overview}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">

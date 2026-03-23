@@ -2,29 +2,26 @@ const activities = [
   {
     id: 1,
     slug: "society-scholarship-2026",
-    title: "Received Two ASHRAE Society Scholarships",
+    title: "Secures Prestigious 2025-2026 Society Scholarships",
     description: "PH",
-    image: "https://picsum.photos/400/250?random=5",
-    date: "August 2024",
-    location: "BUET Auditorium"
+    image: "https://res.cloudinary.com/dll7cjob6/image/upload/v1774292872/1_hoz5im.webp",
+    date: "March 2026",
   },
-    {
-    id: 2,
-    slug: "ashrae-buet-sb-grant-received",
-    title: "Secured Two ASHRAE UG Equipment Grants on First Try",
-    description: "The ASHRAE BUET Student Branch secured two ASHRAE Undergraduate Program Equipment Grants on its first-ever application, receiving a total of USD 1,370 in funding in recognition of innovative, student-led projects in sustainable cooling systems and heat exchanger design.",
-    image: "https://picsum.photos/400/250?random=2",
-    date: "April 2025",
-    location: "ASHRAE Headquarters"
+  {
+    id:2,
+    slug: "three-presentations-winter-conference",
+    title: "Achieves 100% Acceptance Rate at 2026 Winter Conference",
+    description: "PH",
+    image: "https://res.cloudinary.com/dll7cjob6/image/upload/v1774293101/3_duoet2.webp",
+    date: "January 2026",
   },
   {
     id:3,
-    slug: "three-presentations-winter-conference",
-    title: "Presented Three Papers",
-    description: "The ASHRAE BUET Student Branch secured two ASHRAE Undergraduate Program Equipment Grants on its first-ever application, receiving a total of USD 1,370 in funding in recognition of innovative, student-led projects in sustainable cooling systems and heat exchanger design.",
-    image: "https://picsum.photos/400/250?random=2",
-    date: "April 2025",
-    location: "ASHRAE Headquarters"
+    slug: "dual-ug-equipment-grant",
+    title: "Secures Dual Undergraduate Equipment Grants on First Attempt",
+    description: "PH",
+    image: "https://res.cloudinary.com/dll7cjob6/image/upload/v1774292611/1_jcmf9h.webp",
+    date: "April 2025"
   }
 
     

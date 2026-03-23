@@ -58,7 +58,7 @@ const activities = [
     slug: "ashrae-buet-sb-grant-received",
     title: "Secured Two ASHRAE UG Equipment Grants on First Try",
     description: "The ASHRAE BUET Student Branch secured two ASHRAE Undergraduate Program Equipment Grants on its first-ever application, receiving a total of USD 1,370 in funding in recognition of innovative, student-led projects in sustainable cooling systems and heat exchanger design.",
-    image: "https://res.cloudinary.com/dll7cjob6/image/upload/v1773785523/1_nnjhr9.jpg",
+    image: "https://res.cloudinary.com/dll7cjob6/image/upload/v1774292611/1_jcmf9h.webp",
     date: "April 2025",
     location: "ASHRAE Headquarters"
   },

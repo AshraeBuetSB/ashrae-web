@@ -64,8 +64,8 @@ const activityDetails =
           'ASHRAE BUET Student Branch Executive Committee', 'ASHRAE Officials'
         ],
         gallery: [
-          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785523/1_nnjhr9.jpg',
-          'https://res.cloudinary.com/dll7cjob6/image/upload/v1773785529/Spiral-Plate-Grant_Team_hjsmn1.jpg'
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1774292611/1_jcmf9h.webp',
+          'https://res.cloudinary.com/dll7cjob6/image/upload/v1774292611/Spiral-Plate-Grant_Team_xcbtjy.webp'
         ],
         key_moments: [
           'Official announcement of the grant.',
