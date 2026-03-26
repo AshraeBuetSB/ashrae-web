@@ -3,10 +3,10 @@ import AnimatedSection from '../components/AnimatedSection';
 
 export default function CTA() {
     return (
-        <div>
+        <div id='connect'>
             {/* CTA Section */}
             <AnimatedSection className="py-20 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-4xl mx-auto text-center" id='connect'>
+                <div className="max-w-4xl mx-auto text-center">
                 <motion.h2 
                     className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight"
                     initial={{ opacity: 0, y: 30 }}
@@ -40,13 +40,6 @@ export default function CTA() {
                     > <a href="mailto:ashraebuetsb@gmail.com">
                     ashraebuetsb@gmail.com
                     </a></motion.button>
- <motion.button 
-                    className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
-                    whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
-                    whileTap={{ scale: 0.95 }}
-                    >
-                    +8801012345678
-                    </motion.button>
                     
                     {/*<motion.button 
                     className="bg-transparent border-2 border-white/30 hover:border-white hover:bg-white/10 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm"
