@@ -72,7 +72,7 @@ export default function Header() {
 
                 
                 <div className="flex items-center space-x-4">
-                    <a href='#connect'>
+                    <a href='/home#connect'>
                         <motion.button 
                         className="hidden sm:block bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-200 shadow-lg"
                         whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(59, 130, 246, 0.3)" }}
