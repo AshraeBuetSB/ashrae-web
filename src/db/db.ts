@@ -1,438 +1,401 @@
-const db = [
+export interface Member {
+    name: string;
+    designation: string;
+    image: string;
+    color: string;
+}
+
+export interface Panel {
+    id: string;
+    year: string;
+    members: Member[];
+}
+
+const db: Panel[] = [
     {
-        name: "Dr. Md. Ashiqur Rahman, Professor, Department of Mechanical Engineering",
-        designation: "Advisor",
-        image: "https://i.postimg.cc/FsxDmh98/Dr-Md-Ashiqur-Rahman-Advisor-png.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
+        id: "second",
+        year: "2025-2026",
+        members: [
+            {
+                name: "Dr. Md. Ashiqur Rahman, Professor, Department of Mechanical Engineering",
+                designation: "Advisor",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542375/Dr_Md_Ashiqur_Rahman_Advisor.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Luban Mehda",
+                designation: "President",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542292/Md_Luban_Mehda_President.webp",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Arafath Rahman Nishat",
+                designation: "Vice President",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542308/Arafath_Rahman_Nishat_Vice_President.webp",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Safwan Sakib",
+                designation: "Treasurer",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542336/Safwan_Sakib_Treasurer.webp",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Nahian Prapon Jaman",
+                designation: "Secretary",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542295/Nahian_Prapon_Jaman_Secretary.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Lamia Tasnim Suhi",
+                designation: "Chair, Competitions, Scholarships & Research",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542350/Lamia_Tasnim_Suhi_Chair_Competitions_Scholarships_Research.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Nafisa Ferdous Orin",
+                designation: "Co-chair, Competitions, Scholarships & Research",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542354/Nafisa_Ferdous_Orin_Co_chair_Competitions_Scholarships_Research.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Shakib Arafat Tapu",
+                designation: "Co-chair, Competitions, Scholarships & Research",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542328/Shakib_Arafat_Tapu_Co_chair_Competitions_Scholarships_Research.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Assfee Mosharraf Bhuiyan",
+                designation: "Co-chair, Competitions, Scholarships & Research",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542321/Assfee_Mosharraf_Bhuiyan_Co_chair_Competitions_Scholarships_Research.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "S.M. Hasibur Rahman",
+                designation: "Chair, Trip & Conference Travel",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542368/S_M_Hasibur_Rahman_Chair_Trip_Conference_Travel.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Solaiman Hossain",
+                designation: "Co-chair, Trip & Conference Travel",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542364/Md_Solaiman_Hossain_Co_chair_Trip_Conference_Travel.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Arman Hassan",
+                designation: "Co-chair, Trip & Conference Travel",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542376/Arman_Hassan_Co_chair_Trip_Conference_Travel.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Naimul Hasan Nashid",
+                designation: "Co-chair, Trip & Conference Travel",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542360/Md_Naimul_Hasan_Nashid_Co_chair_Trip_Conference_Travel.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Samayala Rahman Oyshie",
+                designation: "Co-chair, Trip & Conference Travel",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542287/Samayala_Rahman_Oyshie_Co_chair_Trip_Conference_Travel.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Farzana Yesamin Sholly",
+                designation: "Manager, Sponsorship Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542274/Farzana_Yesamin_Sholly_Manager_Sponsorship_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Ali Al Aftab",
+                designation: "Manager, Sponsorship Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542298/Md_Ali_Al_Aftab_Manager_Sponsorship_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Mahfuzur Rahman",
+                designation: "Manager, Public Communications Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542324/Md_Mahfuzur_Rahman_Manager_Public_Communications_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Progga Parmita Rahman",
+                designation: "Manager, Public Communications Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542356/Progga_Parmita_Rahman_Manager_Public_Communications_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Yeamin Hossain",
+                designation: "Manager, Logistics Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542317/Md_Yeamin_Hossain_Manager_Logistics_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Usman Gani Pranto",
+                designation: "Manager, Logistics Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542315/Usman_Gani_Pranto_Manager_Logistics_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Nabila Mustary",
+                designation: "Assistant Manager, Sponsorship Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542363/Nabila_Mustary_Assistant_Manager_Sponsorship_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Shahajal Islam Pial",
+                designation: "Assistant Manager, Sponsorship Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542303/Md_Shahajal_Islam_Pial_Assistant_Manager_Sponsorship_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Tanzila Mozumder Shally",
+                designation: "Assistant Manager, Sponsorship Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542366/Tanzila_Mozumder_Shally_Assistant_Manager_Sponsorship_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Jarin Tasnim Mahnur",
+                designation: "Assistant Manager, Sponsorship Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542276/Jarin_Tasnim_Mahnur_Assistant_Manager_Sponsorship_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Ahmed Reza Junaid",
+                designation: "Assistant Manager, Public Communications Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542330/Ahmed_Reza_Junaid_Assistant_Manager_Public_Communications_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Sakib Hasan Kafi",
+                designation: "Assistant Manager, Public Communications Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542265/Md_Sakib_Hasan_Kafi_Assistant_Manager_Public_Communications_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Salman Rakib Sunny",
+                designation: "Assistant Manager, Public Communications Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542268/Salman_Rakib_Sunny_Assistant_Manager_Public_Communications_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Rifa Rafia",
+                designation: "Assistant Manager, Public Communications Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542338/Rifa_Rafia_Assistant_Manager_Public_Communications_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Nasim Khan",
+                designation: "Assistant Manager, Logistics Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542350/Md_Nasim_Khan_Assistant_Manager_Logistics_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Fahim Faisal",
+                designation: "Assistant Manager, Logistics Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542312/Fahim_Faisal_Assistant_Manager_Logistics_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Ariful Islam Raju",
+                designation: "Assistant Manager, Logistics Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542355/Md_Ariful_Islam_Raju_Assistant_Manager_Logistics_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Ahmed Shofi Ratul",
+                designation: "Assistant Manager, Logistics Team",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542305/Ahmed_Shofi_Ratul_Assistant_Manager_Logistics_Team.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Shahriar Adnan Adib",
+                designation: "Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542346/Shahriar_Adnan_Adib_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md. Mobin Al Nahian",
+                designation: "Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542322/Md_Mobin_Al_Nahlan_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Mahadi Ahmed",
+                designation: "Associate Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542300/Mahadi_Ahmed_Associate_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Al Jawad",
+                designation: "Associate Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542310/Al_Jawad_Associate_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Abdullah Ibne Nasiruddin (Sheehan)",
+                designation: "Associate Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542356/Abdullah_Ibne_Nasiruddin_Sheehan__Associate_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Aditya Das",
+                designation: "Associate Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542263/Aditya_Das_Associate_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Aryan Nafis",
+                designation: "Associate Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542283/Aryan_Nafis_Associate_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Arnob Das",
+                designation: "Assistant Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542290/Arnob_Das_Assistant_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Jubayer Ahmed Udoy",
+                designation: "Assistant Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542261/Jubayer_Ahmed_Udoy_Assistant_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Md Istiaq Ahmed Khan",
+                designation: "Assistant Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542342/Md_Istiaq_Ahmed_Khan_Assistant_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Muhammad Farbeen Ferdous (Twaseen)",
+                designation: "Assistant Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542271/Muhammad_Farbeen_Ferdous_Twaseen__Assistant_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Maxudur Rahman Chowdhury (Samee)",
+                designation: "Assistant Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542281/Maxudur_Rahman_Chowdhury_Samee__Assistant_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Abid Ahsan",
+                designation: "Assistant Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542335/Abid_Ahsan_Assistant_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            },
+            {
+                name: "Asfi Raihan",
+                designation: "Assistant Coordinator",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542374/Asfi_Raihan_Assistant_Coordinator.png",
+                color: "from-green-500 to-emerald-500",
+            }
+        ]
     },
     {
-        name: "Md. Luban Mehda",
-        designation: "President",
-        image: "https://i.postimg.cc/MT3Yq2gz/Md-Lubnan-Mehda-President.webp",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Arafath Rahman Nishat",
-        designation: "Vice President",
-        image: "https://i.postimg.cc/W317BbW9/Arafath-Rahman-Nishat-Vice-President.webp",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Safwan Sakib",
-        designation: "Treasurer",
-        image: "https://i.postimg.cc/pdZZcnZh/Safwan-Sakib-Treasurer.webp",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Nahian Prapon Jaman",
-        designation: "Secretary",
-        image: "https://i.postimg.cc/vT1tm2df/Nahiyan-Prapon-Jaman-Secretary.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Lamia Tasnim Suhi",
-        designation: "Chair, Competitions, Scholarships & Research",
-        image: "https://i.postimg.cc/HLBw91Yb/Lamia-Tasnim-Suhi-Chair-Competitions-Scholarships-Research.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Nafisa Ferdous Orin",
-        designation: "Co-chair, Competitions, Scholarships & Research",
-        image: "https://i.postimg.cc/43JvcxgJ/Nafisa-Ferdous-Co-Chair-Competitions-Scholarships-Research.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Shakib Arafat Tapu",
-        designation: "Co-chair, Competitions, Scholarships & Research",
-        image: "https://i.postimg.cc/d138WN3p/Shakib-Arafat-Tapu-Co-Chair-Competitions-Scholarships-Research.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Assfee Mosharraf Bhuiyan",
-        designation: "Co-chair, Competitions, Scholarships & Research",
-        image: "https://i.postimg.cc/KzWtC7gz/Aasfee-Mosharraf-Bhuiyan-Co-Chair-Competitions-Scholarships-Research.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "S.M. Hasibur Rahman",
-        designation: "Chair, Trip & Conference Travel",
-        image: "https://i.postimg.cc/R0VsBRqQ/S-M-Hasibur-Rahman-Chair-Trip-conference-Travel.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md. Solaiman Hossain",
-        designation: "Co-chair, Trip & Conference Travel",
-        image: "https://i.postimg.cc/JnspyzNs/Md-Solaiman-Hossain-Co-Chair-Trip-Conference-Travel.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Arman Hassan",
-        designation: "Co-chair, Trip & Conference Travel",
-        image: "https://i.postimg.cc/fb2HT994/Md-Arman-Hasan-Co-Chair-Trip-Conference-Travel.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md. Naimul Hasan Nashid",
-        designation: "Co-chair, Trip & Conference Travel",
-        image: "https://i.postimg.cc/TwBCnv0C/Md-Naimul-Hasan-Nashid-Co-Chair-Trip-Conference-Travel.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Samayala Rahman Oyshie",
-        designation: "Co-chair, Trip & Conference Travel",
-        image: "https://i.postimg.cc/SR8Vr1tq/Samayala-Rahman-Oyshie-Co-Chair-Trips-Conference-Travel.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Farzana Yesamin Sholly",
-        designation: "Manager, Sponsorship Team",
-        image: "https://i.postimg.cc/4N2nP4Vf/Farzana-Yeasmin-Shoily-Manager-Sponsorship-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md. Ali Al Aftab",
-        designation: "Manager, Sponsorship Team",
-        image: "https://i.postimg.cc/Z59nMkxr/Md-Ali-Al-Aftab-Manager-Sponsorship-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md. Mahfuzur Rahman",
-        designation: "Manager, Public Communications Team",
-        image: "https://i.postimg.cc/CMQV6RPQ/Md-Mahfuzur-Rahman-Manager-Public-Communication-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Progga Parmita Rahman",
-        designation: "Manager, Public Communications Team",
-        image: "https://i.postimg.cc/0jFR64Ks/Progga-Parmita-Rahman-Manager-Public-Communication-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md. Yeamin Hossain",
-        designation: "Manager, Logistics Team",
-        image: "https://i.postimg.cc/zvc5CBM4/Md-Yeamin-Hossain-Manager-Logistics-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Usman Gani Pranto",
-        designation: "Manager, Logistics Team",
-        image: "https://i.postimg.cc/8P7T1RfG/Usman-Gani-Pranto-Manager-Logistics-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Nabila Mustary",
-        designation: "Assistant Manager, Sponsorship Team",
-        image: "https://i.postimg.cc/BndbWhmR/Nabila-Mustary-Assistant-Manager-Sponsorship-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md. Shahajal Islam Pial",
-        designation: "Assistant Manager, Sponsorship Team",
-        image: "https://i.postimg.cc/5N268QHK/Md-Shahajalal-Islam-Pial-Assistant-Manager-Sponsorship-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Tanzila Mozumder Shally",
-        designation: "Assistant Manager, Sponsorship Team",
-        image: "https://i.postimg.cc/jjP5Rz92/Tanzila-Mazumder-Shaily-Assistant-Manager-Sponsorship-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Jarin Tasnim Mahnur",
-        designation: "Assistant Manager, Sponsorship Team",
-        image: "https://i.postimg.cc/66087fQG/Jarin-Tasnim-Mahnur-Assistant-Manager-Sponsership-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Ahmed Reza Junaid",
-        designation: "Assistant Manager, Public Communications Team",
-        image: "https://i.postimg.cc/mDdG4kbh/Ahmed-Reza-Junaid-Assistant-Manager-Public-Communication-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md. Sakib Hasan Kafi",
-        designation: "Assistant Manager, Public Communications Team",
-        image: "https://i.postimg.cc/0jb1yvQn/Md-Sakib-Hasan-Kafi-Assistant-Manager-Public-Communicatiion-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Salman Rakib Sunny",
-        designation: "Assistant Manager, Public Communications Team",
-        image: "https://i.postimg.cc/kgrPqkdN/Salman-Rakib-Sunny-Assistant-Manager-Public-Communication-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Rifa Rafia",
-        designation: "Assistant Manager, Public Communications Team",
-        image: "https://i.postimg.cc/RVJzrv2V/Rifa-Rafia-Assistant-Manager-Public-Communication-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md. Nasim Khan",
-        designation: "Assistant Manager, Logistics Team",
-        image: "https://i.postimg.cc/Y2npKn98/Nasim-Khan-Assistant-Manager-Logistics-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Fahim Faisal",
-        designation: "Assistant Manager, Logistics Team",
-        image: "https://i.postimg.cc/NFMB2TN1/Fahim-Faisal-Assitant-Manager-Logistic-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md. Ariful Islam Raju",
-        designation: "Assistant Manager, Logistics Team",
-        image: "https://i.postimg.cc/d1nJ0n9s/Md-Ariful-Islam-Raju-Assitant-Manager-Logistics-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Ahmed Shofi Ratul",
-        designation: "Assistant Manager, Logistics Team",
-        image: "https://i.postimg.cc/qRpk0WyD/Ahmed-Shofi-Ratul-Assistant-Manager-Logistics-Team.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Shahriar Adnan Adib",
-        designation: "Coordinator",
-        image: "https://i.postimg.cc/pd27dvcj/Shahriar-Adnan-Adib-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md. Mobin Al Nahlan",
-        designation: "Coordinator",
-        image: "https://i.postimg.cc/cL72ZChZ/Md-Mobin-Al-Nahian-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Mahadi Ahmed",
-        designation: "Associate Coordinator",
-        image: "https://i.postimg.cc/x1YYLWFf/Mahadi-Ahmed-Associate-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Al Jawad",
-        designation: "Associate Coordinator",
-        image: "https://i.postimg.cc/447JGv9g/Al-Jawad-Associate-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Abdullah Ibne Nasiruddin (Sheehan)",
-        designation: "Associate Coordinator",
-        image: "https://i.postimg.cc/3W5fQQDd/Abdullah-Ibne-Nasiruddin-Sheehan-Associate-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Aditya Das",
-        designation: "Associate Coordinator",
-        image: "https://i.postimg.cc/2jsCSqQB/Adittya-Das-Associate-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Aryan Nafis",
-        designation: "Associate Coordinator",
-        image: "https://i.postimg.cc/SNck2yd1/Aryan-Nafis-Associate-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Arnob Das",
-        designation: "Assistant Coordinator",
-        image: "https://i.postimg.cc/63Z1jQyD/Arnob-Das-Assistant-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Jubayer Ahmed Udoy",
-        designation: "Assistant Coordinator",
-        image: "https://i.postimg.cc/fbJPdCZW/Jubayer-Ahmed-Udoy-Assistant-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Md Istiaq Ahmed Khan",
-        designation: "Assistant Coordinator",
-        image: "https://i.postimg.cc/bYQB1sXn/Md-Istiaq-Ahmed-Khan-Assistant-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Muhammad Farbeen Ferdous (Twaseen)",
-        designation: "Assistant Coordinator",
-        image: "https://i.postimg.cc/tCpmkpyM/Muhammad-Farbeen-Ferdous-Twaseen-Assistant-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Maxudur Rahman Chowdhury (Samee)",
-        designation: "Assistant Coordinator",
-        image: "https://i.postimg.cc/1Xc7SY0B/Maxudur-Rahman-Chowdhury-Samee-Assistant-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-    {
-        name: "Abid Ahsan",
-        designation: "Assistant Coordinator",
-        image: "https://i.postimg.cc/vmkNtnHr/Abid-Ahsan-Assistant-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-    },
-    {
-        name: "Asfi Raihan",
-        designation: "Assistant Coordinator",
-        image: "https://i.postimg.cc/fyhq6hdk/Asfi-Raihan-Assistant-Coordinator.png",
-        color: "from-green-500 to-emerald-500",
-        panel: "second"
-    },
-  // --- FIRST PANEL (New Members) ---
-    {
-        name: "Dr. Md. Ashiqur Rahman, Professor, Department of Mechanical Engineering",
-        designation: "Advisor",
-        image: "https://i.postimg.cc/FsxDmh98/Dr-Md-Ashiqur-Rahman-Advisor-png.png", // Reusing image from advisor
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Taskin Mehereen",
-        designation: "President",
-        image: "https://i.postimg.cc/5Yc4jvw8/Taskin-Mehereen-President.png", 
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Jubaer Jami",
-        designation: "Vice President",
-        image: "https://i.postimg.cc/PpGXNZmC/Jubaer-Jami-Vice-President.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Sahib Ur Rauf",
-        designation: "Treasurer",
-        image: "https://i.postimg.cc/BLWStDxK/Sahib-Ur-Rauf-Treasurer.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Nahid Shahriare",
-        designation: "Secretary",
-        image: "https://i.postimg.cc/R6rSqfct/Nahid-Shahriare-Secretary.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Afia Zaman",
-        designation: "Joint Secretary, Competitions Scholarships & Research",
-        image: "https://i.postimg.cc/1479NLch/Afia-Zaman-Joint-Secretary-Competitions-Scholarships-Research.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Iltimas Wasek",
-        designation: "Joint Secretary, Trips & Conference",
-        image: "https://i.postimg.cc/fkqw06jN/Iltimas-Wasek-Joint-Secretary-Trips-Conference.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Atia Ashrafy",
-        designation: "Assistant Joint Secretary, Trips & Conferences",
-        image: "https://i.postimg.cc/sGggRzYm/Atia-Ashrafy-Assistant-Joint-Secretary-Trips-Conferences.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Kaifa Samsad",
-        designation: "Assistant Joint Secretary, Trips & Conferences",
-        image: "https://i.postimg.cc/CnxxV0G4/Kaifa-Samsad-Assistant-Joint-Secretary-Trips-Conferences.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Arnab Roy",
-        designation: "Assistant Joint Secretary, Competitions Scholarships & Research",
-        image: "https://i.postimg.cc/Zv55hm88/Arnab-Roy-Assistant-Joint-Secretary-Competitions-Scholarships-Research.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Afrina Ayrin",
-        designation: "Assistant Joint Secretary, Competitions Scholarships & Research",
-        image: "https://i.postimg.cc/V0kkcwq4/Afrina-Ayrin-Assistant-Joint-Secretary-Competitions-Scholarships-Research.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Md Luban Mehda",
-        designation: "Coordinator, Logistics",
-        image: "https://i.postimg.cc/N2Kv4j8D/Md-Lubnan-Mehda-Coordinator-Logistics.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Arafath Rahman",
-        designation: "Coordinator, Logistics",
-        image: "https://i.postimg.cc/ZvWzc5P8/Arafath-Rahman-Nishat-Coordinator-Logistics.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Nafisa Ferdous",
-        designation: "Coordinator, Public Communications",
-        image: "https://i.postimg.cc/tnsG54dz/Nafisa-Ferdous-Coordinator-Public-Communications.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Prapon Jaman",
-        designation: "Coordinator, Sponsorship",
-        image: "https://i.postimg.cc/BPjfgn5g/Prapon-Jaman-Coordinator-Sponsorship.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
-    },
-    {
-        name: "Safwan Sakib",
-        designation: "Coordinator, Sponsorship",
-        image: "https://i.postimg.cc/wR1YVj5c/Safwan-Sakib-Coordinator-Sponsorship.png",
-        color: "from-blue-500 to-cyan-500",
-        panel: "first"
+        id: "first",
+        year: "2024-2025",
+        members: [
+            {
+                name: "Dr. Md. Ashiqur Rahman, Professor, Department of Mechanical Engineering",
+                designation: "Advisor",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542375/Dr_Md_Ashiqur_Rahman_Advisor.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Taskin Mehereen",
+                designation: "President",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541212/Taskin_Mehereen_President.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Jubaer Jami",
+                designation: "Vice President",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541215/Jubaer_Jami_Vice_President.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Sahib Ur Rauf",
+                designation: "Treasurer",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541210/Sahib_Ur_Rauf_Treasurer.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Nahid Shahriare",
+                designation: "Secretary",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541211/Nahid_Shahriare_Secretary.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Afia Zaman",
+                designation: "Joint Secretary, Competitions Scholarships & Research",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541215/Afia_Zaman_Joint_Secretary_Competitions_Scholarships_Research.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Iltimas Wasek",
+                designation: "Joint Secretary, Trips & Conference",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541209/Iltimas_Wasek_Joint_Secretary_Trips_Conference.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Atia Ashrafy",
+                designation: "Assistant Joint Secretary, Trips & Conferences",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541209/Atia_Ashrafy_Assistant_Joint_Secretary_Trips_Conferences.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Kaifa Samsad",
+                designation: "Assistant Joint Secretary, Trips & Conferences",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541217/Kaifa_Samsad_Assistant_Joint_Secretary_Trips_Conferences.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Arnab Roy",
+                designation: "Assistant Joint Secretary, Competitions Scholarships & Research",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541214/Arnab_Roy_Assistant_Joint_Secretary_Competitions_Scholarships_Research.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Afrina Ayrin",
+                designation: "Assistant Joint Secretary, Competitions Scholarships & Research",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541210/Afrina_Ayrin_Assistant_Joint_Secretary_Competitions_Scholarships_Research.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Md Luban Mehda",
+                designation: "Coordinator, Logistics",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541216/Md_Luban_Mehda_Coordinator_Logistics.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Arafath Rahman",
+                designation: "Coordinator, Logistics",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541214/Arafath_Rahman_Coordinator_Logistics.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Nafisa Ferdous",
+                designation: "Coordinator, Public Communications",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541208/Nafisa_Ferdous_Coordinator_Public_Communications.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Prapon Jaman",
+                designation: "Coordinator, Sponsorship",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541208/Prapon_Jaman_Coordinator_Sponsorship.png",
+                color: "from-blue-500 to-cyan-500",
+            },
+            {
+                name: "Safwan Sakib",
+                designation: "Coordinator, Sponsorship",
+                image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774541218/Safwan_Sakib_Coordinator_Sponsorship.png",
+                color: "from-blue-500 to-cyan-500",
+            }
+        ]
     }
-]
+];
 
 export default db;

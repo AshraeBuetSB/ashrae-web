@@ -27,3 +27,6 @@ dist-ssr/
 *.njsproj
 *.sln
 *.sw?
+
+#media files
+localmedia/

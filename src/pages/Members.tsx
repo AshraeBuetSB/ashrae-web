@@ -40,7 +40,9 @@ const groups = [
 ];
 
 export default function Members() {
-  const [activePanel, setActivePanel] = useState('second'); // Default to current members
+  const [activePanelId, setActivePanelId] = useState(db[0].id); // Default to latest panel
+
+  const activePanel = db.find(panel => panel.id === activePanelId) || db[0];
 
   return (
     <div>
@@ -61,20 +63,17 @@ export default function Members() {
                   </span>
                 </motion.h1>
 
-                {/* Tab Switcher Buttons - Matches your image styling */}
+                {/* Tab Switcher Buttons - Dynamically generated from db */}
                 <div className="flex justify-center gap-4 mb-16">
-                  <button 
-                    onClick={() => setActivePanel('first')}
-                    className={`px-8 py-3 rounded-full font-bold transition-all duration-300 ${activePanel === 'first' ? 'bg-white text-black scale-105 shadow-xl' : 'bg-white/10 text-white hover:bg-white/20'}`}
-                  >
-                    2024-2025
-                  </button>
-                  <button 
-                    onClick={() => setActivePanel('second')}
-                    className={`px-8 py-3 rounded-full font-bold transition-all duration-300 ${activePanel === 'second' ? 'bg-white text-black scale-105 shadow-xl' : 'bg-white/10 text-white hover:bg-white/20'}`}
-                  >
-                    2025-2026
-                  </button>
+                  {db.map((panel) => (
+                    <button 
+                      key={panel.id}
+                      onClick={() => setActivePanelId(panel.id)}
+                      className={`px-8 py-3 rounded-full font-bold transition-all duration-300 ${activePanelId === panel.id ? 'bg-white text-black scale-105 shadow-xl' : 'bg-white/10 text-white hover:bg-white/20'}`}
+                    >
+                      {panel.year}
+                    </button>
+                  ))}
                 </div>
               </motion.div>
             </div>
@@ -82,16 +81,16 @@ export default function Members() {
 
           <AnimatePresence mode="wait">
             <motion.div
-              key={activePanel}
+              key={activePanelId}
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.5 }}
             >
-              {groups.map((group, groupIndex) => {
-                // Filters by designation AND current tab
-                const members = db.filter(member => 
-                  group.designations.includes(member.designation) && member.panel === activePanel
+              {groups.map((group, _groupIndex) => {
+                // Filters by designation within the active panel
+                const members = activePanel.members.filter(member => 
+                  group.designations.includes(member.designation)
                 );
 
                 if (members.length === 0) return null;
@@ -116,45 +115,13 @@ export default function Members() {
                               className={`rounded-full overflow-hidden bg-gradient-to-r ${member.color} p-1`}
                               style={{ width: '140px', height: '140px' }}
                             >
-                              {/* Restored your specific image scaling logic */}
-                              {(groupIndex > 1 || (groupIndex == 1 && index == 3)) && activePanel=="second" &&
-                                <div className="rounded-full overflow-hidden bg-white" style={{ width: '100%', height: '100%' }}>
-                                  <img
-                                    src={member.image}
-                                    alt={member.name}
-                                    style={{
-                                      width: '190%',
-                                      height: '190%',
-                                      objectFit: 'cover',
-                                      objectPosition: 'center',
-                                      transform: 'translate(0%, -20%)'
-                                    }}
-                                  />
-                                </div>
-                              }
-                              {(groupIndex >= 1) && activePanel=="first" &&
-                                <div className="rounded-full overflow-hidden bg-white" style={{ width: '100%', height: '100%' }}>
-                                  <img
-                                    src={member.image}
-                                    alt={member.name}
-                                    style={{
-                                      width: '190%',
-                                      height: '190%',
-                                      objectFit: 'cover',
-                                      objectPosition: '80% 50%',
-                                      transform: 'translate(0%, -20%)'
-                                    }}
-                                  />
-                                </div>
-                              }
-                              {((groupIndex <= 1 && activePanel=="second") || (groupIndex < 1 && activePanel=="first")) &&
-                                <div className="rounded-full overflow-hidden bg-white" style={{ width: '100%', height: '100%' }}>
+                              <div className="rounded-full overflow-hidden bg-white" style={{ width: '100%', height: '100%' }}>
                                   <img
                                     src={member.image}
                                     alt={member.name}
                                     className="w-full h-full object-cover object-center"
                                   />
-                                </div>}
+                              </div>
                             </div>
                           </div>
                           <div>
