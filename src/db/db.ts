@@ -101,7 +101,7 @@ const db: Panel[] = [
                 color: "from-green-500 to-emerald-500",
             },
             {
-                name: "Farzana Yesamin Sholly",
+                name: "Farzana Yeasmin Shoily",
                 designation: "Manager, Sponsorship Team",
                 image: "https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542274/Farzana_Yesamin_Sholly_Manager_Sponsorship_Team.png",
                 color: "from-green-500 to-emerald-500",
