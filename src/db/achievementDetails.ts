@@ -54,9 +54,18 @@ const activityDetails = {
         the other on high-efficiency heat exchangers for industrial use. These victories highlight the branch’s rapid growth and its commitment to practical, sustainable 
         HVAC&R innovation.`,
     date: 'April 2025',
-    recipients: [
-      'Taskin Mehereen, Afrina Ayrin Nitu, Asif Shorforaj Chowdhury, and Arif Sadik Riddhie - $1,110',
-      'Arafath Rahman Nishat, Anurag Dev, Aion Aich, and Aniruddho Biswas - $260',
+
+    awards: [
+      {
+        team:
+            'Taskin Mehereen, Afrina Ayrin Nitu, Asif Shorforaj Chowdhury, and Arif Sadik Riddhie',
+        amount: '$1,110'
+      },
+      {
+        team:
+            'Arafath Rahman Nishat, Anurag Dev, Aion Aich, and Aniruddho Biswas',
+        amount: '$260'
+      }
     ],
     gallery: [
       'https://res.cloudinary.com/dll7cjob6/image/upload/v1774292611/1_jcmf9h.webp',

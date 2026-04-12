@@ -4,7 +4,7 @@ const activities = [
     slug: "society-scholarship-2026",
     title: "Secures Prestigious 2025-2026 Society Scholarships",
     description: "PH",
-    image: "https://res.cloudinary.com/dll7cjob6/image/upload/v1774292872/1_hoz5im.webp",
+    image: "https://res.cloudinary.com/dll7cjob6/image/upload/v1776029648/1-1_gwjiae.webp",
     date: "March 2026",
   },
   {

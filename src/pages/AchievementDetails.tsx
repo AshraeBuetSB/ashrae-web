@@ -2,9 +2,19 @@ import { useParams } from 'react-router-dom';
 import achievementDetails from '../db/achievementDetails';
 import { Calendar } from 'lucide-react';
 
+interface Achievement {
+  title: string;
+  overview: string;
+  date: string;
+  recipients?: string[];
+  awards?: { team: string; amount: string }[];
+  gallery?: string[];
+  key_takeouts?: string[];
+}
+
 export default function AchievementDetail() {
   const { slug } = useParams();
-  const achievement = achievementDetails[slug as keyof typeof achievementDetails];
+  const achievement = achievementDetails[slug as keyof typeof achievementDetails] as Achievement;
 
   if (!achievement) {
     return <div className="text-white p-8">Achievement not found.</div>;
@@ -36,6 +46,20 @@ export default function AchievementDetail() {
                 <li key={idx}>{recipients}</li>
                 ))}
             </ul>
+            </div>
+        )}
+
+        {achievement.awards && (
+            <div className="mb-6">
+            <h2 className="text-2xl font-semibold mb-2">Awards</h2>
+            <div className="space-y-4">
+                {achievement.awards.map((award, idx) => (
+                <div key={idx} className="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 p-4 rounded-lg border border-blue-500/30">
+                    <p className="text-gray-300 mb-2">{award.team}</p>
+                    <p className="text-green-400 font-bold text-xl">{award.amount}</p>
+                </div>
+                ))}
+            </div>
             </div>
         )}
 
