@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
+import { Mail, Linkedin, Facebook } from 'lucide-react';
 
 export default function CTA() {
     return (
@@ -27,19 +28,45 @@ export default function CTA() {
                 </motion.p>
                 
                 <motion.div 
-                    className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+                    className="flex gap-6 justify-center items-center"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.4 }}
                 >
-                    <motion.button 
-                    className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
-                    whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
-                    whileTap={{ scale: 0.95 }}
-                    > <a href="mailto:ashraebuetsb@gmail.com">
-                    ashraebuetsb@gmail.com
-                    </a></motion.button>
+                    <motion.a 
+                        href="mailto:ashraebuetsb@gmail.com"
+                        className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white p-4 rounded-full transition-all duration-300 shadow-xl flex items-center justify-center"
+                        whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
+                        whileTap={{ scale: 0.95 }}
+                        aria-label="Email us"
+                    >
+                        <Mail size={24} />
+                    </motion.a>
+                    
+                    <motion.a 
+                        href="https://bd.linkedin.com/company/ashrae-buet-student-branch"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white p-4 rounded-full transition-all duration-300 shadow-xl flex items-center justify-center"
+                        whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
+                        whileTap={{ scale: 0.95 }}
+                        aria-label="LinkedIn"
+                    >
+                        <Linkedin size={24} />
+                    </motion.a>
+                    
+                    <motion.a 
+                        href="https://www.facebook.com/share/18SgAaieGU/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white p-4 rounded-full transition-all duration-300 shadow-xl flex items-center justify-center"
+                        whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
+                        whileTap={{ scale: 0.95 }}
+                        aria-label="Facebook"
+                    >
+                        <Facebook size={24} />
+                    </motion.a>
                     
                     {/*<motion.button 
                     className="bg-transparent border-2 border-white/30 hover:border-white hover:bg-white/10 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-sm"

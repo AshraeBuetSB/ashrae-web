@@ -66,15 +66,15 @@ export default function ChapterInfo() {
                 >
                     <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                     <img 
-                        src="./WhatsApp Image 2025-06-19 at 18.48.51_5ea854a3.jpg"
+                        src="https://res.cloudinary.com/dll7cjob6/image/upload/v1773791851/1_xdhiag.webp"
                         alt="ASHRAE BUET Student Chapter Activities"
                         className="w-full h-96 object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                    <div className="absolute bottom-6 left-6 text-white">
+                    {/* <div className="absolute bottom-6 left-6 text-white">
                         <p className="text-sm font-medium mb-1">Student Chapter Event 2025</p>
                         <p className="text-lg font-bold">Learning Through Innovation</p>
-                    </div>
+                    </div> */}
                     </div>
                     
                     {/* Floating stats */}

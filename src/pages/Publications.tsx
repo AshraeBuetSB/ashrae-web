@@ -92,7 +92,7 @@ export default function Publications() {
 
                   <div className="flex items-center justify-between mt-6 pt-6 border-t border-white/10">
                     <span className="text-sm text-gray-400 italic">
-                      Published in {pub.journal}
+                      {pub.journal}
                     </span>
                     <a 
                       href={pub.link}

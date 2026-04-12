@@ -55,8 +55,8 @@ const activityDetails = {
         HVAC&R innovation.`,
     date: 'April 2025',
     recipients: [
-      'Taskin Mehereen, Afrina Ayrin Nitu, Asif Shorforaj Chowdhury, and Arif Sadik Riddhie.',
-      'Arafath Rahman Nishat, Anurag Dev, Aion Aich, and Aniruddho Biswas.',
+      'Taskin Mehereen, Afrina Ayrin Nitu, Asif Shorforaj Chowdhury, and Arif Sadik Riddhie - $1,110',
+      'Arafath Rahman Nishat, Anurag Dev, Aion Aich, and Aniruddho Biswas - $260',
     ],
     gallery: [
       'https://res.cloudinary.com/dll7cjob6/image/upload/v1774292611/1_jcmf9h.webp',
