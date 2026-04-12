@@ -93,7 +93,7 @@ export default function Activities() {
       </AnimatedSection>
 
       {/* Statistics Section */}
-      <AnimatedSection className="py-16 px-4 sm:px-6 lg:px-8 bg-black/20 backdrop-blur-sm">
+      {/* <AnimatedSection className="py-16 px-4 sm:px-6 lg:px-8 bg-black/20 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -133,10 +133,10 @@ export default function Activities() {
             ))}
           </div>
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* Call to Action */}
-      <AnimatedSection className="py-16 px-4 sm:px-6 lg:px-8">
+      {/* <AnimatedSection className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h2 
             className="text-3xl md:text-4xl font-bold mb-6 text-white leading-tight"
@@ -176,7 +176,7 @@ export default function Activities() {
           </motion.div>
           
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
     </div>
   );
 }

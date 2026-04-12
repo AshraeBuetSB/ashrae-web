@@ -66,7 +66,7 @@ export default function ChapterInfo() {
                 >
                     <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                     <img 
-                        src="https://res.cloudinary.com/dll7cjob6/image/upload/v1773791851/1_xdhiag.webp"
+                        src="https://res.cloudinary.com/dll7cjob6/image/upload/v1773785526/1_k2ruu2.webp"
                         alt="ASHRAE BUET Student Chapter Activities"
                         className="w-full h-96 object-cover"
                     />

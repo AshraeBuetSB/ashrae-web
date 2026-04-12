@@ -88,7 +88,7 @@ export default function Achievements() {
         </div>
       </AnimatedSection>
 
-      {/* Statistics Section */}
+      {/* Statistics Section
       <AnimatedSection className="py-16 px-4 sm:px-6 lg:px-8 bg-black/20 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -129,9 +129,9 @@ export default function Achievements() {
             ))}
           </div>
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
 
-      {/* Call to Action */}
+      {/* Call to Action
       <AnimatedSection className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h2 
@@ -172,7 +172,7 @@ export default function Achievements() {
           </motion.div>
           
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
     </div>
   );
 }
