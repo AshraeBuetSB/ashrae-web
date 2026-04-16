@@ -56,7 +56,9 @@ export default function AchievementDetail() {
                 {achievement.awards.map((award, idx) => (
                 <div key={idx} className="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 p-4 rounded-lg border border-blue-500/30">
                     <p className="text-gray-300 mb-2">{award.team}</p>
-                    <p className="text-green-400 font-bold text-xl">{award.amount}</p>
+                    {award.amount && (
+                        <p className="text-green-400 font-bold text-xl">{award.amount}</p>
+                    )}
                 </div>
                 ))}
             </div>

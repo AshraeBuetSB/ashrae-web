@@ -6,6 +6,7 @@ const activities = [
     description: "PH",
     image: "https://res.cloudinary.com/dll7cjob6/image/upload/v1776029648/1-1_gwjiae.webp",
     date: "March 2026",
+    type: "scholarship",
   },
   {
     id:2,
@@ -14,6 +15,8 @@ const activities = [
     description: "PH",
     image: "https://res.cloudinary.com/dll7cjob6/image/upload/v1774293101/3_duoet2.webp",
     date: "January 2026",
+    type: "paper",
+    papers: 3
   },
   {
     id:3,
@@ -21,7 +24,9 @@ const activities = [
     title: "Secures Dual Undergraduate Equipment Grants on First Attempt",
     description: "PH",
     image: "https://res.cloudinary.com/dll7cjob6/image/upload/v1774292611/1_jcmf9h.webp",
-    date: "April 2025"
+    date: "April 2025",
+    type: "grant",
+    amount: "1,370"
   }
 
     

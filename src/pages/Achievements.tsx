@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Calendar, ArrowRight} from 'lucide-react';
+import { Calendar, ArrowRight, GraduationCap, FileText, Award} from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { Link } from 'react-router-dom';
 import achievements from '../db/achievements';
@@ -74,11 +74,32 @@ export default function Achievements() {
                     <div className="mt-auto" />
 
                     {/* Event Details */}
-                    <div className="space-y-3">
-                      <div className="flex items-center text-sm text-gray-400 mt-5">
+                    <div className="space-y-2 mt-3">
+                      <div className="flex items-center text-sm text-gray-400">
                         <Calendar className="w-4 h-4 mr-2 text-blue-400" />
                         <span>{achievement.date}</span>
                       </div>
+                      
+                      {achievement.type === 'scholarship' && (
+                        <div className="flex items-center text-sm text-gray-400">
+                          <GraduationCap className="w-4 h-4 mr-2 text-purple-400" />
+                          <span>Scholarship Received {achievement.amount ? `- $${achievement.amount}` : ''}</span>
+                        </div>
+                      )}
+                      
+                      {achievement.type === 'paper' && (
+                        <div className="flex items-center text-sm text-gray-400">
+                          <FileText className="w-4 h-4 mr-2 text-green-400" />
+                          <span>Papers Published {achievement.papers ? `(${achievement.papers})` : ''}</span>
+                        </div>
+                      )}
+
+                      {achievement.type === 'grant' && (
+                        <div className="flex items-center text-sm text-gray-400">
+                          <Award className="w-4 h-4 mr-2 text-yellow-400" />
+                          <span>Grant Received {achievement.amount ? `- $${achievement.amount}` : ''}</span>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </motion.div>
