@@ -25,7 +25,7 @@ export default function AdvisorQuote() {
                 >
                     <div className="relative">
                     <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden bg-gradient-to-r from-blue-400 to-green-400 p-1">
-                        <div className="w-full h-full rounded-full overflow-hidden bg-white">
+                        <div className="w-full h-full rounded-full overflow-hidden">
                         <img 
                             src="https://res.cloudinary.com/dll7cjob6/image/upload/v1776353915/Dr._Md._Ashiqur_Rahman_Advisor_u2ct4w.webp"
                             alt="Dr. Md. Ashiqur Rahman"
