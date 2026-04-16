@@ -1,6 +1,6 @@
 const activities = [
 {
-    id: 9,
+    id: 10,
     slug: "industry-tour-26",
     title: "2nd Industrial Visit to Elite Hi-Tech Industries Ltd",
     description: "Members of the ASHRAE BUET Student Branch participated in an industrial visit to Elite Hi-Tech Industries Ltd., Cumilla. The visit provided students with valuable firsthand exposure to the real-world manufacturing and processing of complete air conditioning units at a state-of-the-art industrial facility.",
@@ -8,6 +8,15 @@ const activities = [
     date: "January 2026",
     location: "Elite Hi-Tech Industries Ltd., Cumilla"
   },
+  {
+  "id": 9,
+  "slug": "ashrae-buet-gob-joint-meeting",
+  "title": "Joint General Meeting with GoB, ABC",
+  "description": "The ASHRAE BUET Student Branch hosted a Joint General Meeting with the ASHRAE Bangladesh Chapter Board of Governors. The session focused on expanding student engagement, professional development, and exploring HVAC&R industry trends through direct networking with chapter leadership and industry veterans.",
+  "image": "https://res.cloudinary.com/dll7cjob6/image/upload/v1776354794/616837104_122198867570495045_2768483565036174701_n_dn8ng8.webp",
+  "date": "January 2026",
+  "location": "ME Building, BUET"
+},
   {
     id: 8,
     slug: "icme-2025",

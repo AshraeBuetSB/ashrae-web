@@ -27,7 +27,7 @@ export default function AdvisorQuote() {
                     <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden bg-gradient-to-r from-blue-400 to-green-400 p-1">
                         <div className="w-full h-full rounded-full overflow-hidden bg-white">
                         <img 
-                            src="https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542375/Dr_Md_Ashiqur_Rahman_Advisor.png"
+                            src="https://res.cloudinary.com/dll7cjob6/image/upload/v1776353915/Dr._Md._Ashiqur_Rahman_Advisor_u2ct4w.webp"
                             alt="Dr. Md. Ashiqur Rahman"
                             className="w-full h-full object-cover object-[center_20%]"
                         />
@@ -58,8 +58,8 @@ export default function AdvisorQuote() {
                     
                     {/* Quote Text */}
                     <blockquote className="text-lg sm:text-xl text-gray-200 leading-relaxed mb-8 italic">
-                        "A quote from our advisor Ashiq Sir About ASHRAE and importance of student involvement"
-                    </blockquote>
+                        "Welcome, everyone! As the faculty advisor of ASHRAE BUET Student Branch, I am very excited and happy to see our chapter grow within a very short time. This student chapter serves as a bridge between academic learning and industry practice in HVAC&R via technical sessions, a range of events, and real-world projects. Stay curious, get involved, and let's make this ASHRAE BUET student branch impactful!"
+                        </blockquote>
                     
                     {/* Advisor Info */}
                     <div className="border-l-4 border-gradient-to-b from-blue-400 to-green-400 pl-6">
