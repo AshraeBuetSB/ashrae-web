@@ -289,7 +289,7 @@ const
                         color: 'from-green-500 to-emerald-500',
                       },
                       {
-                        name: 'Aditya Das',
+                        name: 'Adittya Das',
                         designation: 'Associate Coordinator',
                         image:
                             'https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542263/Aditya_Das_Associate_Coordinator.png',
