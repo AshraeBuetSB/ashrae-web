@@ -14,6 +14,7 @@ const ActivityDetail = lazy(() => import('./pages/ActivityDetails'));
 const Publications = lazy(() => import('./pages/Publications'));
 const Achievements = lazy(() => import('./pages/Achievements'));
 const AchievementDetail = lazy(() => import('./pages/AchievementDetails'));
+const DbGenerator = lazy(() => import('./pages/DbGenerator'));
 
 // Loading fallback component
 const LoadingFallback = () => (
@@ -40,6 +41,7 @@ function App() {
           <Route path="achievements" element={<Achievements />} />
           <Route path="achievements/:slug" element={<AchievementDetail />} />
         </Route>
+        <Route path="db-generator" element={<DbGenerator />} />
       </Routes>
     </Suspense>
   );
