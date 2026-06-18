@@ -41,7 +41,7 @@ function App() {
           <Route path="achievements" element={<Achievements />} />
           <Route path="achievements/:slug" element={<AchievementDetail />} />
         </Route>
-        <Route path="db-generator" element={<DbGenerator />} />
+        <Route path="tools/db-generator" element={<DbGenerator />} />
       </Routes>
     </Suspense>
   );
