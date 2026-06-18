@@ -565,7 +565,7 @@ ${takeouts}
 
       {/* Tabs list */}
       <div className="max-w-7xl mx-auto mb-10 flex justify-center">
-        <div className="flex flex-wrap p-1 gap-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-full max-w-3xl justify-center">
+        <div className="flex flex-wrap gap-2.5 max-w-3xl justify-center">
           {(['projects', 'activities', 'achievements', 'publications', 'members'] as Tab[]).map(tab => (
             <button
               key={tab}
