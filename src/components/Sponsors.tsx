@@ -31,22 +31,22 @@ export default function Sponsors() {
                         {[
                             {
                                 name: "American Society of Heating, Refrigerating and Air-Conditioning Engineers",
-                                logo: "./sponsors/ashrae.png",
+                                logo: "https://res.cloudinary.com/dll7cjob6/image/upload/v1781770344/ashrae_yrarsi.png",
                                 category: "Professional Society"
                             },
                             {
                                 name: "Hands-on Ultrasound Training Academy",
-                                logo: "./sponsors/Hands-on_Ultrasound_Training_Academy.png",
+                                logo: "https://res.cloudinary.com/dll7cjob6/image/upload/v1781770345/Hands-on_Ultrasound_Training_Academy_xhum1u.png",
                                 category: "Training Partner"
                             },
                             {
                                 name: "Zenzone",
-                                logo: "./sponsors/Zenzone.png",
+                                logo: "https://res.cloudinary.com/dll7cjob6/image/upload/v1781770345/Zenzone_dnbgjl.png",
                                 category: "Technology Partner"
                             },
                             {
                                 name: "Wemake",
-                                logo: "./sponsors/Wemake.png",
+                                logo: "https://res.cloudinary.com/dll7cjob6/image/upload/v1781770346/Wemake_uhbc3b.png",
                                 category: "Industry Partner"
                             }
                         ].map((sponsor, index) => (
