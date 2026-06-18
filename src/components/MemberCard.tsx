@@ -71,7 +71,7 @@ export default function Members() {
         </div>
       </section>
 
-          {groups.map((group, groupIndex) => {
+          {groups.map((group, _groupIndex) => {
             const members = db.filter(member => group.designations.includes(member.designation));
 
             if (members.length === 0) return null;
@@ -97,7 +97,7 @@ export default function Members() {
                           style={{ width: '140px', height: '140px' }} // explicitly fixed circle size
                         >
                           
-                          {(groupIndex > 1 || (groupIndex == 1 && index == 3)) &&
+                          {/* {(groupIndex > 1 || (groupIndex == 1 && index == 3)) &&
                             <div
                               className="rounded-full overflow-hidden bg-white"
                               style={{ width: '100%', height: '100%' }}
@@ -114,8 +114,8 @@ export default function Members() {
                                 }}
                               />
                             </div>
-                          }
-                          {groupIndex <= 1 &&
+                          } */}
+                          {/* {groupIndex <= 1 && */}
                             <div
                               className="rounded-full overflow-hidden bg-white"
                               style={{ width: '100%', height: '100%' }}
@@ -124,7 +124,8 @@ export default function Members() {
                                 alt={member.name}
                                 className="w-full h-full object-cover object-center"
                               />
-                            </div>}
+                            </div>
+                            {/* } */}
                         </div>
 
                       </div>
