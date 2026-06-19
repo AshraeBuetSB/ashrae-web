@@ -10,7 +10,8 @@ const publications = [
     journal: '2026 ASHRAE Winter Conference, Las Vegas, NV',
     date: 'February 2026',
     link: '#',
-    type: 'Conference Paper'
+    type: 'Conference Paper',
+    doi: 'https://doi.org/10.63044/w26hri03'
   },
   {
     id: 3,
@@ -20,7 +21,8 @@ const publications = [
     journal: '2026 ASHRAE Winter Conference, Las Vegas, NV',
     date: 'February 2026',
     link: 'https://ashraem.confex.com/ashraem/w26/meetingapp.cgi/Paper/40188',
-    type: 'Conference Paper'
+    type: 'Conference Paper',
+    doi: 'https://doi.org/10.63044/w26dev01'
   },
   {
     id: 2,
@@ -32,7 +34,8 @@ const publications = [
     date: 'February 2026',
     link:
         'https://www.researchgate.net/publication/400546447_Investigation_of_Thermal_and_Hydraulic_Performance_in_a_Shell-and-Tube_Heat_Exchanger_with_Cinquefoil_Baffles_Learning_Objectives_Acknowledgements',
-    type: 'Conference Paper'
+    type: 'Conference Paper',
+    doi: 'https://doi.org/10.63044/w26meh02'
   },
   {
 
@@ -45,7 +48,8 @@ const publications = [
     date: 'November 2025',
     link:
         'https://www.researchgate.net/publication/397570272_Investigation_of_Eco-Friendly_PET_Plastic_Waste_and_Coated_Jute_Fiber_as_Alternative_Fill_Material_for_Cross-Flow_Induced_Draft_Cooling_Towers',
-    type: 'Conference Paper'
+    type: 'Conference Paper',
+    doi: ''
   },
 
 ];

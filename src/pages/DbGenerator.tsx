@@ -70,7 +70,8 @@ export default function DbGenerator() {
     journal: '',
     date: '',
     link: '',
-    type: 'Conference Paper'
+    type: 'Conference Paper',
+    doi: ''
   });
 
   // Members State
@@ -344,8 +345,9 @@ export default function DbGenerator() {
         authors: 'Student Author 1, Student Author 2, Research Advisor',
         journal: 'Journal of Thermal Science and Engineering Applications',
         date: 'March 2026',
-        link: 'https://doi.org/10.1115/1.4005464',
-        type: 'Journal Paper'
+        link: '#',
+        type: 'Journal Paper',
+        doi: 'https://doi.org/10.1115/1.4005464'
       });
     } else if (tab === 'members') {
       setMember({
@@ -511,7 +513,8 @@ ${takeouts}
     journal: '${(publication.journal || 'Journal / Conference Details').replace(/'/g, "\\'")}',
     date: '${publication.date || 'February 2026'}',
     link: '${publication.link || '#'}',
-    type: '${publication.type}'
+    type: '${publication.type}',
+    doi: '${publication.doi || ''}'
   },`;
   };
 
@@ -1379,7 +1382,7 @@ ${takeouts}
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-3 gap-4">
                   <div>
                     <label className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Date</label>
                     <input
@@ -1397,6 +1400,16 @@ ${takeouts}
                       value={publication.link}
                       onChange={e => setPublication({ ...publication, link: e.target.value })}
                       placeholder="e.g. https://ashraem.confex.com/ashraem/w26/meetingapp.cgi/Paper/40188"
+                      className="w-full bg-black/30 border border-white/15 focus:border-blue-400 rounded-2xl px-4 py-2.5 text-sm text-white focus:ring-0 focus:outline-none transition-colors duration-300 font-mono text-xs"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">DOI Link</label>
+                    <input
+                      type="text"
+                      value={publication.doi}
+                      onChange={e => setPublication({ ...publication, doi: e.target.value })}
+                      placeholder="e.g. https://doi.org/10.63044/w26hri03"
                       className="w-full bg-black/30 border border-white/15 focus:border-blue-400 rounded-2xl px-4 py-2.5 text-sm text-white focus:ring-0 focus:outline-none transition-colors duration-300 font-mono text-xs"
                     />
                   </div>
