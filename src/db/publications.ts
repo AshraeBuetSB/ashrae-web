@@ -1,6 +1,17 @@
 
 const publications = [
   // Add new entries here:
+    {
+    id: 5,
+    title:
+        'Numerical Investigation of the Effects of CuO-H2O Nanofluid on the Thermal Performance of Shell and Tube Heat Exchnager',
+    authors: 'Tasnim Kibria',
+    journal: '2026 ASHRAE Annual Conference',
+    date: 'June 2026',
+    link: '#',
+    type: 'Conference Paper',
+    doi: ''
+  },
   {
     id: 4,
     title:
