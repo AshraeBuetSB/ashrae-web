@@ -27,9 +27,9 @@ function App() {
   return (
     <Suspense fallback={<LoadingFallback />}>
       <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/home" element={<Navigate to="/" replace />} />
         <Route path="/" element={<Layout />}>
-          <Route path="home" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="activities" element={<Activities />} />
           <Route path="activities/:slug" element={<ActivityDetail />} />

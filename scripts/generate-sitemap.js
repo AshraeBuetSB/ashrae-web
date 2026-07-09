@@ -10,7 +10,6 @@ const TODAY = new Date().toISOString().split('T')[0];
 
 const staticPaths = [
   { path: '', priority: '1.0', changefreq: 'monthly' },
-  { path: 'home', priority: '0.9', changefreq: 'monthly' },
   { path: 'about', priority: '0.8', changefreq: 'monthly' },
   { path: 'activities', priority: '0.8', changefreq: 'weekly' },
   { path: 'members', priority: '0.8', changefreq: 'monthly' },

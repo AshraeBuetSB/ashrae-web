@@ -545,7 +545,7 @@ ${takeouts}
           </div>
         </div>
         <Link
-          to="/home"
+          to="/"
           className="flex items-center space-x-2 text-sm text-gray-300 hover:text-white transition bg-white/10 hover:bg-white/20 px-5 h-10 rounded-full border border-white/10"
         >
           <ArrowLeft className="w-4 h-4" />
