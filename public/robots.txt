@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow indexing of the database generator utility tool
+Disallow: /tools/db-generator
+
+# Sitemap URL
+Sitemap: https://ashraebuetsb.com/sitemap.xml
