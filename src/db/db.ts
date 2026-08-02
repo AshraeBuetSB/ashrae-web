@@ -16,6 +16,49 @@ const
         Panel[] =
             [
               {
+                id: 'third',
+                year: '2026-2027',
+                members:
+                    [
+                      {
+                        name:
+                            'Dr. Md. Ashiqur Rahman, Professor, Department of Mechanical Engineering',
+                        designation: 'Advisor',
+                        image:
+                            'https://res.cloudinary.com/dll7cjob6/image/upload/f_auto,q_auto/v1774542375/Dr_Md_Ashiqur_Rahman_Advisor.png',
+                        color: 'from-green-500 to-emerald-500',
+                      },
+                      {
+                        name: "Usman Gani Pranto",
+                        designation: 'President',
+                        image:
+                            "./president.png",
+                        color: 'from-green-500 to-emerald-500',
+                      },
+                      {
+                        name: "Md. Ali Al Aftab",
+                        designation: 'Vice President',
+                        image:
+                            './vp.png',
+                        color: 'from-green-500 to-emerald-500',
+                      },
+                      {
+                        name: "Progga Parmita Rahman",
+                        designation: 'Treasurer',
+                        image:
+                            './treasurer.png',
+                        color: 'from-green-500 to-emerald-500',
+                      },
+                      {
+                        name: "Md Mahfuzur Rahman",
+                        designation: 'Secretary',
+                        image:
+                            "./secretary.png",
+                        color: 'from-green-500 to-emerald-500',
+                      },
+                  ]
+                },
+              {
                 id: 'second',
                 year: '2025-2026',
                 members:
