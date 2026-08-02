@@ -30,30 +30,30 @@ export default function PanelMembers() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
                     {[
                     {
-                        name: "Arafath Rahman Nishat",
+                        name: "Md. Ali Al Aftab",
                         designation: "Vice President",
-                        image: "./vp.webp",
+                        image: "./vp.png",
                         color: "from-green-500 to-emerald-500",
                         mobileOrder: "order-2 md:order-1"
                     },
                     {
-                        name: "Md. Luban Mehda",
+                        name: "Usman Gani Pranto",
                         designation: "President", 
-                        image: "./president.webp",
+                        image: "./president.png",
                         color: "from-purple-500 to-pink-500",
                         mobileOrder: "order-1 md:order-2"
                     },
                     {
-                        name: "Safwan Sakib",
+                        name: "Progga Parmita Rahman",
                         designation: "Treasurer",
-                        image: "./treasurer.webp",
+                        image: "./treasurer.png",
                         color: "from-blue-500 to-cyan-500",
                         mobileOrder: "order-3"
                     },
                     {
-                        name: "Nahian Prapon Jaman",
+                        name: "Md Mahfuzur Rahman",
                         designation: "Secretary",
-                        image: "https://i.postimg.cc/vT1tm2df/Nahiyan-Prapon-Jaman-Secretary.png",
+                        image: "./secretary.png",
                         color: "from-amber-400 to-orange-500",
                         mobileOrder: "order-4 md:col-start-2"
                     }
